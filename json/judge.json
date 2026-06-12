@@ -1,0 +1,173 @@
+{
+  "paperId": "3625846261122875392",
+  "paperName": "",
+  "id": 58514352,
+  "questionId": "3626897741221994496",
+  "parentId": "3626897741221994496",
+  "questionCode": "",
+  "sysCode": 1,
+  "schNumber": "",
+  "schName": "",
+  "stage": "3",
+  "stageName": "",
+  "subject": "54",
+  "subjectName": "",
+  "grade": "",
+  "gradeName": "",
+  "questionType": "1",
+  "businessType": "CYW-PDT",
+  "structureType": "panduan",
+  "structureTypeName": "判断题",
+  "businessTypeName": "",
+  "purpose": 0,
+  "questionContent": "",
+  "questionInfo": {
+    "answer": "bksh",
+    "options": [
+      {
+        "optCode": "y8sm",
+        "htmlCode": "正确",
+        "title": "",
+        "flagAnswer": "0"
+      },
+      {
+        "optCode": "bksh",
+        "htmlCode": "错误",
+        "title": "",
+        "flagAnswer": "1"
+      }
+    ],
+    "analysis": "<p style=\"text-indent:0pt\">解：根据概率的意义，降水概率是 $11\\%$，说明苏州市明天下雨的可能性为 $11\\%$，虽然下雨的可能性较小，但仍然有可能下雨，因此“苏州明天不可能下雨”的说法是错误的．</p>\n\n<p style=\"text-indent:0pt\">故答案为：错误．</p>\n",
+    "stem": "<p style=\"text-indent:0pt\">天气预报中说：“苏州市明天的降水概率是$11\\%$．”根据这项预报，可知苏州明天不可能下雨．<span class=\"underline fillblank\" contenteditable=\"false\" data-blank-id=\"134943735786533327\" data-width=\"3\" style=\"text-indent: 0; border-bottom: 1px solid #000000; display: inline-block;\"><input style=\"display:none\" type=\"text\">     </span>&nbsp;</p>\n"
+  },
+  "questionProperty": {
+    "property": {
+      "area": [],
+      "schoolYearEnd": [
+        {
+          "type": 1,
+          "value": "2020"
+        }
+      ],
+      "reviewStage": [],
+      "year": [
+        {
+          "type": 1,
+          "value": "2020"
+        }
+      ],
+      "purpose": [
+        {
+          "type": 1,
+          "value": "35416"
+        }
+      ],
+      "city": [
+        {
+          "type": 1,
+          "value": "3205"
+        }
+      ],
+      "usage": [],
+      "competeStage": [],
+      "source": [],
+      "schoolYearBegin": [
+        {
+          "type": 1,
+          "value": "2019"
+        }
+      ],
+      "competeType": [],
+      "difficulty": [
+        {
+          "type": 2,
+          "value": 1
+        }
+      ],
+      "courseVersion": [],
+      "province": [
+        {
+          "type": 1,
+          "value": "32"
+        }
+      ],
+      "school": [],
+      "paperMonth": [],
+      "sourceName": [
+        {
+          "type": 1,
+          "value": "江苏苏州吴江区绸都小学2020年小升初数学模拟试卷-朱佳怡【2020原创资源大赛】"
+        }
+      ],
+      "paperTerm": [
+        {
+          "type": 1,
+          "value": "2"
+        }
+      ],
+      "businessType": [
+        {
+          "type": 2,
+          "value": "CYW-PDT"
+        }
+      ],
+      "classType": [],
+      "quarter": []
+    },
+    "knowledge": null,
+    "knwIds": []
+  },
+  "questionIndex": 16,
+  "questionAnswer": "",
+  "questionSource": 2,
+  "status": "",
+  "difficulty": 1,
+  "year": "",
+  "examType": "",
+  "examArea": "",
+  "groupId": "3626897741221994496",
+  "questionScore": 0,
+  "relationType": 0,
+  "isNotOriginal": "",
+  "similarityScore": null,
+  "creator": "wanghaoran75@xdf.cn",
+  "creatorName": "王浩然",
+  "createTime": "2026-06-12 18:49:44",
+  "editor": "wanghaoran75@xdf.cn",
+  "editorName": "王浩然",
+  "editTime": "2026-06-12 18:49:44",
+  "isProcessing": null,
+  "questionStem": "",
+  "questionAnalysis": "",
+  "questionVersion": "",
+  "highQuality": "",
+  "organizedCount": "",
+  "flagUse": "",
+  "recordingTime": null,
+  "correctionFlag": 0,
+  "needSupplement": false,
+  "filled": null,
+  "mediaIds": [],
+  "smallQuestions": [],
+  "questionFormulas": [],
+  "propertyList": [],
+  "isQuoted": null,
+  "questionImages": [],
+  "oldQuestionId": "",
+  "hasCorrected": null,
+  "propertyNameDTO": null,
+  "startTime": null,
+  "endTime": null,
+  "similarityPaperName": "",
+  "knowledgeList": [],
+  "sourceName": "",
+  "compositeScore": null,
+  "paperList": [],
+  "knwInfos": [],
+  "tikuType": "",
+  "analysisVideos": [],
+  "standardFlag": "",
+  "errorCauses": [],
+  "answerLabelType": "",
+  "analysisLabelType": ""
+}

@@ -1,0 +1,8 @@
+- `title([一、选择题])`
+- `sc([题干 #klammern()], (A: [选项A], B: [选项B], C: [选项C], D: [选项D]), difficulty: 2, business-type: "单项选择", answer: (),analysis: [])`
+- `mc([题干 #klammern()], (A: [选项A], B: [选项B], C: [选项C], D: [选项D]), difficulty: 3, business-type: "多项选择", answer: (),analysis: [])`
+- `fb([第一空 #blank_line()，第二空 #blank_line()], difficulty: 2, business-type: "填空题", answer: (),analysis: [])`
+- `judge([判断题干。], difficulty: 1, business-type: "判断题")`
+- `subj([#par[求证：...]#par[解答区域...]], difficulty: 4, business-type: "解答题")`
+- `composite([材料正文], (sc(...), fb(...), subj(...),), difficulty: 3, business-type: "综合题")`
+- `completion([材料含 #blank_line()], (A: [选项A], B: [选项B], C: [选项C]), difficulty: 3, business-type: "阅读还原")`

@@ -1,0 +1,180 @@
+{
+		"paperId": "3625846261122875392",
+		"paperName": "",
+		"id": 58514357,
+		"questionId": "3626897788382748672",
+		"parentId": "3626897788382748672",
+		"questionCode": "",
+		"sysCode": 1,
+		"schNumber": "",
+		"schName": "",
+		"stage": "3",
+		"stageName": "",
+		"subject": "54",
+		"subjectName": "",
+		"grade": "",
+		"gradeName": "",
+		"questionType": "1",
+		"businessType": "CSX-DANXUAN",
+		"structureType": "danxuan",
+		"structureTypeName": "单选题",
+		"businessTypeName": "",
+		"purpose": 0,
+		"questionContent": "",
+		"questionInfo": {
+			"answer": "C",
+			"options": [
+				{
+					"optCode": "9669",
+					"htmlCode": "<p style=\"text-indent:0pt\">$2:3$</p>\n",
+					"title": "A",
+					"flagAnswer": "0"
+				},
+				{
+					"optCode": "a0c7",
+					"htmlCode": "<p style=\"text-indent:0pt\">$4:3$</p>\n",
+					"title": "B",
+					"flagAnswer": "0"
+				},
+				{
+					"optCode": "f356",
+					"htmlCode": "<p style=\"text-indent:0pt\">$9:4$&nbsp;</p>\n",
+					"title": "C",
+					"flagAnswer": "1"
+				}
+			],
+			"analysis": "<p style=\"text-indent:0pt\">解：因为小圆的直径是 $4$ 厘米，</p>\n\n<p style=\"text-indent:0pt\">所以小圆的半径是 $4 \\div 2 = 2$ 厘米，</p>\n\n<p style=\"text-indent:0pt\">小圆的面积是 $\\pi \\times 2^2 = 4\\pi$ 平方厘米；</p>\n\n<p style=\"text-indent:0pt\">因为大圆的半径是 $3$ 厘米，</p>\n\n<p style=\"text-indent:0pt\">所以大圆的面积是 $\\pi \\times 3^2 = 9\\pi$ 平方厘米；</p>\n\n<p style=\"text-indent:0pt\">大圆面积和小圆面积的比是 $9\\pi : 4\\pi = 9:4$．</p>\n\n<p style=\"text-indent:0pt\">A．小圆半径与大圆半径的比是 $2:3$，故本选项计算错误；</p>\n\n<p style=\"text-indent:0pt\">B．小圆直径与大圆半径的比是 $4:3$，故本选项计算错误；</p>\n\n<p style=\"text-indent:0pt\">C．大圆面积和小圆面积的比是 $9:4$，故本选项计算正确．</p>\n\n<p style=\"text-indent:0pt\">故选：C．</p>\n",
+			"stem": "<p style=\"text-indent:0pt\">小圆的直径是$4$厘米，大圆的半径是$3$厘米．大圆面积和小圆面积的比是（　　）</p>\n"
+		},
+		"questionProperty": {
+			"property": {
+				"area": [],
+				"schoolYearEnd": [
+					{
+						"type": 1,
+						"value": "2020"
+					}
+				],
+				"reviewStage": [],
+				"year": [
+					{
+						"type": 1,
+						"value": "2020"
+					}
+				],
+				"purpose": [
+					{
+						"type": 1,
+						"value": "35416"
+					}
+				],
+				"city": [
+					{
+						"type": 1,
+						"value": "3205"
+					}
+				],
+				"usage": [],
+				"competeStage": [],
+				"source": [],
+				"schoolYearBegin": [
+					{
+						"type": 1,
+						"value": "2019"
+					}
+				],
+				"competeType": [],
+				"difficulty": [
+					{
+						"type": 2,
+						"value": 2
+					}
+				],
+				"courseVersion": [],
+				"province": [
+					{
+						"type": 1,
+						"value": "32"
+					}
+				],
+				"school": [],
+				"paperMonth": [],
+				"sourceName": [
+					{
+						"type": 1,
+						"value": "江苏苏州吴江区绸都小学2020年小升初数学模拟试卷-朱佳怡【2020原创资源大赛】"
+					}
+				],
+				"paperTerm": [
+					{
+						"type": 1,
+						"value": "2"
+					}
+				],
+				"businessType": [
+					{
+						"type": 2,
+						"value": "CSX-DANXUAN"
+					}
+				],
+				"classType": [],
+				"quarter": []
+			},
+			"knowledge": null,
+			"knwIds": []
+		},
+		"questionIndex": 25,
+		"questionAnswer": "",
+		"questionSource": 2,
+		"status": "",
+		"difficulty": 2,
+		"year": "",
+		"examType": "",
+		"examArea": "",
+		"groupId": "3626897788382748672",
+		"questionScore": 0,
+		"relationType": 0,
+		"isNotOriginal": "",
+		"similarityScore": null,
+		"creator": "wanghaoran75@xdf.cn",
+		"creatorName": "王浩然",
+		"createTime": "2026-06-12 18:50:24",
+		"editor": "wanghaoran75@xdf.cn",
+		"editorName": "王浩然",
+		"editTime": "2026-06-12 18:50:24",
+		"isProcessing": null,
+		"questionStem": "",
+		"questionAnalysis": "",
+		"questionVersion": "",
+		"highQuality": "",
+		"organizedCount": "",
+		"flagUse": "",
+		"recordingTime": null,
+		"correctionFlag": 0,
+		"needSupplement": false,
+		"filled": null,
+		"mediaIds": [],
+		"smallQuestions": [],
+		"questionFormulas": [],
+		"propertyList": [],
+		"isQuoted": null,
+		"questionImages": [],
+		"oldQuestionId": "",
+		"hasCorrected": null,
+		"propertyNameDTO": null,
+		"startTime": null,
+		"endTime": null,
+		"similarityPaperName": "",
+		"knowledgeList": [],
+		"sourceName": "",
+		"compositeScore": null,
+		"paperList": [],
+		"knwInfos": [],
+		"tikuType": "",
+		"analysisVideos": [],
+		"standardFlag": "",
+		"errorCauses": [],
+		"answerLabelType": "",
+		"analysisLabelType": ""
+	
+}

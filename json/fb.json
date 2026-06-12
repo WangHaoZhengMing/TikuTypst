@@ -1,0 +1,177 @@
+{
+
+		"paperId": "3625846261122875392",
+		"paperName": "",
+		"id": 58514340,
+		"questionId": "3626897666917310464",
+		"parentId": "3626897666917310464",
+		"questionCode": "",
+		"sysCode": 1,
+		"schNumber": "",
+		"schName": "",
+		"stage": "3",
+		"stageName": "",
+		"subject": "54",
+		"subjectName": "",
+		"grade": "",
+		"gradeName": "",
+		"questionType": "1",
+		"businessType": "CSX-TIANKONG",
+		"structureType": "fillblank",
+		"structureTypeName": "填空题",
+		"businessTypeName": "",
+		"purpose": 0,
+		"questionContent": "",
+		"questionInfo": {
+			"answer": [
+				{
+					"blankId": "404680807435538633",
+					"answers": [
+						"七万八千七百九十九"
+					],
+					"index": 0
+				},
+				{
+					"blankId": "794159056115329967",
+					"answers": [
+						"$8$"
+					],
+					"index": 1
+				}
+			],
+			"unOrderedIndex": [],
+			"options": [],
+			"analysis": "<p style=\"text-indent:0pt\">解：$78799$ 的最高位是万位，读作：七万八千七百九十九；</p>\n\n<p style=\"text-indent:0pt\">省略“万”后面的尾数，需要看千位上的数，千位上是 $8$，大于 $5$，向万位进一，所以约是 $8$ 万．</p>\n\n<p style=\"text-indent:0pt\">故答案为：七万八千七百九十九, $8$．&nbsp;</p>\n",
+			"stem": "<p style=\"text-indent:0pt\">截至$7$月$19$日$24$时，据我国$31$个省（自治区、直辖市）和新疆生产建设兵团报告，现累计新冠肺炎治愈出院病例$78799$例，这个数读作<span class=\"underline fillblank\" contenteditable=\"false\" data-blank-id=\"404680807435538633\" data-width=\"3\" style=\"text-indent: 0; border-bottom: 1px solid #000000; display: inline-block;\"><input style=\"display:none\" type=\"text\">     </span>，省略“万”后面的尾数约是<span class=\"underline fillblank\" contenteditable=\"false\" data-blank-id=\"794159056115329967\" data-width=\"3\" style=\"text-indent: 0; border-bottom: 1px solid #000000; display: inline-block;\"><input style=\"display:none\" type=\"text\">     </span>万人．</p>\n"
+		},
+		"questionProperty": {
+			"property": {
+				"area": [],
+				"schoolYearEnd": [
+					{
+						"type": 1,
+						"value": "2020"
+					}
+				],
+				"reviewStage": [],
+				"year": [
+					{
+						"type": 1,
+						"value": "2020"
+					}
+				],
+				"purpose": [
+					{
+						"type": 1,
+						"value": "35416"
+					}
+				],
+				"city": [
+					{
+						"type": 1,
+						"value": "3205"
+					}
+				],
+				"usage": [],
+				"competeStage": [],
+				"source": [],
+				"schoolYearBegin": [
+					{
+						"type": 1,
+						"value": "2019"
+					}
+				],
+				"competeType": [],
+				"difficulty": [
+					{
+						"type": 2,
+						"value": 2
+					}
+				],
+				"courseVersion": [],
+				"province": [
+					{
+						"type": 1,
+						"value": "32"
+					}
+				],
+				"school": [],
+				"paperMonth": [],
+				"sourceName": [
+					{
+						"type": 1,
+						"value": "江苏苏州吴江区绸都小学2020年小升初数学模拟试卷-朱佳怡【2020原创资源大赛】"
+					}
+				],
+				"paperTerm": [
+					{
+						"type": 1,
+						"value": "2"
+					}
+				],
+				"businessType": [
+					{
+						"type": 2,
+						"value": "CSX-TIANKONG"
+					}
+				],
+				"classType": [],
+				"quarter": []
+			},
+			"knowledge": null,
+			"knwIds": []
+		},
+		"questionIndex": 2,
+		"questionAnswer": "",
+		"questionSource": 2,
+		"status": "",
+		"difficulty": 2,
+		"year": "",
+		"examType": "",
+		"examArea": "",
+		"groupId": "3626897666917310464",
+		"questionScore": 0,
+		"relationType": 0,
+		"isNotOriginal": "",
+		"similarityScore": null,
+		"creator": "wanghaoran75@xdf.cn",
+		"creatorName": "王浩然",
+		"createTime": "2026-06-12 18:48:06",
+		"editor": "wanghaoran75@xdf.cn",
+		"editorName": "王浩然",
+		"editTime": "2026-06-12 18:48:06",
+		"isProcessing": null,
+		"questionStem": "",
+		"questionAnalysis": "",
+		"questionVersion": "",
+		"highQuality": "",
+		"organizedCount": "",
+		"flagUse": "",
+		"recordingTime": null,
+		"correctionFlag": 0,
+		"needSupplement": false,
+		"filled": null,
+		"mediaIds": [],
+		"smallQuestions": [],
+		"questionFormulas": [],
+		"propertyList": [],
+		"isQuoted": null,
+		"questionImages": [],
+		"oldQuestionId": "",
+		"hasCorrected": null,
+		"propertyNameDTO": null,
+		"startTime": null,
+		"endTime": null,
+		"similarityPaperName": "",
+		"knowledgeList": [],
+		"sourceName": "",
+		"compositeScore": null,
+		"paperList": [],
+		"knwInfos": [],
+		"tikuType": "",
+		"analysisVideos": [],
+		"standardFlag": "",
+		"errorCauses": [],
+		"answerLabelType": "",
+		"analysisLabelType": ""
+}
