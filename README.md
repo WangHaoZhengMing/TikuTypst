@@ -1,5 +1,14 @@
 # TikuTypst
 
+HTML 中包含 `<table>` 时，转换器会调用：
+
+```powershell
+pandoc --from=html --to=typst --wrap=none
+```
+
+因此处理表格题前需要安装 Pandoc。也可以通过 `TIKU_TYPST_PANDOC` 指定 Pandoc
+可执行文件路径。
+
 将题库 JSON 转换为 `json/dsl.typ` 所描述的 Typst DSL。
 
 ## 使用
