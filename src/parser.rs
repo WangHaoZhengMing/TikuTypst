@@ -202,7 +202,7 @@ pub(crate) fn question_kind(record: &Record) -> Result<QuestionKind> {
         "biaoti" | "title" => QuestionKind::Title,
         "danxuan" | "single_choice" => QuestionKind::SingleChoice,
         "duoxuan" | "multiple_choice" => QuestionKind::MultipleChoice,
-        "fillblank" | "tiankong" => QuestionKind::FillBlank,
+        "fillblank" | "tiankong" | "fuhe_fillblank" => QuestionKind::FillBlank,
         "panduan" | "judge" => QuestionKind::Judge,
         "zhuguan" | "fuhe_zhuguan" | "subjective" => QuestionKind::Subjective,
         "fuhe" | "composite" => QuestionKind::Composite,

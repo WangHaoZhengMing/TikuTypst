@@ -404,7 +404,7 @@ fn html_with_tables_to_content(
                 convert_table,
             )?,
         );
-        let converted = convert_table(table.as_str())?;
+        let converted = convert_table_preserving_blanks(table.as_str(), convert_table)?;
         if !body.is_empty() && !body.ends_with('\n') {
             body.push('\n');
         }
@@ -417,6 +417,22 @@ fn html_with_tables_to_content(
         &html_to_content_with_table_converter(&html[last..], context, convert_table)?,
     );
     Ok(format!("[{}]", body.trim()))
+}
+
+fn convert_table_preserving_blanks(
+    table_html: &str,
+    convert_table: &dyn Fn(&str) -> Result<String>,
+) -> Result<String> {
+    let blank_count = BLANK_RE.find_iter(table_html).count();
+    let prepared = BLANK_RE.replace_all(table_html, BLANK_TOKEN);
+    let converted = convert_table(&prepared)?;
+    let converted_blank_count = converted.matches(BLANK_TOKEN).count();
+    if converted_blank_count != blank_count {
+        bail!(
+            "table conversion lost fill-blank placeholders: expected {blank_count}, got {converted_blank_count}"
+        );
+    }
+    Ok(converted.replace(BLANK_TOKEN, "#blank_line()"))
 }
 
 fn append_content_body(output: &mut String, content: &str) {
@@ -722,6 +738,42 @@ mod tests {
 
         assert_eq!(content.matches("#table(").count(), 2);
         assert!(content.contains("#latex(`\\rm{middle}`)"));
+    }
+
+    #[test]
+    fn preserves_fill_blanks_inside_tables() {
+        let converted_tables = RefCell::new(Vec::new());
+        let converter = |table: &str| {
+            converted_tables.borrow_mut().push(table.to_owned());
+            Ok(format!(
+                "#table(columns: 2, [first {BLANK_TOKEN}], [second {BLANK_TOKEN}])"
+            ))
+        };
+        let content = html_to_content_with_table_converter(
+            r#"<table><tr><td>first <span class="underline fillblank"> </span></td><td>second <span class="fillblank"> </span></td></tr></table>"#,
+            TextContext::Normal,
+            &converter,
+        )
+        .unwrap();
+
+        let converted_table = &converted_tables.borrow()[0];
+        assert_eq!(converted_table.matches(BLANK_TOKEN).count(), 2);
+        assert!(!converted_table.contains("fillblank"));
+        assert_eq!(content.matches("#blank_line()").count(), 2);
+        assert!(!content.contains(BLANK_TOKEN));
+    }
+
+    #[test]
+    fn rejects_table_conversion_that_loses_fill_blanks() {
+        let converter = |_: &str| Ok("#table(columns: 1, [cell])".to_owned());
+        let error = html_to_content_with_table_converter(
+            r#"<table><tr><td><span class="fillblank"> </span></td></tr></table>"#,
+            TextContext::Normal,
+            &converter,
+        )
+        .unwrap_err();
+
+        assert!(error.to_string().contains("expected 1, got 0"));
     }
 
     #[test]
