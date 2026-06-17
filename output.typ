@@ -1,1092 +1,14 @@
-#let forrender = (
-  title([一、填空题]),
-  fb(
-    [#latex(`\dfrac{6}{5} =`) #blank_line() #latex(`\div 10 = 18 :`) #blank_line() #latex(`= \dfrac{6 + \text{ (<span style="white-space: pre-wrap">  </span>) }}{5 + 10} =`) #blank_line() #latex(`\%`) #latex(`=`) #blank_line() (填小数)．],
-    difficulty: 2,
-    business-type: "CSX-TIANKONG",
-    answer: ([#latex(`12`)], [#latex(`15`)], [#latex(`120`)], [#latex(`1.2`)]),
-    analysis: [解：根据分数、除法与比的关系，以及分数的基本性质和数之间的互化进行解答．
-
-      由分数的分子、分母和除法中的被除数、除数的关系可得：#latex(`\dfrac{6}{5} = 6 \div 5 = (6 \times 2) \div (5 \times 2) = 12 \div 10`)；
-
-      根据比与分数的关系可得：#latex(`\dfrac{6}{5} = 6 : 5 = (6 \times 3) : (5 \times 3) = 18 : 15`)；
-
-      根据分数的基本性质，分母由 #latex(`5`) 变为 #latex(`5 + 10 = 15`)，扩大了 #latex(`3`) 倍，分子也应扩大 #latex(`3`) 倍变为 #latex(`18`)，即 #latex(`6 + (12) = 18`)；
-
-      将分数化为百分数和小数：#latex(`\dfrac{6}{5} = 1.2 = 120\%`)．
-
-      所以，#latex(`\dfrac{6}{5} = 12 \div 10 = 18 : 15 = \dfrac{6 + (12)}{5 + 10} = 120\% = 1.2`)．
-
-      故答案为：#latex(`12`)，#latex(`15`)，#latex(`120`)，#latex(`1.2`)．],
-  ),
-  fb(
-    [如果篮球比赛输一场记作 #latex(`-1`) 分，那么输两场记作 #blank_line() 分，#latex(`+3`) 分表示 #blank_line()．],
-    difficulty: 2,
-    business-type: "CSX-TIANKONG",
-    answer: ([#latex(`-2`)], [赢三场]),
-    analysis: [解：因为篮球比赛输一场记作 #latex(`-1`) 分，
-
-      所以输两场应记作 #latex(`-2`) 分；
-
-      因为 “#latex(`+`)” 和 “#latex(`-`)” 表示具有相反意义的量，输球记为负，则赢球记为正，
-
-      所以 #latex(`+3`) 分表示赢三场．
-
-      故答案为：#latex(`-2`)；赢三场．],
-  ),
-  fb(
-    [分数#latex(`\dfrac{a}{5}`)，它的分数单位是#blank_line() ，当#latex(`a=`)#blank_line() 时，它是最大的真分数；当#latex(`a=`)#blank_line() 时，它是最小的合数．],
-    difficulty: 2,
-    business-type: "CSX-TIANKONG",
-    answer: ([#latex(`\dfrac{1}{5}`)], [#latex(`4`)], [#latex(`20`)]),
-    analysis: [本题考查了分数的相关概念，解答本题要明确分数单位的定义，真分数的定义，合数的定义．欲求这个分数的分数单位，可根据分数单位的定义求解；欲求当a等于几时，它是最大的真分数，可根据真分数的定义求解；欲求当a等于几时，它是最小合数，可根据最小的合数是#latex(`4`)求解．
-
-      解：#latex(`\dfrac{a}{5}`)的分数单位是#latex(`\dfrac{1}{5}`)，根据真分数的定义，当#latex(`a=4`)时，它是最大的真分数，根据合数的定义，当#latex(`a=20`)时，#latex(`\dfrac{a}{5}`)是最小的合数#latex(`4`)．
-
-      故答案为：#latex(`\dfrac{1}{5}`)；#latex(`4`)；#latex(`20`)],
-  ),
-  fb(
-    [如果 #latex(`4 \square 6`) 是 #latex(`4`) 的倍数，#latex(`\square`) 里最大应填 #blank_line()；如果 #latex(`79 \square`) 是 #latex(`6`) 的倍数，#latex(`\square`) 里可以填 #blank_line()．],
-    difficulty: 2,
-    business-type: "CSX-TIANKONG",
-    answer: ([#latex(`9`)], [#latex(`2`)或#latex(`8`)]),
-    analysis: [解：根据能被 #latex(`2`)，#latex(`3`)，#latex(`4`) 整除的数的特征：
-
-      第一空：要使三位数 #latex(`4 \square 6`) 是 #latex(`4`) 的倍数，只需其末两位数 #latex(`\square 6`) 是 #latex(`4`) 的倍数．
-
-      由于 #latex(`\square 6`) 是 #latex(`4`) 的倍数，#latex(`\square`) 中可以填 #latex(`1`)，#latex(`3`)，#latex(`5`)，#latex(`7`)，#latex(`9`)，其中最大的是 #latex(`9`)，所以 #latex(`\square`) 里最大应填 #latex(`9`)；
-
-      第二空：要使三位数 #latex(`79 \square`) 是 #latex(`6`) 的倍数，它必须同时是 #latex(`2`) 和 #latex(`3`) 的倍数．
-
-      因为是 #latex(`2`) 的倍数，所以个位 #latex(`\square`) 必须是偶数，即 #latex(`0`)，#latex(`2`)，#latex(`4`)，#latex(`6`)，#latex(`8`)；
-
-      因为是 #latex(`3`) 的倍数，所以各位数字之和 #latex(`7 + 9 + \square = 16 + \square`) 必须是 #latex(`3`) 的倍数．
-
-      当 #latex(`\square = 2`) 时，#latex(`16 + 2 = 18`) 是 #latex(`3`) 的倍数；
-
-      当 #latex(`\square = 8`) 时，#latex(`16 + 8 = 24`) 是 #latex(`3`) 的倍数．
-
-      所以 #latex(`\square`) 里可以填 #latex(`2`) 或 #latex(`8`)．
-
-      故答案为：#latex(`9`)，#latex(`2`)或#latex(`8`)．],
-  ),
-  fb(
-    [随意找 #latex(`13`) 个小朋友，他们中至少有 #blank_line() 个人的属相相同．这是我们学习的“鸽巢问题”，题中 #blank_line() 相当于“鸽子”．],
-    difficulty: 2,
-    business-type: "CSX-TIANKONG",
-    answer: ([#latex(`2`)], [#latex(`13`)个小朋友]),
-    analysis: [解：根据鸽巢原理，一共有 #latex(`12`) 个属相，即有 #latex(`12`) 个“鸽巢”；
-
-      有 #latex(`13`) 个小朋友，即有 #latex(`13`) 只“鸽子”．
-
-      #latex(`13 \div 12 = 1`) （个） #latex(`1`) （个），
-
-      #latex(`1 + 1 = 2`) （个），
-
-      所以他们中至少有 #latex(`2`) 个人的属相相同；
-
-      题中的“#latex(`13`)个小朋友”相当于“鸽子”．
-
-      故答案为：#latex(`2`)；#latex(`13`)个小朋友．],
-  ),
-  composite(
-    [按规律填数．],
-    (
-      fb(
-        [#latex(`1`)， #latex(`4`)， #latex(`9`)， #latex(`16`)， #blank_line()， #blank_line() #latex(`...`)],
-        difficulty: 2,
-        business-type: "CSX-ZHT",
-        answer: ([#latex(`25`)], [#latex(`36`)]),
-        analysis: [解：通过观察已知的数列：
-
-          第一个数：#latex(`1 = 1^2`)
-
-          第二个数：#latex(`4 = 2^2`)
-
-          第三个数：#latex(`9 = 3^2`)
-
-          第四个数：#latex(`16 = 4^2`)
-
-          由此可得规律：第 #latex(`n`) 个数是 #latex(`n^2`)．
-
-          因此，第五个数为 #latex(`5^2 = 25`)，第六个数为 #latex(`6^2 = 36`)．
-
-          故答案为：#latex(`25`)，#latex(`36`)．],
-      ),
-      fb(
-        [#latex(`1`)， #latex(`2`)， #latex(`2`)， #latex(`4`)， #latex(`3`)， #latex(`8`)， #latex(`4`)， #latex(`16`)， #latex(`5`)， #blank_line()， #blank_line() #latex(`...`)],
-        difficulty: 3,
-        business-type: "CSX-ZHT",
-        answer: ([#latex(`32`)], [#latex(`6`)]),
-        analysis: [解：根据题意，观察数列：#latex(`1`)，#latex(`2`)，#latex(`2`)，#latex(`4`)，#latex(`3`)，#latex(`8`)，#latex(`4`)，#latex(`16`)，#latex(`5`)，……
-
-          可以发现该数列由两个子数列交替排列组成：
-
-          奇数项依次为：#latex(`1`)，#latex(`2`)，#latex(`3`)，#latex(`4`)，#latex(`5`)，……，是公差为 #latex(`1`) 的等差数列；
-
-          偶数项依次为：#latex(`2`)，#latex(`4`)，#latex(`8`)，#latex(`16`)，……，是公比为 #latex(`2`) 的等比数列．
-
-          因此，第 #latex(`10`) 项为偶数项的第 #latex(`5`) 项，应为 #latex(`16 \times 2 = 32`)；
-
-          第 #latex(`11`) 项为奇数项的第 #latex(`6`) 项，应为 #latex(`5 + 1 = 6`)．
-
-          故答案为：#latex(`32`)，#latex(`6`)．],
-      ),
-    ),
-    difficulty: 3,
-    business-type: "CSX-ZHT",
-  ),
-  fb(
-    [#latex(`A = 2 \times 2 \times 3 \times 5`)，#latex(`B = 2 \times 3 \times 3 \times 5`)，#latex(`A`)和#latex(`B`)的最大公因数是 #blank_line()，#latex(`A`)和#latex(`B`)的最小公倍数是 #blank_line()．],
-    difficulty: 2,
-    business-type: "CSX-TIANKONG",
-    answer: ([#latex(`30`)], [#latex(`180`)]),
-    analysis: [解：因为 #latex(`A = 2 \times 2 \times 3 \times 5`)，
-
-      #latex(`B = 2 \times 3 \times 3 \times 5`)．
-
-      所以 #latex(`A`) 和 #latex(`B`) 的公有质因数是 #latex(`2`)，#latex(`3`)，#latex(`5`)．
-
-      最大公因数是这些公有质因数的乘积：
-
-      #latex(`2 \times 3 \times 5 = 30`)；
-
-      最小公倍数是公有质因数与独有质因数的乘积：
-
-      #latex(`2 \times 2 \times 3 \times 3 \times 5 = 180`)．
-
-      故答案为：#latex(`30`)；#latex(`180`)．],
-  ),
-  fb(
-    [如图，一张方桌能坐#latex(`4`)人，#latex(`2`)张方桌拼在一起能坐#latex(`6`)人．．．．．．，#latex(`10`)张方桌拼在一起能坐#blank_line() 人；要坐#latex(`32`)人，需要#blank_line() 张方桌拼在一起；n张方桌拼在一起能坐#blank_line() 人．
-
-      #box(baseline: 25%, image(
-        "https://k12static.xdf.cn/k12/xkw/1749864779591/867612c5-0512-47af-a660-408c6e0a5bec.png",
-        width: 35.93%,
-      ))],
-    difficulty: 2,
-    business-type: "CSX-TIANKONG",
-    answer: ([#latex(`22`)], [#latex(`15`)], [#latex(`2n+2`)]),
-    analysis: [本题主要考查了数与形中的找规律问题，根据#latex(`1`)张方桌能坐：#latex(`2+2=4`)，#latex(`2`)张方桌能坐：#latex(`2\times 2+2=6`)人，#latex(`3`)张方桌能坐：#latex(`2\times 3+2=8`)人，即可得出#latex(`10`)张方桌能坐#latex(`2\times 10+2=22`)，用#latex(`\left(32-2\right)\div 2=15`)，即可得出要坐#latex(`32`)人需要#latex(`\left(32-2\right)\div 2=15`)张桌子，总结规律即n张方桌拼在一起能坐#latex(`2n+2`)人．
-
-      解：#latex(`1`)张方桌能坐：#latex(`2+2=4`)（人），
-
-      #latex(`2`)张方桌能坐：#latex(`2\times 2+2=6`)（人），
-
-      #latex(`3`)张方桌能坐：#latex(`2\times 3+2=8`)（人），
-
-      #latex(`\cdot \cdot \cdot`)
-
-      #latex(`10`)张方桌能坐：#latex(`2\times 10+2=22`)（人），
-
-      要坐#latex(`32`)人，需要：#latex(`\left(32-2\right)\div 2=15`)（张），
-
-      n张方桌拼在一起能坐#latex(`2n+2`)人，
-
-      故答案为：#latex(`22`)，#latex(`15`)，#latex(`2n+2`)．],
-  ),
-  fb(
-    [把 #latex(`0.333`)，#latex(`\dfrac{1}{3}`)，#latex(`33\%`)，#latex(`0.34`)，#latex(`0.4`)，三成五从左到右依次从大到小排列，排在第四位的数是 (#blank_line())．],
-    difficulty: 3,
-    business-type: "CSX-TIANKONG",
-    answer: ([#latex(`\dfrac{1}{3}`)],),
-    analysis: [解：为了方便比较，先把这些数统一化成小数：
-
-      #latex(`0.333`)；
-
-      #latex(`\dfrac{1}{3} \approx 0.3333`)；
-
-      #latex(`33\% = 0.33`)；
-
-      #latex(`0.34`)；
-
-      #latex(`0.4`)；
-
-      三成五 #latex(`= 35\% = 0.35`)．
-
-      因为 #latex(`0.4 > 0.35 > 0.34 > 0.3333 > 0.333 > 0.33`)，
-
-      所以它们从大到小的排列顺序为：
-
-      #latex(`0.4 > \text{三成五} > 0.34 > \dfrac{1}{3} > 0.333 > 33\%`)．
-
-      其中排在第四位的数是 #latex(`\dfrac{1}{3}`)．
-
-      故答案为：#latex(`\dfrac{1}{3}`)．],
-  ),
-  fb(
-    [当 #latex(`x = 0.5`) 时，#latex(`x^2 =`) #blank_line()，#latex(`2x =`) #blank_line()；当 #latex(`y =`) #blank_line() 时，#latex(`y^2 = 2y`)．],
-    difficulty: 2,
-    business-type: "CSX-TIANKONG",
-    answer: ([#latex(`0.25`)], [#latex(`1`)], [#latex(`0`) 或 #latex(`2`)]),
-    analysis: [解：当 #latex(`x = 0.5`) 时，
-
-      #latex(`x^2 = 0.5^2 = 0.25`)；
-
-      #latex(`2x = 2 \times 0.5 = 1`)．
-
-      当 #latex(`y^2 = 2y`) 时，
-
-      #latex(`y^2 - 2y = 0`)，
-
-      #latex(`y(y - 2) = 0`)，
-
-      解得 #latex(`y = 0`) 或 #latex(`y = 2`)．
-
-      所以当 #latex(`y = 0`) 或 #latex(`2`) 时，#latex(`y^2 = 2y`)．
-
-      故答案为：#latex(`0.25`)；#latex(`1`)；#latex(`0`) 或 #latex(`2`)．],
-  ),
-  subj(
-    [一个圆柱的底面半径是#latex(`3\mathrm{cm}`)，它的侧面展开图正好是一个正方形，与这个圆柱等底等高的圆锥的体积是多少．],
-    difficulty: 2,
-    business-type: "CSX-JIEDA",
-    answer: ([#latex(`177.4728\mathrm{cm}^{3}`)],),
-    analysis: [根据圆柱侧面展开图正好是一个正方形，求出高，再根据圆锥体积公式计算即可．
-
-      解：圆柱底面周长为：#latex(`3\times 2\times 3.14=18.84\left(\mathrm{cm}\right)`)，
-
-      由于侧面展开图正好是一个正方形，
-
-      则高为#latex(`18.84\mathrm{cm}`)，
-
-      则等底等高的圆锥的体积是#latex(`3^{2}\times 3.14\times 18.84\times \dfrac{1}{3}=177.4728\mathrm{cm}^{3}`)．
-
-      本题考查了圆柱的侧面展开图，圆柱和圆锥的关系，圆锥的体积，解题的关键是根据侧面展开图求出高．],
-  ),
-  fb(
-    [(如下图) #latex(`5`)个棱长#latex(`2`)分米的正方体硬纸箱堆放在墙角，体积一共是 #blank_line() 立方分米，露在外面的硬纸面积是 #blank_line() 平方分米．
-
-      #box(baseline: 25%, image(
-        "https://img.xkw.com/dksih/QBM/2020/2/26/2407331122192384/2411489676763137/STEM/d5fd875450724b67946bbea0f3474f8a.png",
-        width: 20%,
-      ))],
-    difficulty: 3,
-    business-type: "CSX-TIANKONG",
-    answer: ([#latex(`40`)], [#latex(`40`)]),
-    analysis: [解：每个正方体的体积为：#latex(`2 \times 2 \times 2 = 8`)（立方分米），
-
-      #latex(`5`) 个正方体的总体积为：#latex(`8 \times 5 = 40`)（立方分米）．
-
-      根据正方体堆放在墙角的方式，可以通过从不同方向观察来确定露在外面的面数：
-
-      无论是按照下层 #latex(`4`) 个、上层 #latex(`1`) 个的方式，还是下层 #latex(`3`) 个、上层 #latex(`2`) 个的方式靠墙角堆放，露在外面的面数总共都是 #latex(`10`) 个．
-
-      每个面的面积为：#latex(`2 \times 2 = 4`)（平方分米），
-
-      所以露在外面的硬纸面积是：#latex(`10 \times 4 = 40`)（平方分米）．
-
-      故答案为：#latex(`40`)，#latex(`40`)．],
-  ),
-  title([二、判断题]),
-  fb(
-    [一根绳子长#latex(`\dfrac{4}{5}`)米，也就是#latex(`80%`)米．#blank_line()],
-    difficulty: 1,
-    business-type: "CYW-PDT",
-    answer: ([×],),
-    analysis: [根据百分数的意义：表示一个数是另一数的百分之几的数叫百分数，百分数又叫百分率或百分比；它只能表示两数之间的倍数关系，不能表示某一具体数量．
-
-      解：因为百分数表示一个数是另一个数的百分之几，是不能带单位的；所以一根绳子长#latex(`80%`)米的说法是错误的；
-
-      故答案为：×
-
-      本题主要考查了百分数的意义及表示方法，理解百分数不能带单位是解题的关键．],
-  ),
-  sc(
-    [一个圆锥的底面半径扩大到原来的#latex(`2`)倍，高也扩大到原来的#latex(`2`)倍，它的体积扩大到原来的#klammern()倍．],
-    (A: [#latex(`4`)], B: [#latex(`6`)], C: [#latex(`8`)], D: [不变]),
-    difficulty: 3,
-    business-type: "CSX-DANXUAN",
-    answer: ([C],),
-    analysis: [熟练掌握圆锥的体积公式，是解答此题的关键．
-
-      根据圆锥体积公式，计算变化后的体积与原体积的比值即可求解．
-
-      ∵ 圆锥体积公式为#latex(`V = \dfrac{1}{3} \pi r^2 h`)，
-
-      设原圆锥底面半径为#latex(`r`)，高为#latex(`h`)，则原体积#latex(`V = \dfrac{1}{3} \pi r^2 h`)．
-
-      变化后，底面半径变为 #latex(`2r`)，高变为 #latex(`2h`)，
-
-      ∴ 新体积 #latex(`V' = \dfrac{1}{3} \pi (2r)^2 (2h) = \dfrac{1}{3} \pi \cdot 4r^2 \cdot 2h = \dfrac{1}{3} \pi \cdot 8r^2 h`)。
-
-      ∴ #latex(`\dfrac{V'}{V} = \dfrac{\dfrac{1}{3} \pi \cdot 8r^2 h}{\dfrac{1}{3} \pi r^2 h} = 8`)．
-
-      即体积扩大到原来的 #latex(`8`) 倍．
-
-      故选：#latex(`\rm{C}`)．],
-  ),
-  judge(
-    [一件衣服的价格先提价 #latex(`5\%`)，再降价 #latex(`5\%`)，价格仍是原价 （　　）],
-    difficulty: 2,
-    business-type: "CSX-PDT",
-  ),
-  judge([两种相关联的量不成正比例，就成反比例．（　　）], difficulty: 2, business-type: "CSX-PDT"),
-  fb(
-    [统计时使用折线统计图更能清楚的看出数量的变化情况． #blank_line() （判断对错）],
-    difficulty: 2,
-    business-type: "CSX-QITA",
-    answer: ([对],),
-    analysis: [本题考查了折线统计图的特点，熟练掌握各种统计图的特点是解题的关键；
-
-      条形统计图能很容易看出数量的多少；折线统计图不仅容易看出数量的多少，而且能反映数量的增减变化情况；扇形统计图能反映部分与整体的关系；由此根据情况选择即可．
-
-      解：折线统计图不仅可以看出数量多少，而且能清楚地看出数量的变化情况，
-
-      故答案为：对．],
-  ),
-  title([三、选择题]),
-  sc(
-    [安妮花图书馆一本《安徒生童话》原价 #latex(`30`) 元，六一儿童节，八折出售，六一儿童节过后恢复原价，需要提价 #klammern()],
-    (A: [#latex(`20\%`)], B: [#latex(`25\%`)], C: [#latex(`120\%`)], D: [#latex(`125\%`)]),
-    difficulty: 2,
-    business-type: "CSX-DANXUAN",
-    answer: ([B],),
-    analysis: [解：一本《安徒生童话》原价为 #latex(`30`) 元，八折出售的价格为：
-
-      #latex(`30 \times 80\% = 24`)（元），
-
-      六一儿童节过后恢复原价（即恢复到 #latex(`30`) 元），需要在现价 #latex(`24`) 元的基础上提价：
-
-      #latex(`30 - 24 = 6`)（元），
-
-      需要提价的百分比为：
-
-      #latex(`\dfrac{6}{24} \times 100\% = 25\%`)．
-
-      #latex(`\rm{A}`)．需要提价 #latex(`25\%`)，故本选项计算错误；
-
-      #latex(`\rm{B}`)．需要提价 #latex(`25\%`)，故本选项计算正确；
-
-      #latex(`\rm{C}`)．需要提价 #latex(`25\%`)，故本选项计算错误；
-
-      #latex(`\rm{D}`)．需要提价 #latex(`25\%`)，故本选项计算错误．
-
-      故选：#latex(`\rm{B}`)．],
-  ),
-  sc(
-    [有一个小数 #latex(`7.12365365365365...`)，从小数点开始向右数 #latex(`64`) 个数字，#latex(`3`) 有 #klammern() 个．],
-    (A: [#latex(`19`) 个], B: [#latex(`20`) 个], C: [#latex(`21`) 个], D: [#latex(`22`) 个]),
-    difficulty: 3,
-    business-type: "CSX-DANXUAN",
-    answer: ([C],),
-    analysis: [解：由题意可知，小数 #latex(`7.12365365365365...`) 是混循环小数，循环节是 #latex(`365`)．
-
-      从小数点后第一位起，前两位数字是 #latex(`1`) 和 #latex(`2`)，不属于循环部分；
-
-      从第三位起是循环节 #latex(`3, 6, 5`)，其长度为 #latex(`3`)．
-
-      现在要统计前 #latex(`64`) 个数字中数字 #latex(`3`) 出现的次数，
-
-      除去前两位，剩下数字的个数为 #latex(`64 - 2 = 62`) 个．
-
-      因为 #latex(`62 \div 3 = 20 \cdots 2`)，
-
-      说明这 #latex(`62`) 个数字中包含 #latex(`20`) 个完整的循环节，并且还剩下 #latex(`2`) 个数字．
-
-      在每个完整的循环节 #latex(`3, 6, 5`) 中，数字 #latex(`3`) 出现 #latex(`1`) 次，因此在 #latex(`20`) 个循环节中数字 #latex(`3`) 出现 #latex(`20`) 次；
-
-      余下的 #latex(`2`) 个数字依次是 #latex(`3, 6`)，其中数字 #latex(`3`) 出现 #latex(`1`) 次．
-
-      所以，数字 #latex(`3`) 出现的总次数为 #latex(`20 + 1 = 21`) 次．
-
-      #latex(`\rm{A}`)．#latex(`19`) 个，根据计算可知数字 #latex(`3`) 出现了 #latex(`21`) 次，故本选项计算错误；
-
-      #latex(`\rm{B}`)．#latex(`20`) 个，根据计算可知数字 #latex(`3`) 出现了 #latex(`21`) 次，故本选项计算错误；
-
-      #latex(`\rm{C}`)．#latex(`21`) 个，根据计算可知数字 #latex(`3`) 出现了 #latex(`21`) 次，故本选项计算正确；
-
-      #latex(`\rm{D}`)．#latex(`22`) 个，根据计算可知数字 #latex(`3`) 出现了 #latex(`21`) 次，故本选项计算错误．
-
-      故选：#latex(`\rm{C}`)．],
-  ),
-  sc(
-    [#latex(`4a+8`)错写成#latex(`4\times (a+8)`)，结果比原来#klammern()．],
-    (A: [多#latex(`4`)], B: [少#latex(`4`)], C: [多#latex(`24`)]),
-    difficulty: 3,
-    business-type: "CSX-DANXUAN",
-    answer: ([C],),
-    analysis: [本题考查了用乘法分配律计算含字母的算式，根据乘法分配律，将算式#latex(`4\times (a+8)`)去括号得出#latex(`4a+4\times 8`)，计算出结果，再求与#latex(`4a+8`)的差即可，要熟记运算律并能灵活使用．
-
-      解：#latex(`4\times (a+8)-(4a+8)`)
-
-      #latex(`=4a+32-4a-8`)
-
-      #latex(`=32-8`)
-
-      #latex(`=24`)
-
-      答：结果比原来多#latex(`24`)．
-
-      故选：#latex(`\rm{C}`)．],
-  ),
-  sc(
-    [轮船向东偏北#latex(`30`)°航行，因有紧急任务，按顺时针方向调头 #latex(`90`)°去执行任务，那么这时轮船的航行方向是#klammern()],
-    (
-      A: [东偏南 #latex(`60`)°],
-      B: [东偏南 #latex(`30`)°],
-      C: [北偏西 #latex(`30`)°],
-      D: [北偏西 #latex(`60`)°#linebreak()],
-    ),
-    difficulty: 2,
-    business-type: "CSX-DANXUAN",
-    answer: ([A],),
-    analysis: [],
-  ),
-  sc(
-    [某班的女生人数比全班人数的#latex(`\frac59`)少 #latex(`4`) 人，男生人数比全班人数的 #latex(`40%`)多 #latex(`6`) 人，那么这个班的男生人数比女生人数多#klammern()人.#linebreak()],
-    (A: [#latex(`3`)], B: [#latex(`5`)], C: [#latex(`9`)], D: [#latex(`10`)]),
-    difficulty: 3,
-    business-type: "CSX-DANXUAN",
-    answer: ([A],),
-    analysis: [],
-  ),
-  title([四、计算题]),
-  composite(
-    [直接写出得数．],
-    (
-      fb(
-        [#latex(`3 \div 10\% =`) #blank_line()],
-        difficulty: 1,
-        business-type: "CSX-JST",
-        answer: ([#latex(`30`)],),
-        analysis: [解：根据除以一个数等于乘上这个数的倒数（或者化为小数计算），可得：
-
-          #latex(`3 \div 10\% = 3 \div 0.1 = 30`)．
-
-          故答案为：#latex(`30`)．],
-      ),
-      fb(
-        [#latex(`0.4^3 =`) #blank_line()],
-        difficulty: 2,
-        business-type: "CSX-JST",
-        answer: ([#latex(`0.064`)],),
-        analysis: [解：根据小数乘法的计算方法，可得：
-
-          #latex(`0.4^3 = 0.4 \times 0.4 \times 0.4 = 0.064`)．
-
-          故答案为：#latex(`0.064`)．],
-      ),
-      fb(
-        [#latex(`(\dfrac{5}{6} - \dfrac{3}{4}) \times 24 =`) #blank_line()],
-        difficulty: 2,
-        business-type: "CSX-JST",
-        answer: ([#latex(`2`)],),
-        analysis: [解：根据乘法分配律计算如下：
-
-          #latex(`(\dfrac{5}{6} - \dfrac{3}{4}) \times 24`)
-
-          #latex(`= \dfrac{5}{6} \times 24 - \dfrac{3}{4} \times 24`)
-
-          #latex(`= 20 - 18`)
-
-          #latex(`= 2`)
-
-          故答案为：#latex(`2`)．],
-      ),
-      fb(
-        [#latex(`\dfrac{4}{7} + \dfrac{5}{11} + \dfrac{3}{7} - \dfrac{6}{11} =`) #blank_line()],
-        difficulty: 2,
-        business-type: "CSX-JST",
-        answer: ([#latex(`\dfrac{10}{11}`)],),
-        analysis: [解：利用加法的交换律和结合律进行简便计算：
-
-          #latex(`\dfrac{4}{7} + \dfrac{5}{11} + \dfrac{3}{7} - \dfrac{6}{11} = \left(\dfrac{4}{7} + \dfrac{3}{7}\right) + \left(\dfrac{5}{11} - \dfrac{6}{11}\right) = 1 - \dfrac{1}{11} = \dfrac{10}{11}`)．
-
-          故答案为：#latex(`\dfrac{10}{11}`)．],
-      ),
-      fb(
-        [#latex(`0.32 \times 25\% =`) #blank_line()],
-        difficulty: 2,
-        business-type: "CSX-JST",
-        answer: ([#latex(`0.08`)],),
-        analysis: [解：根据小数乘百分数的计算方法，把百分数化成分数进行计算：
-
-          #latex(`0.32 \times 25\% = 0.32 \times \dfrac{1}{4} = 0.08`)．
-
-          故答案为：#latex(`0.08`)．],
-      ),
-      fb(
-        [#latex(`1.2 : 96 =`) #blank_line()],
-        difficulty: 2,
-        business-type: "CSX-JST",
-        answer: ([#latex(`0.0125`)],),
-        analysis: [解：根据小数除法的计算法则计算即可：
-
-          #latex(`1.2 \div 96 = 0.0125`)（或 #latex(`1/80`)）．
-
-          故答案为：#latex(`0.0125`)．],
-      ),
-      fb(
-        [#latex(`4 \times \dfrac{3}{7} \div \dfrac{4}{9} =`) #blank_line()],
-        difficulty: 2,
-        business-type: "CSX-JST",
-        answer: ([#latex(`\dfrac{27}{7}`)],),
-        analysis: [解：根据分数乘除混合运算的计算法则进行计算：
-
-          #latex(`4 \times \dfrac{3}{7} \div \dfrac{4}{9} = 4 \times \dfrac{3}{7} \times \dfrac{9}{4} = \dfrac{27}{7}`)．
-
-          故答案为：#latex(`\dfrac{27}{7}`)．],
-      ),
-      fb(
-        [#latex(`\dfrac{3}{5} \times \dfrac{5}{3} \div \dfrac{7}{8} \times \dfrac{8}{7} =`) #blank_line()],
-        difficulty: 2,
-        business-type: "CSX-JST",
-        answer: ([#latex(`\dfrac{64}{49}`)],),
-        analysis: [解：根据分数乘除混合运算的顺序，从左到右依次计算：
-
-          #latex(`\dfrac{3}{5} \times \dfrac{5}{3} \div \dfrac{7}{8} \times \dfrac{8}{7}`)
-
-          #latex(`= 1 \div \dfrac{7}{8} \times \dfrac{8}{7}`)
-
-          #latex(`= \dfrac{8}{7} \times \dfrac{8}{7}`)
-
-          #latex(`= \dfrac{64}{49}`)
-
-          故答案为：#latex(`\dfrac{64}{49}`)．],
-      ),
-    ),
-    difficulty: 2,
-    business-type: "CSX-JST",
-  ),
-  composite(
-    [脱式计算，能简算的要简算．],
-    (
-      subj(
-        [#latex(`8 - \dfrac{3}{2} \times \dfrac{10}{21} - \dfrac{2}{7}`)],
-        difficulty: 3,
-        business-type: "CSX-ZHT",
-        answer: ([#latex(`7`)],),
-        analysis: [解：原式#latex(`= 8 - \dfrac{3}{2} \times \dfrac{10}{21} - \dfrac{2}{7}`)
-
-          #latex(`= 8 - \dfrac{5}{7} - \dfrac{2}{7}`)
-
-          #latex(`= 8 - ( \dfrac{5}{7} + \dfrac{2}{7} )`)
-
-          #latex(`= 8 - 1`)
-
-          #latex(`= 7`)．],
-      ),
-      subj(
-        [#latex(`\dfrac{8}{9} \times \left[ \dfrac{3}{4} - \left( \dfrac{7}{10} - \dfrac{1}{4} \right) \right]`)],
-        difficulty: 3,
-        business-type: "CSX-ZHT",
-        answer: ([#latex(`\dfrac{4}{15}`)],),
-        analysis: [解：#latex(`\dfrac{8}{9} \times \left[ \dfrac{3}{4} - \left( \dfrac{7}{10} - \dfrac{1}{4} \right) \right]`)
-
-          #latex(`= \dfrac{8}{9} \times \left[ \dfrac{3}{4} - \left( \dfrac{14}{20} - \dfrac{5}{20} \right) \right]`)
-
-          #latex(`= \dfrac{8}{9} \times \left[ \dfrac{3}{4} - \dfrac{9}{20} \right]`)
-
-          #latex(`= \dfrac{8}{9} \times \left[ \dfrac{15}{20} - \dfrac{9}{20} \right]`)
-
-          #latex(`= \dfrac{8}{9} \times \dfrac{6}{20}`)
-
-          #latex(`= \dfrac{8}{9} \times \dfrac{3}{10}`)
-
-          #latex(`= \dfrac{4}{15}`)．],
-      ),
-      subj(
-        [#latex(`9.5 \times \dfrac{4}{5} + 0.2 \times 9.5`)],
-        difficulty: 3,
-        business-type: "CSX-ZHT",
-        answer: ([#latex(`9.5`)],),
-        analysis: [解：#latex(`9.5 \times \dfrac{4}{5} + 0.2 \times 9.5`)
-
-          #latex(`= 9.5 \times 0.8 + 0.2 \times 9.5`)
-
-          #latex(`= 9.5 \times (0.8 + 0.2)`)
-
-          #latex(`= 9.5 \times 1`)
-
-          #latex(`= 9.5`)．],
-      ),
-      subj(
-        [#latex(`(1.25 \times 8 - 1.5) \times 2`)],
-        difficulty: 3,
-        business-type: "CSX-ZHT",
-        answer: ([#latex(`17`)],),
-        analysis: [解：#latex(`(1.25 \times 8 - 1.5) \times 2`)
-
-          #latex(`= (10 - 1.5) \times 2`)
-
-          #latex(`= 8.5 \times 2`)
-
-          #latex(`= 17`)．],
-      ),
-      subj(
-        [#latex(`1010 - 3072 \div 12`)],
-        difficulty: 3,
-        business-type: "CSX-ZHT",
-        answer: ([#latex(`754`)],),
-        analysis: [解：#latex(`1010 - 3072 \div 12`)
-
-          #latex(`= 1010 - 256`)
-
-          #latex(`= 754`)．],
-      ),
-      subj(
-        [#latex(`1.25 \times 4 \times 0.8 \times 0.25`)],
-        difficulty: 3,
-        business-type: "CSX-ZHT",
-        answer: ([#latex(`1`)],),
-        analysis: [解：#latex(`\because`) 原式为 #latex(`1.25 \times 4 \times 0.8 \times 0.25`)，
-
-          #latex(`\therefore`) 根据乘法交换律与结合律，原式可变形为：
-
-          原式 #latex(`= (1.25 \times 0.8) \times (4 \times 0.25)`)，
-
-          #latex(`\because 1.25 \times 0.8 = 1`)，
-
-          #latex(`\because 4 \times 0.25 = 1`)，
-
-          #latex(`\therefore`) 原式 #latex(`= 1 \times 1`)，
-
-          #latex(`\therefore`) 原式 #latex(`= 1`)．
-
-          故答案为：#latex(`1`)．],
-      ),
-    ),
-    difficulty: 3,
-    business-type: "CSX-ZHT",
-  ),
-  composite(
-    [解方程或比例．],
-    (
-      subj(
-        [#latex(`\dfrac{3}{5} = \dfrac{4.2}{x}`)],
-        difficulty: 2,
-        business-type: "CSX-JST",
-        answer: ([#latex(`x = 7`)],),
-        analysis: [解：#latex(`\because \dfrac{3}{5} = \dfrac{4.2}{x}`)，
-
-          #latex(`\therefore 3x = 4.2 \times 5`)，
-
-          (不对)
-
-          #latex(`\therefore 3x = 21`)，
-
-          #latex(`\therefore x = 7`)．],
-      ),
-      subj(
-        [#latex(`1 - \dfrac{3}{5}x = \dfrac{3}{10}`)],
-        difficulty: 2,
-        business-type: "CSX-JST",
-        answer: ([#latex(`x = \dfrac{7}{6}`)],),
-        analysis: [解：#latex(`1 - \dfrac{3}{5}x = \dfrac{3}{10}`)，
-
-          两边同时乘以 #latex(`10`)得：
-
-          #latex(`10 - 6x = 3`)，
-
-          移项得：
-
-          #latex(`-6x = 3 - 10`)，
-
-          合并同类项得：
-
-          #latex(`-6x = -7`)，
-
-          系数化为 #latex(`1`)得：
-
-          #latex(`x = \dfrac{7}{6}`)．],
-      ),
-      subj(
-        [#latex(`\dfrac{1}{6} : x = \dfrac{1}{10} : \dfrac{1}{4}`)],
-        difficulty: 2,
-        business-type: "CSX-JST",
-        answer: ([#latex(`x = \dfrac{5}{12}`)],),
-        analysis: [解：根据比例的基本性质，两外项之积等于两内项之积，
-
-          #latex(`\because \dfrac{1}{6} : x = \dfrac{1}{10} : \dfrac{1}{4}`)，
-
-          #latex(`\therefore \dfrac{1}{10}x = \dfrac{1}{6} \times \dfrac{1}{4}`)，
-
-          #latex(`\dots \dfrac{1}{10}x = \dfrac{1}{24}`)，
-
-          #latex(`\therefore x = \dfrac{1}{24} \times 10`)，
-
-          #latex(`\dots x = \dfrac{5}{12}`)．],
-      ),
-    ),
-    difficulty: 2,
-    business-type: "CSX-JST",
-  ),
-  title([五、作图题]),
-  subj(
-    [在方格纸上按要求画图．
-
-      (#latex(`1`)) 画出图形 #latex(`A`) 绕点 #latex(`O`) 逆时针旋转 #latex(`90^{\circ}`) 得到的图形 #latex(`B`)．
-
-      (#latex(`2`)) 画出图形 #latex(`A`) 关于直线 #latex(`l`) 的轴对称图形 #latex(`C`)．
-
-      (#latex(`3`)) 画出图形 #latex(`C`) 向右平移 #latex(`4`) 格后的图形 #latex(`D`)．
-
-      (#latex(`4`)) 画出图形 #latex(`A`) 按 #latex(`2 : 1`) 放大后的图形 #latex(`E`)．
-
-      #box(baseline: 25%, image(
-        "https://img.xkw.com/dksih/QBM/2019/6/1/2216198352404480/2217167164645376/STEM/3eea9d4ea59f4fc6814c6f31af81e94e.png",
-        width: 100%,
-      ))],
-    difficulty: 3,
-    business-type: "CSX-JIEDA",
-    answer: (
-      [绕点 #latex(`O`) 逆时针旋转 #latex(`90^{\circ}`) 得到的图形 #latex(`\rm{B}`) 如图所示；
-
-        (#latex(`2`)) 关于直线 #latex(`l`) 的轴对称图形 #latex(`\rm{C}`) 如图所示；
-
-        (#latex(`3`)) 向右平移 #latex(`4`) 格后的图形 #latex(`\rm{D}`) 如图所示；
-
-        (#latex(`4`)) 按 #latex(`2 : 1`) 放大后的图形 #latex(`\rm{E}`) 如图所示．
-
-        #box(baseline: 25%, image(
-          "https://tiku-1252350207.cos.ap-beijing.myqcloud.com/k12-paper/2-1780751126533.png",
-          width: 100%,
-        ))],
-    ),
-    analysis: [解：(#latex(`1`)) #latex(`\because`) 图形 #latex(`\rm{A}`) 的直角顶点为 #latex(`O(4,4)`)，另外两个顶点分别为 #latex(`(4,6)`)，#latex(`(5,4)`)，
-
-      #latex(`\because`) 图形 #latex(`\rm{B}`) 是图形 #latex(`\rm{A}`) 绕点 #latex(`O`) 逆时针旋转 #latex(`90^{\circ}`) 得到的图形，
-
-      #latex(`\therefore`) 旋转中心 #latex(`O(4,4)`) 的位置保持不变，
-
-      #latex(`\because`) 顶点 #latex(`(4,6)`) 绕点 #latex(`O`) 逆时针旋转 #latex(`90^{\circ}`) 后的对应点为 #latex(`(2,4)`)，
-
-      #latex(`\because`) 顶点 #latex(`(5,4)`) 绕点 #latex(`O`) 逆时针旋转 #latex(`90^{\circ}`) 后的对应点为 #latex(`(4,5)`)，
-
-      #latex(`\therefore`) 顺次连接点 #latex(`(4,4)`)，#latex(`(2,4)`)，#latex(`(4,5)`) 即可得到图形 #latex(`\rm{B}`)．
-
-      (#latex(`2`))
-
-      #latex(`\because`) 对称轴直线 #latex(`l`) 所在的直线为 #latex(`x=6`)，
-
-      #latex(`\because`) 图形 #latex(`\rm{A}`) 的三个顶点坐标分别为 #latex(`(4,4)`)，#latex(`(4,6)`)，#latex(`(5,4)`)，
-
-      #latex(`\therefore`) 各顶点关于直线 #latex(`l`) 对称的对应点坐标分别为 #latex(`(8,4)`)，#latex(`(8,6)`)，#latex(`(7,4)`)，
-
-      #latex(`\therefore`) 顺次连接点 #latex(`(8,4)`)，#latex(`(8,6)`)，#latex(`(7,4)`) 即可得到图形 #latex(`\rm{C}`)．
-
-      (#latex(`3`))
-
-      #latex(`\because`) 图形 #latex(`\rm{D}`) 是图形 #latex(`\rm{C}`) 向右平移 #latex(`4`) 格后得到的图形，
-
-      #latex(`\because`) 图形 #latex(`\rm{C}`) 的三个顶点坐标分别为 #latex(`(8,4)`)，#latex(`(8,6)`)，#latex(`(7,4)`)，
-
-      #latex(`\therefore`) 向右平移 #latex(`4`) 格后，对应顶点的横坐标均增加 #latex(`4`)，纵坐标保持不变，
-
-      #latex(`\therefore`) 各对应顶点的坐标分别为 #latex(`(12,4)`)，#latex(`(12,6)`)，#latex(`(11,4)`)，
-
-      #latex(`\therefore`) 顺次连接点 #latex(`(12,4)`)，#latex(`(12,6)`)，#latex(`(11,4)`) 即可得到图形 #latex(`\rm{D}`)．
-
-      (#latex(`4`))
-
-      #latex(`\because`) 图形 #latex(`\rm{E}`) 是图形 #latex(`\rm{A}`) 按 #latex(`2 : 1`) 放大后的图形，
-
-      #latex(`\because`) 图形 #latex(`\rm{A}`) 是直角边分别为 #latex(`2`) 和 #latex(`1`) 的直角三角形，
-
-      #latex(`\therefore`) 图形 #latex(`\rm{E}`) 是直角边分别为 #latex(`4`) 和 #latex(`2`) 的直角三角形，
-
-      #latex(`\therefore`) 在方格纸的合适位置（如以 #latex(`(1,1)`) 为直角顶点）画出直角边长分别为 #latex(`4`) 和 #latex(`2`) 的直角三角形，即可得到图形 #latex(`\rm{E}`)．],
-  ),
-  title([六、填空题]),
-  fb(
-    [小明按照如图的方法用灰色和白色的小正方形摆图形．当中间摆#latex(`2022`)个灰色的小正方形时，四周共需要摆白色小正方形的个数为#blank_line() ．
-
-      #box(baseline: 25%, image(
-        "https://k12static.xdf.cn/k12/xkw/1748877285661/c7d55756-6139-4e68-b30e-ba314c40a525.png",
-        width: 60.98%,
-      ))],
-    difficulty: 3,
-    business-type: "CSX-TIANKONG",
-    answer: ([#latex(`4050`)],),
-    analysis: [给图形依次标上序号，观察图形规律可得：灰色正方形的个数与图形的序号相同，白色正方形的个数比灰色正方形个数的#latex(`2`)倍多#latex(`6`)，据此规律即可得出答案．
-
-      解：根据题意分析可得：
-
-      灰色正方形的个数与图形的序号数相同，
-
-      第#latex(`1`)幅图中白色正方形有#latex(`2\times 1+6=8`)​(个)；
-
-      第#latex(`2`)幅图中白色正方形有#latex(`2\times 2+6=10`)​(个)；
-
-      第#latex(`3`)幅图中白色正方形有#latex(`2\times 3+6=12`)​(个)；
-
-      …
-
-      第#latex(`n`)幅图中白色正方形有#latex(`\left(2n+6\right)`)个；
-
-      #latex(`\therefore`)当中间摆#latex(`2022`)个灰色的小正方形时，也就是第#latex(`2022`)幅图，
-
-      其中白色正方形的个数为：#latex(`2\times 2022+6=4050`) (个)，
-
-      故答案为：#latex(`4050`)．
-
-      本题考查图形的规律问题，找出每个图形中灰色正方形和白色正方形的个数与序号间的关系是解题的关键．],
-  ),
-  title([七、解答题]),
-  subj(
-    [求下图阴影部分的面积．
-
-      #box(baseline: 25%, image(
-        "https://img.xkw.com/dksih/QBM/2019/6/1/2216198352404480/2217167164653569/STEM/def71d3f-c1b7-493e-8afe-8ebcb81cafd8.png",
-        width: 100%,
-      ))],
-    difficulty: 3,
-    business-type: "CSX-JIEDA",
-    answer: ([#latex(`24 - 4\pi`)],),
-    analysis: [解：
-
-      连接 #latex(`OE`) ．
-
-      #latex(`\because`) 四边形 #latex(`ABCD`) 是正方形，边长为 #latex(`8`)，
-
-      #latex(`\therefore \angle DAB = 90^{\circ}`)，#latex(`AB = BC = 8`)，
-
-      #latex(`\because AC`) 是正方形 #latex(`ABCD`) 的对角线，
-
-      #latex(`\therefore \angle BAC = 45^{\circ}`)，
-
-      #latex(`\because O`) 是 #latex(`AB`) 的中点，以 #latex(`AB`) 为直径在正方形内作半圆，
-
-      #latex(`\therefore OA = OB = OE = 4`)，
-
-      #latex(`\therefore \angle OAE = \angle OEA = 45^{\circ}`)，
-
-      #latex(`\therefore \angle AOE = 180^{\circ} - \angle OAE - \angle OEA = 90^{\circ}`)，
-
-      #latex(`\therefore \angle BOE = 180^{\circ} - \angle AOE = 90^{\circ}`)，
-
-      #latex(`\therefore S_{\triangle ABC} = \dfrac{1}{2} \times AB \times BC = \dfrac{1}{2} \times 8 \times 8 = 32`)，
-
-      #latex(`\therefore S_{\triangle AOE} = \dfrac{1}{2} \times OA \times OE = \dfrac{1}{2} \times 4 \times 4 = 8`)，
-
-      #latex(`\because \angle BOE = 90^{\circ}`)，
-
-      #latex(`\therefore S_{\text{扇形 } BOE} = \dfrac{90}{360} \times \pi \times OE^2 = \dfrac{1}{4} \times \pi \times 4^2 = 4\pi`)，
-
-      #latex(`\because S_{\triangle ABC} = S_{\triangle AOE} + S_{\text{扇形 } BOE} + S_{\text{阴影}}`)，
-
-      #latex(`\therefore S_{\text{阴影}} = S_{\triangle ABC} - S_{\triangle AOE} - S_{\text{扇形 } BOE}`)
-
-      #latex(`\therefore S_{\text{阴影}} = 32 - 8 - 4\pi = 24 - 4\pi`)．
-
-      故答案为：#latex(`24 - 4\pi`)．],
-  ),
-  subj(
-    [只列综合算式，不计算．
-
-      南洋酒店第一季度的营业额中应纳税的部分按 #latex(`3\%`) 纳税，税后余额为 #latex(`190`) 万元，第一季度纳税多少万元？],
-    difficulty: 3,
-    business-type: "CSX-JIEDA",
-    answer: ([#latex(`190 \div (1 - 3\%) \times 3\%`)],),
-    analysis: [解：#latex(`\because`) 南洋酒店第一季度的营业额中应纳税的部分按 #latex(`3\%`) 纳税，
-
-      #latex(`\therefore`) 税后余额占应纳税部分的百分比为 #latex(`1 - 3\%`)，
-
-      #latex(`\because`) 税后余额为 #latex(`190`) 万元，
-
-      #latex(`\therefore`) 应纳税的部分为 #latex(`190 \div (1 - 3\%)`) 万元，
-
-      #latex(`\therefore`) 第一季度纳税金额为 #latex(`190 \div (1 - 3\%) \times 3\%`) 万元．
-
-      故答案为：#latex(`190 \div (1 - 3\%) \times 3\%`)．],
-  ),
-  subj(
-    [一个圆锥形黄沙堆．底面周长为#latex(`25.12\mathrm{m}`)．高#latex(`3\mathrm{m}`)．每立方米黄沙重#latex(`1.49\mathrm{t}`)，这个黄沙堆共重多少吨？（#latex(`\pi =3.14`)）],
-    difficulty: 2,
-    business-type: "CSX-JIEDA",
-    answer: ([这个黄沙堆共重 #latex(`74.8576`)吨],),
-    analysis: [本题考查了圆锥的体积公式，根据圆锥的体积公式计算即可得解，理解题意，正确列式计算是解此题的关键．
-
-      解：#latex(`\dfrac{1}{3}\times 3.14\times \left(25.12\div 3.14\div 2\right)^{2}\times 3\times 1.49=\dfrac{1}{3}\times 3.14\times 16\times 3\times 1.49=74.8576`)（吨），
-
-      故这个黄沙堆共重#latex(`74.8576`)吨．],
-  ),
-  subj(
-    [只列综合算式，不计算．
-
-      春节过后，亮亮把自己的 #latex(`1500`) 元压岁钱存入银行，存期三年，年利率为 #latex(`3.25\%`)，到期后亮亮可得本金和利息共多少元？（免征利息税）],
-    difficulty: 2,
-    business-type: "CSX-JIEDA",
-    answer: ([#latex(`1500 + 1500 \times 3.25\% \times 3`)（或 #latex(`1500 \times (1 + 3.25\% \times 3)`)）],),
-    analysis: [解：#latex(`\because`) 本金为 #latex(`1500`) 元，年利率为 #latex(`3.25\%`)，存期为 #latex(`3`) 年，
-
-      #latex(`\therefore`) 到期时亮亮可以获得的利息为 #latex(`1500 \times 3.25\% \times 3`) 元，
-
-      #latex(`\therefore`) 到期后亮亮可得本金和利息共为 #latex(`1500 + 1500 \times 3.25\% \times 3`) 元（或 #latex(`1500 \times (1 + 3.25\% \times 3)`) 元）．
-
-      故列综合算式为：#latex(`1500 + 1500 \times 3.25\% \times 3`)（或 #latex(`1500 \times (1 + 3.25\% \times 3)`)）．],
-  ),
-  subj(
-    [北京和南京大约相距 #latex(`1050`) 千米，一辆快车和一辆动车同时从两地出发，相向而行，#latex(`3`) 小时相遇，动车与快车的速度比是 #latex(`5 : 2`)，求动车每小时行多少千米．],
-    difficulty: 3,
-    business-type: "CSX-JIEDA",
-    answer: ([#latex(`250`)],),
-    analysis: [解：#latex(`\because`) 北京和南京大约相距 #latex(`1050`) 千米，两车相向而行，#latex(`3`) 小时相遇，
-
-      #latex(`\therefore`) 两车的速度之和为 #latex(`1050 \div 3 = 350`)（千米\/小时），
-
-      #latex(`\because`) 动车与快车的速度比是 #latex(`5 : 2`)，
-
-      #latex(`\therefore`) 动车的速度占两车速度之和的 #latex(`\dfrac{5}{5 + 2}`)，
-
-      #latex(`\therefore`) 动车每小时行：#latex(`350 \times \dfrac{5}{5 + 2} = 250`)（千米）．
-
-      答：动车每小时行 #latex(`250`) 千米．],
-  ),
-  subj(
-    [某工程队铺一段路，原计划每天铺#latex(`9.6`)千米，#latex(`15`)天铺完，实际每天比原计划多铺#latex(`2.4`)千米，实际要用多少天铺完？（列方程解答）],
-    difficulty: 2,
-    business-type: "CSX-JIEDA",
-    answer: ([见解析],),
-    analysis: [解：设实际要用x天铺完，#linebreak()（#latex(`2.4`)+#latex(`9.6`)）#latex(`\rm{x}`)=#latex(`9.6`)×#latex(`15`)，#linebreak()解得：#latex(`\rm{x}`)=#latex(`12`)，#linebreak()答：实际要用#latex(`12`)天铺完．],
-  ),
-  subj(
-    [图书室有科技书 #latex(`1200`) 本，科技书比文艺书的 #latex(`2`) 倍少 #latex(`150`) 本，文艺书有多少本？（用方程解答）],
-    difficulty: 2,
-    business-type: "CSX-JIEDA",
-    answer: ([文艺书有 #latex(`675`) 本．],),
-    analysis: [解：设文艺书有 #latex(`x`) 本，
-
-      #latex(`\because`) 科技书比文艺书的 #latex(`2`) 倍少 #latex(`150`) 本，且科技书有 #latex(`1200`) 本，
-
-      #latex(`\therefore 2x - 150 = 1200`)，
-
-      #latex(`2x = 1200 + 150`)，
-
-      #latex(`2x = 1350`)，
-
-      #latex(`x = 675`)．
-
-      答：文艺书有 #latex(`675`) 本．],
-  ),
-  subj(
-    [为迎接省文明城市创建，新区拓宽一条公路，第一天修了#latex(`15\mathrm{％}`)，第二天比第一天少修了#latex(`300`)米，还剩#latex(`75\mathrm{％}`)，这条公路全长多少米？],
-    difficulty: 1,
-    business-type: "CSX-JIEDA",
-    answer: ([6000米],),
-    analysis: [本题主要考查了百分数的实际应用，先求出第二天比第一天少修的百分比，再根据第二天比第一天少修#latex(`300`)米列式求解即可．
-
-      解：#latex(`300\div \left[15\mathrm{\% }-\left(1-15\mathrm{\% }-75\mathrm{\% }\right)\right]=6000`)米，
-
-      答：这条公路全长#latex(`6000`)米．],
-  ),
-  subj(
-    [中国参加第 #latex(`31`) 届里约奥运会的运动员中，男运动员占运动员总数的 #latex(`\dfrac{5}{13}`)，女运动员比运动员总数的 #latex(`\dfrac{5}{8}`) 少 #latex(`4`) 人．中国参加第 #latex(`31`) 届奥运会的运动员共有多少人？],
-    difficulty: 3,
-    business-type: "CSX-JIEDA",
-    answer: ([#latex(`416`)],),
-    analysis: [解：设中国参加第 #latex(`31`) 届奥运会的运动员共有 #latex(`x`) 人．
-
-      #latex(`\because`) 男运动员占运动员总数的 #latex(`\dfrac{5}{13}`)，
-
-      #latex(`\therefore`) 男运动员人数为 #latex(`\dfrac{5}{13}x`) 人．
-
-      #latex(`\because`) 女运动员比运动员总数的 #latex(`\dfrac{5}{8}`) 少 #latex(`4`) 人，
-
-      #latex(`\therefore`) 女运动员人数为 #latex(`\left(\dfrac{5}{8}x - 4\right)`) 人．
-
-      #latex(`\because`) 男运动员人数与女运动员人数之和等于总人数，
-
-      #latex(`\therefore`) #latex(`\dfrac{5}{13}x + \dfrac{5}{8}x - 4 = x`)，
-
-      #latex(`\therefore`) #latex(`\left(\dfrac{5}{13} + \dfrac{5}{8} - 1\right)x = 4`)，
-
-      #latex(`\therefore`) #latex(`\left(\dfrac{40}{104} + \dfrac{65}{104} - \dfrac{104}{104}\right)x = 4`)，
-
-      #latex(`\therefore`) #latex(`\dfrac{1}{104}x = 4`)，
-
-      #latex(`\therefore`) #latex(`x = 416`)．
-
-      答：中国参加第 #latex(`31`) 届奥运会的运动员共有 #latex(`416`) 人．],
-  ),
-  composite(
-    [笑笑过生日，有 #latex(`6`) 位小伙伴来做客．她用一大盒果汁招待同学，给每位同学倒上一杯后，剩下的倒给自己．（果汁包装盒和杯子如下图，厚度忽略不计）
-
-      #box(baseline: 25%, image(
-        "https://img.xkw.com/dksih/QBM/2020/6/24/2491735018135552/2498837784051712/STEM/7d960ac61b6a4dbb9b9a79d7eb27c743.png",
-        width: 100%,
-      ))],
-    (
-      subj(
-        [这盒果汁有多少毫升？],
-        difficulty: 2,
-        business-type: "CSX-ZHT",
-        answer: ([#latex(`1320`) 毫升],),
-        analysis: [解：#latex(`\because`) 由图可知，果汁包装盒是一个长方体，其长为 #latex(`11\text{ cm}`)，宽为 #latex(`6\text{ cm}`)，高为 #latex(`20\text{ cm}`)，
-
-          #latex(`\therefore`) 这盒果汁的体积为：
-
-          #latex(`11 \times 6 \times 20 = 1320\text{ (cm}^3\text{)}`)，
-
-          #latex(`\because 1\text{ cm}^3 = 1\text{ mL}`)，
-
-          #latex(`\therefore 1320\text{ cm}^3 = 1320\text{ mL}`)．
-
-          故答案为：#latex(`1320`) 毫升．],
-      ),
-      subj(
-        [每位小客人喝了多少毫升？],
-        difficulty: 2,
-        business-type: "CSX-ZHT",
-        answer: ([#latex(`282.6`)],),
-        analysis: [解：根据题意和图示可知，圆柱形杯子的底面直径为 #latex(`6\text{ cm}`)，高为 #latex(`10\text{ cm}`)，
-
-          #latex(`\because`) 圆柱形杯子的底面半径为：
-
-          #latex(`r = 6 \div 2 = 3\text{ cm}`)，
-
-          #latex(`\therefore`) 圆柱形杯子的容积为：
-
-          #latex(`V = 3.14 \times 3^2 \times 10 = 282.6\text{ cm}^3`)，
-
-          #latex(`\because 1\text{ cm}^3 = 1\text{ mL}`)，
-
-          #latex(`\therefore 282.6\text{ cm}^3 = 282.6\text{ mL}`)，
-
-          #latex(`\therefore`) 每位小客人喝了 #latex(`282.6`) 毫升．],
-      ),
-      subj(
-        [笑笑喝了这盒果汁的几分之几？],
-        difficulty: 3,
-        business-type: "CSX-ZHT",
-        answer: ([#latex(`\dfrac{587}{2000}`)（或 #latex(`29.35\%`)）],),
-        analysis: [解：#latex(`\because`) 果汁包装盒是长方体，长为 #latex(`15\text{ cm}`)，宽为 #latex(`8\text{ cm}`)，高为 #latex(`20\text{ cm}`)，
-
-          #latex(`\therefore`) 这盒果汁的总容积为：#latex(`V_{\text{总}} = 15 \times 8 \times 20 = 2400\text{ cm}^3 = 2400\text{ mL}`)，
-
-          #latex(`\because`) 杯子是圆柱形，底面直径为 #latex(`6\text{ cm}`)，高为 #latex(`10\text{ cm}`)，
-
-          #latex(`\therefore`) 杯子的底面半径为：#latex(`r = 6 \div 2 = 3\text{ cm}`)，
-
-          #latex(`\therefore`) 一个杯子的容积为：#latex(`V_{\text{杯}} = 3.14 \times 3^2 \times 10 = 282.6\text{ cm}^3 = 282.6\text{ mL}`)，
-
-          #latex(`\because`) 有 #latex(`6`) 位小伙伴，给每位同学倒满一杯，
-
-          #latex(`\therefore`) 一共倒出的果汁体积为：#latex(`282.6 \times 6 = 1695.6\text{ mL}`)，
-
-          #latex(`\therefore`) 剩下的倒给自己，笑笑喝了的果汁体积为：#latex(`2400 - 1695.6 = 704.4\text{ mL}`)，
-
-          #latex(`\therefore`) 笑笑喝了这盒果汁的比例为：#latex(`704.4 \div 2400 = 0.2935 = 29.35\%`)，
-
-          #latex(`\therefore`) 化为最简分数为：#latex(`\dfrac{704.4}{2400} = \dfrac{7044}{24000} = \dfrac{587}{2000}`)．
-
-          故答案为：#latex(`\dfrac{587}{2000}`)（或 #latex(`29.35\%`)）．],
-      ),
-    ),
-    difficulty: 3,
-    business-type: "CSX-ZHT",
-  ),
-)
-
-#let metadata = (
+#let paper_data = (
   (
+    type: "title",
+    content: [一、选择题。（请将正确答案前的字母在答题卡上涂黑。每小题#latex(`2`)分，共#latex(`20`)分）],
+    meta: (
     questionSource: 3,
     questionType: "2",
     relationType: 0,
-    parentId: "3625913149181935616",
-    questionId: "3625913149181935616",
-    paperId: "3625849114759385088",
+    parentId: "3622686747263332352",
+    questionId: "3622686747263332352",
+    paperId: "3622660555529351168",
     questionIndex: 1,
     sysCode: 1,
     standardFlag: "",
@@ -1095,210 +17,341 @@
     flagUse: "",
     knwNames: (),
   ),
+  ),
   (
+    type: "sc",
+    content: [我国古代把女子一拃长称为“咫”，男子一拃长称作“尺”，如图：“咫尺之间”用来比喻相距很近，实际上“咫”与“尺”的长度相差大约为#latex(`3`)#klammern()
+  
+  #box(baseline: 25%, image("https://k12static.xdf.cn/k12/xkw/1780559582861/9cbe2c5e-7055-4d8c-943c-563eacdd75d5.png", width: 31.35%))],
+    options: (A: [#latex(`\mathrm{mm}`)], B: [#latex(`\mathrm{cm}`)], C: [#latex(`\mathrm{dm}`)], D: [#latex(`\mathrm{m}`)]),
+    difficulty: 2,
+    business-type: "CSX-DANXUAN",
+    answer: ([B],),
+    analysis: [本题考查了长度单位，熟练掌握用数学的眼光观察实际生活是解题关键．根据人的手掌比划长度可知题中的长度单位应该是厘米，由此即可得．
+  
+  解：“咫尺之间”用来比喻相距很近，根据实际情况，“咫”与“尺”的长度相差大约为#latex(`3`)厘米．
+  
+  故选：#latex(`\rm{B}`)．],
+    meta: (
     questionSource: 2,
     questionType: "1",
-    relationType: 0,
-    parentId: "3625913153896173568",
-    questionId: "3625913153896173568",
-    paperId: "3625849114759385088",
+    relationType: 1,
+    parentId: "3622685487460032512",
+    questionId: "3622685487460032512",
+    paperId: "3622660555529351168",
     questionIndex: 1,
-    sysCode: 1,
+    sysCode: 13,
     standardFlag: "",
     inputType: none,
     addFlag: none,
     flagUse: "",
-    knwNames: (),
+    knwNames: ("其他",),
+  ),
   ),
   (
+    type: "sc",
+    content: [摄影师把一张照片按#latex(`3`)：#latex(`1`)放大，放大后的照片面积是原照片面积的#klammern()倍.],
+    options: (A: [#latex(`3`)], B: [#latex(`4`)], C: [#latex(`6`)], D: [#latex(`9`)]),
+    difficulty: 3,
+    business-type: "CSX-DANXUAN",
+    answer: ([D],),
+    analysis: [【分析】把一张长方形照片按#latex(`3`)：#latex(`1`)放大，根据图形放大与缩小的意义，就是这张照片的对应边放大到原来的#latex(`3`)倍，面积放大到原来的 #latex(`3^2`) 倍，即#latex(`9`)倍，据此结合题意分析解答即可.
+  
+  【解答】解：#latex(`3 \times 3=9`)
+  
+  答：摄影师把一张照片按#latex(`3`)：#latex(`1`)放大，放大后的照片面积是原照片面积的#latex(`9`)倍.
+  
+  故选：#latex(`\rm{D}`)​.
+  
+  【点评】本题是考查了图形的放大与缩小的意义，图形放大或缩小的倍数是指对应边放大或缩小的倍数，面积放大或缩小这个倍数的平方倍.],
+    meta: (
     questionSource: 2,
     questionType: "1",
     relationType: 0,
-    parentId: "3625913159328735232",
-    questionId: "3625913159328735232",
-    paperId: "3625849114759385088",
+    parentId: "3622685978866839552",
+    questionId: "3622685978866839552",
+    paperId: "3622660555529351168",
     questionIndex: 2,
     sysCode: 1,
     standardFlag: "",
     inputType: none,
     addFlag: none,
     flagUse: "",
-    knwNames: (),
+    knwNames: ("比例的性质",),
+  ),
   ),
   (
+    type: "sc",
+    content: [体育老师对六年级学生进行了仰卧起坐的测验.以每分钟#latex(`35`)个为达标，记作#latex(`0`)​.小明的成绩记作-#latex(`3`)，则他仰卧起坐的个数是#klammern()],
+    options: (A: [#latex(`38`)], B: [#latex(`32`)], C: [#latex(`3`)], D: [-#latex(`3`)]),
+    difficulty: 2,
+    business-type: "CSX-DANXUAN",
+    answer: ([B],),
+    analysis: [【分析】题意可知，以每分钟#latex(`35`)个为达标，记作#latex(`0`)，超过#latex(`35`)记为正，低于#latex(`35`)记为负，所以-#latex(`3`)表示这个学生可以做 #latex(`35 - 3 = 32`) 个.
+  
+  【解答】解：#latex(`35 - 3 = 32`)（个）
+  
+  答：他仰卧起坐的个数是#latex(`32`)个.
+  
+  故选：#latex(`\rm{B}`)​.
+  
+  【点评】本题考查了负数的意义，找准标准是关键.],
+    meta: (
     questionSource: 2,
     questionType: "1",
-    relationType: 1,
-    parentId: "3184611963893026818",
-    questionId: "3184611963893026818",
-    paperId: "3625849114759385088",
+    relationType: 0,
+    parentId: "3622685964337770496",
+    questionId: "3622685964337770496",
+    paperId: "3622660555529351168",
     questionIndex: 3,
-    sysCode: 13,
+    sysCode: 1,
     standardFlag: "",
     inputType: none,
     addFlag: none,
     flagUse: "",
-    knwNames: ("分数的认识", "分数的运算"),
+    knwNames: ("正数和负数",),
+  ),
   ),
   (
+    type: "sc",
+    content: [用一条长 #latex(`18cm`) 的铁丝围成一个长和宽都为质数的长方形，它的面积是#klammern()#latex(`cm^2`)​.],
+    options: (A: [#latex(`8`)], B: [#latex(`14`)], C: [#latex(`65`)], D: [#latex(`77`)]),
+    difficulty: 3,
+    business-type: "CSX-DANXUAN",
+    answer: ([B],),
+    analysis: [【分析】根据长方形的周长 #latex(`=(`)长#latex(`+`)宽#latex(`)\times 2`)，首先用周长除以#latex(`2`)求出长与宽的和，再根据质数的意义确定长、宽各是多少厘米，然后根据长方形的面积 #latex(`=`)长#latex(`\times`)宽，把数据代入公式解答.
+  
+  【解答】解：#latex(`18 \div 2=9`)（厘米）
+  
+  #latex(`9=7+2`)
+  
+  所以长是#latex(`7`)厘米，宽是#latex(`2`)厘米.
+  
+  #latex(`7 \times 2=14`)（平方厘米）
+  
+  答：它的面积是#latex(`14`)平方厘米.
+  
+  故选：#latex(`\rm{B}`)​.
+  
+  【点评】此题主要考查长方形的周长公式、面积公式的灵活运用，关键是根据质数的意义确定长、宽各是多少厘米.],
+    meta: (
     questionSource: 2,
     questionType: "1",
     relationType: 0,
-    parentId: "3625913169314594816",
-    questionId: "3625913169314594816",
-    paperId: "3625849114759385088",
+    parentId: "3622686366756073472",
+    questionId: "3622686366756073472",
+    paperId: "3622660555529351168",
     questionIndex: 4,
     sysCode: 1,
     standardFlag: "",
     inputType: none,
     addFlag: none,
     flagUse: "",
-    knwNames: (),
+    knwNames: ("面积相等问题（一元一次方程）",),
+  ),
   ),
   (
+    type: "sc",
+    content: [下面图形不能正确表示#latex(`\dfrac{3}{4}\times \dfrac{2}{3}`)的是#klammern()],
+    options: (A: [#box(baseline: 25%, image("https://k12static.xdf.cn/k12/xkw/1770711821373/1baeb777-3a5a-4e5d-9eed-6f1e221d2bd4.png", width: 22.04%))], B: [#box(baseline: 25%, image("https://k12static.xdf.cn/k12/xkw/1770711821500/03c71ea7-a6e6-4996-80ca-43e1537819a2.png", width: 21.47%))], C: [#box(baseline: 25%, image("https://k12static.xdf.cn/k12/xkw/1770711821700/9f9836cf-7c87-42aa-8e2e-694ec81910d6.png", width: 23.19%))], D: [#box(baseline: 25%, image("https://k12static.xdf.cn/k12/xkw/1770711821840/51997711-0528-40fc-8307-a252d380f611.png", width: 21.19%))]),
+    difficulty: 3,
+    business-type: "CSX-DANXUAN",
+    answer: ([D],),
+    analysis: [本题考查了分数乘法的意义，关键是如何理解图形表达的含义；
+  
+  由#latex(`\dfrac{3}{4}\times \dfrac{2}{3}`)表示把一个整体平均分成#latex(`4`)个等份，取其中的#latex(`3`)份，再把这#latex(`3`)份平均分成#latex(`3`)份，取其中的#latex(`2`)份，据此分析即可．
+  
+  解：因#latex(`\dfrac{3}{4}\times \dfrac{2}{3}`)表示把一个整体平均分成#latex(`4`)个等份，取其中的#latex(`3`)份，再把这#latex(`3`)份平均分成#latex(`3`)份，取其中的#latex(`2`)份，
+  
+  所以A、#latex(`\rm{B}`)、C符合#latex(`\dfrac{3}{4}\times \dfrac{2}{3}`)意义；
+  
+  因D表示把一个整体平均分成#latex(`4`)个等份，取其中的#latex(`3`)份，再把这#latex(`3`)份平均分成#latex(`3`)份，取其中的#latex(`1`)份
+  
+  所以D表示#latex(`\dfrac{3}{4}\times \dfrac{1}{3}`)；
+  
+  故答案选：#latex(`\rm{D}`)．],
+    meta: (
     questionSource: 2,
     questionType: "1",
-    relationType: 0,
-    parentId: "3625913174632972288",
-    questionId: "3625913174632972288",
-    paperId: "3625849114759385088",
+    relationType: 1,
+    parentId: "3457467473375805440",
+    questionId: "3457467473375805440",
+    paperId: "3622660555529351168",
     questionIndex: 5,
-    sysCode: 1,
+    sysCode: 13,
     standardFlag: "",
     inputType: none,
     addFlag: none,
     flagUse: "",
-    knwNames: (),
+    knwNames: ("其他",),
+  ),
   ),
   (
+    type: "sc",
+    content: [下面图形中，用“底面积×高”不能直接计算出体积的是#klammern()],
+    options: (A: [#box(baseline: 25%, image("https://k12static.xdf.cn/k12/xkw/1759754111039/8f02cb8c-c584-4846-a1aa-581ef3e40059.png", width: 7.16%))], B: [#box(baseline: 25%, image("https://k12static.xdf.cn/k12/xkw/1759754111212/03839a07-15c0-4197-99ce-5f640d287e1f.png", width: 11.59%))], C: [#box(baseline: 25%, image("https://k12static.xdf.cn/k12/xkw/1759754111340/1ae4ef00-8593-423d-9546-5cec6f7acb25.png", width: 13.74%))], D: [#box(baseline: 25%, image("https://k12static.xdf.cn/k12/xkw/1759754111516/81abd2e6-1c74-41fa-b359-cdd7c115bd30.png", width: 10.31%))]),
+    difficulty: 1,
+    business-type: "CSX-DANXUAN",
+    answer: ([B],),
+    analysis: [根据圆柱、长方体、正方体的体积都可以用“底面积#latex(`\times`)高”直接计算它们的体积，而圆锥用“底面积#latex(`\times`)高”不能直接计算出体积进行解答即可．
+  
+  解：圆柱、长方体、正方体的体积都可以用“底面积#latex(`\times`)高”直接计算它们的体积，而圆锥用“底面积#latex(`\times`)高”不能直接计算出体积．
+  
+  故选：#latex(`\mathrm{B}`)．
+  
+  此题考查的目的是理解掌握圆柱、长方体、正方体、圆锥的体积公式及应用，熟练掌握圆柱、长方体、正方体、圆锥的体积公式是解答本题的关键．],
+    meta: (
     questionSource: 2,
     questionType: "1",
-    relationType: 0,
-    parentId: "3625913179699691520",
-    questionId: "3625913179699691520",
-    paperId: "3625849114759385088",
+    relationType: 1,
+    parentId: "3273627600035258368",
+    questionId: "3273627600035258368",
+    paperId: "3622660555529351168",
     questionIndex: 6,
-    sysCode: 1,
+    sysCode: 13,
     standardFlag: "",
     inputType: none,
     addFlag: none,
     flagUse: "",
-    knwNames: (),
-    smallQuestions: (
-      (
-        questionSource: 2,
-        questionType: "",
-        relationType: "",
-        parentId: "3625913179699691520",
-        questionId: "3625913179901018112",
-        paperId: "3625849114759385088",
-        questionIndex: 1,
-        sysCode: 1,
-        standardFlag: "",
-        inputType: none,
-        addFlag: none,
-        flagUse: "",
-        knwNames: (),
-      ),
-      (
-        questionSource: 2,
-        questionType: "",
-        relationType: "",
-        parentId: "3625913179699691520",
-        questionId: "3625913179901018113",
-        paperId: "3625849114759385088",
-        questionIndex: 2,
-        sysCode: 1,
-        standardFlag: "",
-        inputType: none,
-        addFlag: none,
-        flagUse: "",
-        knwNames: (),
-      ),
-    ),
+    knwNames: ("圆柱的计算",),
+  ),
   ),
   (
+    type: "sc",
+    content: [右图中，点#latex(`P`)的位置可以用数对表示为#klammern()
+  
+  #box(baseline: 25%, image("http://k12static.xdf.cn/k12-paperxdfUploadpngDir/7-1754556796234.png?imageMogr2/thumbnail/1500x860>", width: 21.47%))],
+    options: (A: [#latex(`(6,3)`)], B: [#latex(`(6,4)`)], C: [#latex(`(4,6)`)], D: [#latex(`(4,8)`)]),
+    difficulty: 2,
+    business-type: "CSX-DANXUAN",
+    answer: ([A],),
+    analysis: [解：由图可知，#latex(`P`)的横坐标是#latex(`6`)，纵坐标是#latex(`3`)，
+  
+  ∴#latex(`P`)的坐标为#latex(`(6,3)`)．
+  
+  故选：#latex(`\rm{A}`)．],
+    meta: (
     questionSource: 2,
     questionType: "1",
-    relationType: 0,
-    parentId: "3625913186544635904",
-    questionId: "3625913186544635904",
-    paperId: "3625849114759385088",
+    relationType: 1,
+    parentId: "3186433662894034944",
+    questionId: "3186433662894034944",
+    paperId: "3622660555529351168",
     questionIndex: 7,
     sysCode: 1,
     standardFlag: "",
     inputType: none,
     addFlag: none,
     flagUse: "",
-    knwNames: (),
+    knwNames: ("由点的坐标确定位置",),
+  ),
   ),
   (
+    type: "sc",
+    content: [聪聪一家人“五一”自驾游.出发前，妈妈在网上预订了一个 #latex(`240`) 元的标间.到了目的地后发现：同样的一间房，到店里现付需 #latex(`320`) 元，网络支付比店内现付节省了#klammern()],
+    options: (A: [#latex(`20\%`)], B: [#latex(`25\%`)], C: [#latex(`33.3\%`)], D: [#latex(`37.5\%`)]),
+    difficulty: 3,
+    business-type: "CSX-DANXUAN",
+    answer: ([B],),
+    analysis: [【分析】依据节省了百分之几 #latex(`=(`)店内支付钱数 #latex(`-`) 网络支付钱数#latex(`) \div`) 店内支付钱数即可解答.
+  
+  【解答】解：#latex(`(320 - 240) \div 320`)
+  
+  #latex(`= 80 \div 320`)
+  
+  #latex(`= 25\%`)
+  
+  答：节省了 #latex(`25\%`)​.
+  
+  故选：#latex(`\rm{B}`)​.
+  
+  【点评】本题考查基本等量关系式：节省了百分之几 #latex(`=(`)计划投资数 #latex(`-`) 实际投资数#latex(`) \div`) 计划投资数，据此代入数据即可解答.],
+    meta: (
     questionSource: 2,
     questionType: "1",
-    relationType: 1,
-    parentId: "3107712143599636480",
-    questionId: "3107712143599636480",
-    paperId: "3625849114759385088",
+    relationType: 0,
+    parentId: "3622685464041189376",
+    questionId: "3622685464041189376",
+    paperId: "3622660555529351168",
     questionIndex: 8,
-    sysCode: 13,
+    sysCode: 1,
     standardFlag: "",
     inputType: none,
     addFlag: none,
     flagUse: "",
-    knwNames: ("规律型：图形的变化类",),
+    knwNames: ("由实际问题抽象出一元一次方程",),
+  ),
   ),
   (
+    type: "sc",
+    content: [六年级学生到校外拓展，带队老师问班长出勤情况，班长说：“我们班共 #latex(`50`) 人，没有到齐，但大部分同学来了”.出勤率可能是#klammern()],
+    options: (A: [#latex(`48\%`)], B: [#latex(`50\%`)], C: [#latex(`95\%`)], D: [#latex(`100\%`)]),
+    difficulty: 3,
+    business-type: "CSX-DANXUAN",
+    answer: ([C],),
+    analysis: [【分析】理解出勤率的含义：出勤率指的是出勤的人数占全班总人数的百分之几，进而根据题意可知：没有全部到齐，但大部分来了，即出勤的人数小于#latex(`50`)人，所以出勤率小于#latex(`100%`)，但大于#latex(`50%`)；进而选择即可.
+  
+  【解答】解：根据出勤率的含义可知：没有全部到齐，但大部分来了，即出勤的人数小于#latex(`50`)人，所以出勤率小于#latex(`100%`)，但大于#latex(`50%`)，所以可能是#latex(`95%`)​.
+  
+  故选：#latex(`\rm{C}`)​.
+  
+  【点评】此题属于百分率问题，最大值为#latex(`100%`)，解答时都是用一部分数量（或全部数量）除以全部数量乘百分之百即可.],
+    meta: (
     questionSource: 2,
     questionType: "1",
     relationType: 0,
-    parentId: "3625913196156329984",
-    questionId: "3625913196156329984",
-    paperId: "3625849114759385088",
+    parentId: "3622686139173138432",
+    questionId: "3622686139173138432",
+    paperId: "3622660555529351168",
     questionIndex: 9,
     sysCode: 1,
     standardFlag: "",
     inputType: none,
     addFlag: none,
     flagUse: "",
-    knwNames: (),
+    knwNames: ("频数与频率",),
+  ),
   ),
   (
+    type: "sc",
+    content: [李明每天从家出发，按一定的速度步行去上班.某天上班途中下起了小雨，他便加快了速度.下面能正确表示他行走路程与时间关系的图#klammern()],
+    options: (A: [#box(baseline: 25%, image("https://k12static.xdf.cn/k12/auto/paper/2026/06/04/3622685028773097472.png", width: 22.9%))], B: [#box(baseline: 25%, image("https://k12static.xdf.cn/k12/auto/paper/2026/06/04/3622685028773097473.png", width: 22.9%))], C: [#box(baseline: 25%, image("https://k12static.xdf.cn/k12/auto/paper/2026/06/04/3622685028773097474.png", width: 22.9%))], D: [#box(baseline: 25%, image("https://k12static.xdf.cn/k12/auto/paper/2026/06/04/3622685028773097475.png", width: 22.9%))]),
+    difficulty: 4,
+    business-type: "CSX-DANXUAN",
+    answer: ([B],),
+    analysis: [【分析】按一定的速度步行去上班是倾斜的直线，途中下起了小雨，他便加快了速度，直线倾斜角度变大，据此分析即可得出答案.
+  
+  【解答】解：按一定的速度步行去上班是倾斜的直线，途中下起了小雨，他便加快了速度，直线倾斜角度变大，所以选项B正确.
+  
+  故选：#latex(`\rm{B}`)​.
+  
+  【点评】此题考查单式折线统计图的认识.],
+    meta: (
     questionSource: 2,
     questionType: "1",
     relationType: 0,
-    parentId: "3625913201493295104",
-    questionId: "3625913201493295104",
-    paperId: "3625849114759385088",
+    parentId: "3622685557825826816",
+    questionId: "3622685557825826816",
+    paperId: "3622660555529351168",
     questionIndex: 10,
     sysCode: 1,
     standardFlag: "",
     inputType: none,
     addFlag: none,
     flagUse: "",
-    knwNames: (),
+    knwNames: ("函数图象的信息读取",),
+  ),
   ),
   (
-    questionSource: 2,
-    questionType: "1",
-    relationType: 1,
-    parentId: "3063194952777080832",
-    questionId: "3063194952777080832",
-    paperId: "3625849114759385088",
-    questionIndex: 11,
-    sysCode: 13,
-    standardFlag: "",
-    inputType: none,
-    addFlag: none,
-    flagUse: "",
-    knwNames: ("圆柱和圆锥",),
-  ),
-  (
-    questionSource: 2,
-    questionType: "1",
+    type: "title",
+    content: [二、填空题。（每空#latex(`1`)分，共#latex(`23`)分）],
+    meta: (
+    questionSource: 3,
+    questionType: "2",
     relationType: 0,
-    parentId: "3625913211106639872",
-    questionId: "3625913211106639872",
-    paperId: "3625849114759385088",
+    parentId: "3622686747296886784",
+    questionId: "3622686747296886784",
+    paperId: "3622660555529351168",
     questionIndex: 12,
     sysCode: 1,
     standardFlag: "",
@@ -1307,634 +360,1203 @@
     flagUse: "",
     knwNames: (),
   ),
+  ),
   (
-    questionSource: 3,
-    questionType: "2",
+    type: "fb",
+    content: [年#latex(`5`)月#latex(`3`)日，“嫦娥六号”发射成功，开启月球“挖宝”之旅.月球表面昼夜温差很大，白天温度可达 #latex(`150^\circ \mathrm{C}`)，记作 #blank_line() ，夜晚则降至零下 #latex(`183^\circ \mathrm{C}`)，记作 #blank_line() .月球距地球的平均距离为 #latex(`384400`) 千米，这个数读作 #blank_line() ，改写成用“万”作单位的数是 #blank_line() 万，保留整数是 #blank_line() 万.],
+    difficulty: 3,
+    business-type: "CSX-TIANKONG",
+    answer: ([+#latex(`150`)^\\#latex(`\rm{circ}`) \\#latex(`\rm{mathrm}`){#latex(`\rm{C}`)}], [-#latex(`183`)^\\#latex(`\rm{circ}`) \\#latex(`\rm{mathrm}`){#latex(`\rm{C}`)}], [三十八万四千四百], [#latex(`44`)], [#latex(`38`)],),
+    analysis: [【分析】根据题意，正负数是一对具有相反意义的量，白天温度可达 #latex(`150^\circ \mathrm{C}`) 为正，夜晚则降至零下 #latex(`183^\circ \mathrm{C}`) 为负，据此解答；读数时，把数先分级，从高位读起，亿级或万级的数按照个级的读法去读，再在每级的末尾加一个“亿”或“万”字，每级末尾的#latex(`0`)都不读，每一级的开头或中间无论有几个#latex(`0`)，都读一个#latex(`0`)；将一个数改写成用“万”作单位的数，要先找到万位，再在万位的右下角点上一个小数点，再将这个小数进行化简，然后添上“万”字即可；四舍五入到万位，就是把万位后的千位上的数进行四舍五入，再在数的后面写上“万”字.
+  
+  【解答】解：#latex(`2024`)年#latex(`5`)月#latex(`3`)日，“嫦娥六号”发射成功，开启月球“挖宝”之旅.月球表面昼夜温差很大，白天温度可达 #latex(`150^\circ \mathrm{C}`)，记作 #latex(`+150^\circ \mathrm{C}`)，夜晚则降至零下 #latex(`183^\circ \mathrm{C}`)，记作 #latex(`-183^\circ \mathrm{C}`)​.月球距地球的平均距离为 #latex(`384400`) 千米，这个数读作：三十八万四千四百，改写成用“万”作单位的数是 #latex(`38.44`) 万，保留整数是 #latex(`38`) 万.
+  
+  故答案为：#latex(`+150^\circ \mathrm{C}`)，#latex(`-183^\circ \mathrm{C}`)，三十八万四千四百，#latex(`38.44`)，#latex(`38`)​.
+  
+  【点评】此题考查了亿以内数的读写、改写与求近似数等知识，要求学生掌握.],
+    meta: (
+    questionSource: 2,
+    questionType: "1",
     relationType: 0,
-    parentId: "3625913216139644928",
-    questionId: "3625913216139644928",
-    paperId: "3625849114759385088",
+    parentId: "3622685436006461440",
+    questionId: "3622685436006461440",
+    paperId: "3622660555529351168",
+    questionIndex: 11,
+    sysCode: 1,
+    standardFlag: "",
+    inputType: none,
+    addFlag: none,
+    flagUse: "",
+    knwNames: ("近似数与有效数字", "正数和负数",),
+  ),
+  ),
+  (
+    type: "fb",
+    content: [王叔叔的饭馆上月营业额是 #latex(`100000`) 元，按规定要按营业额的 #latex(`5\%`) 缴纳营业税，他上月应缴 #blank_line() 元的营业税.],
+    difficulty: 2,
+    business-type: "CSX-TIANKONG",
+    answer: ([#latex(`5000`)],),
+    analysis: [【分析】根据“营业税 #latex(`=`) 营业额 #latex(`\times`) 税率”的关系，已知营业额和税率，直接代入计算即可求出应缴纳的营业税.
+  
+  【解答】解：#latex(`100000 \times 5\% = 5000`)（元）
+  
+  答：他上月应缴#latex(`5000`)元的营业税.
+  
+  故答案为：#latex(`5000`)​.
+  
+  【点评】本题考查百分数在纳税问题中的应用，涉及的知识点是“营业税的计算公式：营业税 #latex(`=`) 营业额 #latex(`\times`) 税率”，利用该公式可直接根据已知的营业额和税率求出营业税.],
+    meta: (
+    questionSource: 2,
+    questionType: "1",
+    relationType: 0,
+    parentId: "3622685916841472000",
+    questionId: "3622685916841472000",
+    paperId: "3622660555529351168",
+    questionIndex: 12,
+    sysCode: 1,
+    standardFlag: "",
+    inputType: none,
+    addFlag: none,
+    flagUse: "",
+    knwNames: ("由实际问题抽象出一元一次方程",),
+  ),
+  ),
+  (
+    type: "fb",
+    content: [如图所示，阴影部分占全图面积的 #blank_line() #latex(`\%`)；如果一个正方形用“#latex(`1`)”表示，空白部分可以用 #blank_line() #latex(`\%`)表示.#box(baseline: 25%, image("https://k12static.xdf.cn/k12/auto/paper/2026/06/04/3622685042345865216.png", width: 24.33%))],
+    difficulty: 3,
+    business-type: "CSX-TIANKONG",
+    answer: ([#latex(`5`)], [#latex(`75`)],),
+    analysis: [【分析】把两个正方形看作单位“#latex(`1`)”，平均分成了#latex(`8`)份，阴影部分占#latex(`5`)份，占全图面积的 #latex(`\dfrac{5}{8} = 0.625 = 62.5\%`)​.如果把一个小正方形看作单位“#latex(`1`)”，平均分成了#latex(`4`)份，空白部分占#latex(`3`)份，占一个小正方形的 #latex(`\dfrac{3}{4} = 0.75 = 75\%`)​.
+  
+  【解答】解：如果把两个正方形看作单位“#latex(`1`)”，右图中阴影部分占全图面积的 #latex(`62.5\%`)​.如果把一个小正方形看作单位“#latex(`1`)”，空白部分占一个小正方形的 #latex(`75\%`)；
+  
+  故答案为：#latex(`62.5`)、#latex(`75`)​.
+  
+  【点评】此题考查了分数的意义及分数与百分数的互化.],
+    meta: (
+    questionSource: 2,
+    questionType: "1",
+    relationType: 0,
+    parentId: "3622685956603473920",
+    questionId: "3622685956603473920",
+    paperId: "3622660555529351168",
+    questionIndex: 13,
+    sysCode: 1,
+    standardFlag: "",
+    inputType: none,
+    addFlag: none,
+    flagUse: "",
+    knwNames: ("有理数的四则混合运算",),
+  ),
+  ),
+  (
+    type: "fb",
+    content: [在一个比例里，两个外项互为倒数，期中一个内项是 #latex(`\dfrac{3}{4}`)，另一个内项是 #blank_line() .],
+    difficulty: 3,
+    business-type: "CSX-TIANKONG",
+    answer: ([\\#latex(`\rm{dfrac}`){#latex(`4`)}{#latex(`3`)}],),
+    analysis: [【分析】依据比例的基本性质，即两内项之积等于两外项之积即可求解.
+  
+  【解答】解：因为比例的两内项之积等于两外项之积，又因两个外项互为倒数，即两外项之积为#latex(`1`)，
+  
+  所以两内项之积也应为#latex(`1`)，即两内项也互为倒数；
+  
+  又知一个内项为 #latex(`\dfrac{3}{4}`)，则另一个内项为 #latex(`\dfrac{4}{3}`)；
+  
+  故答案为：#latex(`\dfrac{4}{3}`)​.
+  
+  【点评】此题主要考查比例的基本性质以及倒数的意义.],
+    meta: (
+    questionSource: 2,
+    questionType: "1",
+    relationType: 0,
+    parentId: "3622686608364761088",
+    questionId: "3622686608364761088",
+    paperId: "3622660555529351168",
     questionIndex: 14,
     sysCode: 1,
     standardFlag: "",
     inputType: none,
     addFlag: none,
     flagUse: "",
-    knwNames: (),
+    knwNames: ("比例的性质", "倒数",),
+  ),
   ),
   (
-    questionSource: 2,
-    questionType: "1",
-    relationType: 1,
-    parentId: "3439893741787168768",
-    questionId: "3439893741787168768",
-    paperId: "3625849114759385088",
-    questionIndex: 13,
-    sysCode: 13,
-    standardFlag: "",
-    inputType: none,
-    addFlag: none,
-    flagUse: "",
-    knwNames: ("其他",),
-  ),
-  (
-    questionSource: 2,
-    questionType: "1",
-    relationType: 1,
-    parentId: "3460424511759630336",
-    questionId: "3460424511759630336",
-    paperId: "3625849114759385088",
-    questionIndex: 14,
-    sysCode: 13,
-    standardFlag: "",
-    inputType: none,
-    addFlag: none,
-    flagUse: "",
-    knwNames: ("其他",),
-  ),
-  (
+    type: "fb",
+    content: [你知道吗？当人的下半身与身高的比值为 #latex(`0.6`) 左右时，被称为“黄金比”，身材显得最美.妈妈身高 #latex(`160cm`)，下半身长 #latex(`94cm`)，她平时喜欢穿高跟鞋，鞋的最佳高度是 #blank_line() #latex(`cm`)​.],
+    difficulty: 4,
+    business-type: "CSX-TIANKONG",
+    answer: ([#latex(`5`)],),
+    analysis: [【分析】假设鞋的高度为 #latex(`x cm`)，则总身高为 #latex(`(160+x)cm`)，下半身的长度为 #latex(`(94+x)cm`)，根据人的下半身 #latex(`\div`) 身高 #latex(`= 0.6`)，列出方法解答解答.
+  
+  【解答】解：设鞋的高度为 #latex(`x cm`)，则总身高为 #latex(`(160+x)cm`)，下半身的长度为 #latex(`(94+x)cm`)，
+  
+  #latex(`(94+x) \div (160+x) = 0.6`)
+  
+  #latex(`94+x = 0.6 \times (160+x)`)
+  
+  #latex(`94+x = 96+0.6x`)
+  
+  #latex(`94+x - 94 - 0.6x = 96+0.6x - 94 - 0.6x`)
+  
+  #latex(`x - 0.6x = 96 - 94`)
+  
+  #latex(`(1 - 0.6)x = 2`)
+  
+  #latex(`0.4x = 2`)
+  
+  #latex(`0.4x \div 0.4 = 2 \div 0.4`)
+  
+  #latex(`x = 5`)
+  
+  答：鞋的最佳高度是 #latex(`5cm`)​.
+  
+  故答案为：#latex(`5`)​.
+  
+  【点评】本题考查了求比值的应用.根据“黄金比”的定义建立方法求解即可.],
+    meta: (
     questionSource: 2,
     questionType: "1",
     relationType: 0,
-    parentId: "3625913230113415168",
-    questionId: "3625913230113415168",
-    paperId: "3625849114759385088",
+    parentId: "3622685448388046848",
+    questionId: "3622685448388046848",
+    paperId: "3622660555529351168",
     questionIndex: 15,
     sysCode: 1,
     standardFlag: "",
     inputType: none,
     addFlag: none,
     flagUse: "",
-    knwNames: (),
+    knwNames: ("比例的性质",),
+  ),
   ),
   (
+    type: "fb",
+    content: [学校图书馆里有 #latex(`A`)、#latex(`B`)、#latex(`C`)、#latex(`D`) 四类书，规定每个同学最多可以借 #latex(`1`) 本书，在借书的 #latex(`5`) 名同学中，可以保证至少 #blank_line() 人所借书的类型是一样的.],
+    difficulty: 3,
+    business-type: "CSX-TIANKONG",
+    answer: ([#latex(`2`)],),
+    analysis: [【分析】规定每个同学最多可以借 #latex(`1`) 本书，根据排列组合知识可得，共有 #latex(`4`) 种借法，把它看作 #latex(`4`) 个抽屉，#latex(`5`) 名同学看作 #latex(`5`) 个元素，利用抽屉原理最差情况：要使所借书的类型的人数最少，只要使每个抽屉的元素数尽量平均，即可解答.
+  
+  【解答】解：#latex(`C_4^1 = 4`)（种）
+  
+  #latex(`5 \div 4 = 1`)（人）#latex(`\cdots 1`)（人）
+  
+  #latex(`1+1=2`)（人）
+  
+  答：可以保证至少 #latex(`2`) 人所借书的类型是一样的.
+  
+  故答案为：#latex(`2`)​.
+  
+  【点评】本题关键是：构造物体和抽屉.也就是找到代表物体和抽屉的量，而后依据抽屉原则进行运算.],
+    meta: (
     questionSource: 2,
     questionType: "1",
     relationType: 0,
-    parentId: "3625913235431792640",
-    questionId: "3625913235431792640",
-    paperId: "3625849114759385088",
+    parentId: "3622685406478561280",
+    questionId: "3622685406478561280",
+    paperId: "3622660555529351168",
     questionIndex: 16,
     sysCode: 1,
     standardFlag: "",
     inputType: none,
     addFlag: none,
     flagUse: "",
-    knwNames: (),
+    knwNames: ("推理与论证",),
+  ),
   ),
   (
+    type: "fb",
+    content: [如图：等边三角形的边长是 #latex(`4`) 厘米，涂色部分的面积是 #blank_line() 平方厘米.#box(baseline: 25%, image("https://k12static.xdf.cn/k12/auto/paper/2026/06/04/3622685049862057984.png", width: 14.31%))],
+    difficulty: 3,
+    business-type: "CSX-TIANKONG",
+    answer: ([#latex(`28`)],),
+    analysis: [【分析】等边三角形的每个内角都是 #latex(`60^\circ`)​.阴影部分的面积是半径为 #latex(`2`) 厘米的半圆的面积.
+  
+  【解答】解：#latex(`3.14 \times ((4 \div 2)^2 \div 2)`)
+  
+  #latex(`= 12.56 \div 2`)
+  
+  #latex(`= 6.28`)（平方厘米）
+  
+  答：阴影部分的面积是 #latex(`6.28`) 平方厘米.
+  
+  故答案为：#latex(`6.28`)​.
+  
+  【点评】本题考查了面积公式的应用.],
+    meta: (
+    questionSource: 2,
+    questionType: "1",
+    relationType: 0,
+    parentId: "3622686544342904832",
+    questionId: "3622686544342904832",
+    paperId: "3622660555529351168",
+    questionIndex: 17,
+    sysCode: 1,
+    standardFlag: "",
+    inputType: none,
+    addFlag: none,
+    flagUse: "",
+    knwNames: ("等边三角形的性质",),
+  ),
+  ),
+  (
+    type: "fb",
+    content: [“中国天眼”是一座#latex(`500`)米口径（直径）球面射电望远镜，位于中国贵州省．作为世界上最大的单口径球面射电望远镜，“中国天眼”将在未来#latex(`20\sim 30`)年保持世界一流设备的地位．
+  
+  （#latex(`1`)）“中国天眼”的球面口的周长是#blank_line() 米．
+  
+  （#latex(`2`)）如果在设计“中国天眼”时，设计图纸上的球面口径是#latex(`50`)厘米，那么这幅设计图纸的比例尺是#blank_line()],
+    difficulty: 3,
+    business-type: "CSX-TIANKONG",
+    answer: ([#latex(`1570`)], [#latex(`1\colon 1000`)],),
+    analysis: [本题考查了圆的周长公式，比例尺的应用，掌握知识点的应用是解题的关键．
+  
+  （#latex(`1`)）根据圆的周长公式#latex(`C=\pi d`)，把数据代入公式即可求解；
+  
+  （#latex(`2`)）根据比例尺的意义即可求解；
+  
+  解：（#latex(`1`)）“中国天眼”的球面口的周长是#latex(`3.14\times 500=1570`)（米），
+  
+  故答案为：#latex(`1570`)；
+  
+  （#latex(`2`)）#latex(`50`)厘米#latex(`\colon 500`)米
+  
+  #latex(`=50`)厘米#latex(`\colon 50000`)厘米
+  
+  #latex(`=1\colon 1000`)，
+  
+  故答案为：#latex(`1\colon 1000`)．],
+    meta: (
     questionSource: 2,
     questionType: "1",
     relationType: 1,
-    parentId: "3160160095361052672",
-    questionId: "3160160095361052672",
-    paperId: "3625849114759385088",
-    questionIndex: 17,
+    parentId: "3240046167440756736",
+    questionId: "3240046167440756736",
+    paperId: "3622660555529351168",
+    questionIndex: 18,
     sysCode: 13,
     standardFlag: "",
     inputType: none,
     addFlag: none,
     flagUse: "",
-    knwNames: ("统计图的选择", "折线统计图"),
+    knwNames: ("圆", "比例尺", "应用题",),
+  ),
   ),
   (
-    questionSource: 3,
-    questionType: "2",
-    relationType: 0,
-    parentId: "3625913245112246272",
-    questionId: "3625913245112246272",
-    paperId: "3625849114759385088",
-    questionIndex: 20,
-    sysCode: 1,
-    standardFlag: "",
-    inputType: none,
-    addFlag: none,
-    flagUse: "",
-    knwNames: (),
-  ),
-  (
+    type: "fb",
+    content: [如图所示，按这样的规律摆下去，第 #latex(`5`) 个图中有 #blank_line() 个涂成阴影的小正方形，第 #latex(`n`) 个图中有 #blank_line() 个涂成阴影的小正方形.（用含有 #latex(`n`) 的式子表示）#box(baseline: 25%, image("https://k12static.xdf.cn/k12/auto/paper/2026/06/04/3622685067176144896.png", width: 55.83%))],
+    difficulty: 4,
+    business-type: "CSX-TIANKONG",
+    answer: ([#latex(`9`)], [#latex(`\rm{n}`)^#latex(`2`) - (#latex(`\rm{n-1}`))^#latex(`2`)],),
+    analysis: [【分析】由图可知，第#latex(`2`)个图形涂成阴影的小正方形的个数等于 #latex(`(2^2 - 1^2)`) 个，第#latex(`3`)个图形涂成阴影的小正方形的个数等于 #latex(`(3^2 - 2^2)`) 个；则第#latex(`5`)个图形涂成阴影的小正方形的个数等于 #latex(`(5^2 - 4^2)`) 个，第 #latex(`n`) 个图形涂成阴影的小正方形的个数等于 #latex(`[n^2 - (n-1)^2]`) 个，据此解答.
+  
+  【解答】解：#latex(`5^2 - 4^2`)
+  
+  #latex(`= 25 - 16`)
+  
+  #latex(`= 9`)（个）
+  
+  #latex(`n^2 - (n-1)^2 = [n^2 - (n-1)^2]`)（个）
+  
+  答：第#latex(`5`)个图中有#latex(`9`)个涂成阴影的小正方形，第 #latex(`n`) 个图中有 #latex(`[n^2 - (n-1)^2]`) 个涂成阴影的小正方形.
+  
+  故答案为：#latex(`9`)；#latex(`[n^2 - (n-1)^2]`)​.
+  
+  【点评】找出图形序号与涂阴影的小正方形个数之间的关系是解答本题的关键.],
+    meta: (
     questionSource: 2,
     questionType: "1",
     relationType: 0,
-    parentId: "3625913249509527552",
-    questionId: "3625913249509527552",
-    paperId: "3625849114759385088",
-    questionIndex: 18,
-    sysCode: 1,
-    standardFlag: "",
-    inputType: none,
-    addFlag: none,
-    flagUse: "",
-    knwNames: (),
-  ),
-  (
-    questionSource: 2,
-    questionType: "1",
-    relationType: 0,
-    parentId: "3625913254541041664",
-    questionId: "3625913254541041664",
-    paperId: "3625849114759385088",
+    parentId: "3622686051965169664",
+    questionId: "3622686051965169664",
+    paperId: "3622660555529351168",
     questionIndex: 19,
     sysCode: 1,
     standardFlag: "",
     inputType: none,
     addFlag: none,
     flagUse: "",
-    knwNames: (),
+    knwNames: ("规律型：图形的变化类",),
+  ),
   ),
   (
+    type: "fb",
+    content: [如图：聪聪把 #latex(`1.6`) 升水倒入两个容器中刚好倒满.已知这两个容器的底面积相等.则甲容器的容积是 #blank_line() 升，乙容器的容积是 #blank_line() 升.#box(baseline: 25%, image("https://k12static.xdf.cn/k12/auto/paper/2026/06/04/3622685075933851648.png", width: 24.33%))],
+    difficulty: 3,
+    business-type: "CSX-TIANKONG",
+    answer: ([#latex(`2`)], [#latex(`4`)],),
+    analysis: [【分析】两个容器等底等高，圆柱形容器的容积相当于圆锥形容器容积的#latex(`3`)倍，据此按和倍关系作答即可.
+  
+  【解答】解：圆柱形容器的容积：
+  
+  #latex(`1.6 \div (3+1) \times 3`)
+  
+  #latex(`= 1.6 \div 4 \times 3`)
+  
+  #latex(`= 0.4 \times 3`)
+  
+  #latex(`= 1.2`)（升）
+  
+  圆锥形容器的容积：
+  
+  #latex(`1.6 \div (3+1)`)
+  
+  #latex(`= 1.6 \div 4`)
+  
+  #latex(`= 0.4`)（升）
+  
+  答：甲容器的容积是#latex(`1.2`)升，乙容器的容积是#latex(`0.4`)升.
+  
+  故答案为：#latex(`1.2`)；#latex(`0.4`)​.
+  
+  【点评】本题考查了圆柱、圆锥体积或容积的关系应用问题，解答时一定要清楚：在等底等高的情况下，圆柱的体积或容积等于圆锥的#latex(`3`)倍，圆锥的体积或容积等于圆柱的三分之一.],
+    meta: (
     questionSource: 2,
     questionType: "1",
-    relationType: 1,
-    parentId: "2756263854441779204",
-    questionId: "2756263854441779204",
-    paperId: "3625849114759385088",
-    questionIndex: 20,
-    sysCode: 13,
-    standardFlag: "",
-    inputType: none,
-    addFlag: none,
-    flagUse: "",
-    knwNames: ("整式的加减（计算）",),
-  ),
-  (
-    questionSource: 1,
-    questionType: "1",
-    relationType: 1,
-    parentId: "2141235345487638528",
-    questionId: "2141235345487638528",
-    paperId: "3625849114759385088",
-    questionIndex: 21,
-    sysCode: 9,
-    standardFlag: "",
-    inputType: none,
-    addFlag: none,
-    flagUse: "",
-    knwNames: ("方向角",),
-  ),
-  (
-    questionSource: 1,
-    questionType: "1",
-    relationType: 1,
-    parentId: "2139879511991357440",
-    questionId: "2139879511991357440",
-    paperId: "3625849114759385088",
-    questionIndex: 22,
-    sysCode: 9,
-    standardFlag: "",
-    inputType: none,
-    addFlag: none,
-    flagUse: "",
-    knwNames: ("其他问题（一元一次方程）",),
-  ),
-  (
-    questionSource: 3,
-    questionType: "2",
     relationType: 0,
-    parentId: "3625913273752764416",
-    questionId: "3625913273752764416",
-    paperId: "3625849114759385088",
-    questionIndex: 26,
+    parentId: "3622686003613233152",
+    questionId: "3622686003613233152",
+    paperId: "3622660555529351168",
+    questionIndex: 20,
     sysCode: 1,
     standardFlag: "",
     inputType: none,
     addFlag: none,
     flagUse: "",
-    knwNames: (),
+    knwNames: ("圆柱的计算",),
+  ),
   ),
   (
+    type: "fb",
+    content: [一件衣服“八五折”后便宜了 #latex(`24`) 元，它的原价是 #blank_line() 元.],
+    difficulty: 2,
+    business-type: "CSX-TIANKONG",
+    answer: ([#latex(`160`)],),
+    analysis: [【分析】利用便宜的钱数除以便宜的折扣 #latex(`(1 - 85\%)`)，即可解答.
+  
+  【解答】解：#latex(`24 \div (1 - 85\%)`)
+  
+  #latex(`= 24 \div 15\%`)
+  
+  #latex(`= 160`)（元）
+  
+  答：它的原价是#latex(`160`)元.
+  
+  故答案为：#latex(`160`)​.
+  
+  【点评】本题考查了原价、折扣及现价之间的关系.],
+    meta: (
     questionSource: 2,
     questionType: "1",
     relationType: 0,
-    parentId: "3625913278165172224",
-    questionId: "3625913278165172224",
-    paperId: "3625849114759385088",
+    parentId: "3622686119661236224",
+    questionId: "3622686119661236224",
+    paperId: "3622660555529351168",
+    questionIndex: 21,
+    sysCode: 1,
+    standardFlag: "",
+    inputType: none,
+    addFlag: none,
+    flagUse: "",
+    knwNames: ("销售问题（一元一次方程）",),
+  ),
+  ),
+  (
+    type: "fb",
+    content: [根据图，欢欢列出了算式 #latex(`48 \times (\dfrac{2}{3} \times \dfrac{3}{4})`)，她想用这个算式解决的问题是： #blank_line() .#box(baseline: 25%, image("https://k12static.xdf.cn/k12/auto/paper/2026/06/04/3622685084691558400.png", width: 35.79%))],
+    difficulty: 3,
+    business-type: "CSX-TIANKONG",
+    answer: ([泥塑社团有多少人？],),
+    analysis: [【分析】根据图意可知，轮滑社团有 #latex(`48`) 人，街舞社团人数是轮滑社团人数的 #latex(`\dfrac{2}{3}`)，泥塑社团人数是街舞社团人数的 #latex(`\dfrac{3}{4}`)，用 #latex(`(\dfrac{2}{3} \times \dfrac{3}{4})`) 求的是泥塑社团是轮滑社团的几分之几，再乘 #latex(`48`) 求的就是泥塑社团有多少人.
+  
+  【解答】解：根据分析可知，算式 #latex(`48 \times (\dfrac{2}{3} \times \dfrac{3}{4})`) 解决的问题是：泥塑社团有多少人？
+  
+  故答案为：泥塑社团有多少人？
+  
+  【点评】此题考查了运用分数乘法解决实际问题.],
+    meta: (
+    questionSource: 2,
+    questionType: "1",
+    relationType: 0,
+    parentId: "3622686630963671040",
+    questionId: "3622686630963671040",
+    paperId: "3622660555529351168",
+    questionIndex: 22,
+    sysCode: 1,
+    standardFlag: "",
+    inputType: none,
+    addFlag: none,
+    flagUse: "",
+    knwNames: ("有理数运算的实际应用",),
+  ),
+  ),
+  (
+    type: "fb",
+    content: [桌子上放着三叠碗.图 #latex(`(1)`) 是从上面看到的，图 #latex(`(2)`) 是从侧面看到的，图 #latex(`(3)`) 是从正面看到的.#linebreak()桌上一共放着 #blank_line() 只碗.#box(baseline: 25%, image("https://k12static.xdf.cn/k12/auto/paper/2026/06/04/3622685093365379072.png", width: 38.65%))],
+    difficulty: 3,
+    business-type: "CSX-TIANKONG",
+    answer: ([#latex(`10`)],),
+    analysis: [【分析】根据从上面看到的形状可知，有三叠，根据从前面和左面看到的形状可知，前排左面一叠四只，右面一叠#latex(`2`)只；后排一叠#latex(`4`)只.据此计算即可.
+  
+  【解答】解：#latex(`4+4+2 = 10`)（只）
+  
+  答：桌上一共放着 #latex(`10`) 只碗.
+  
+  故答案为：#latex(`10`)​.
+  
+  【点评】本题考查从不同方向观察物体和几何体，关键是培养学生的观察能力.],
+    meta: (
+    questionSource: 2,
+    questionType: "1",
+    relationType: 0,
+    parentId: "3622686079077150720",
+    questionId: "3622686079077150720",
+    paperId: "3622660555529351168",
     questionIndex: 23,
     sysCode: 1,
     standardFlag: "",
     inputType: none,
     addFlag: none,
     flagUse: "",
-    knwNames: (),
-    smallQuestions: (
-      (
-        questionSource: 2,
-        questionType: "",
-        relationType: "",
-        parentId: "3625913278165172224",
-        questionId: "3625913278366498816",
-        paperId: "3625849114759385088",
-        questionIndex: 1,
-        sysCode: 1,
-        standardFlag: "",
-        inputType: none,
-        addFlag: none,
-        flagUse: "",
-        knwNames: (),
-      ),
-      (
-        questionSource: 2,
-        questionType: "",
-        relationType: "",
-        parentId: "3625913278165172224",
-        questionId: "3625913278366498817",
-        paperId: "3625849114759385088",
-        questionIndex: 2,
-        sysCode: 1,
-        standardFlag: "",
-        inputType: none,
-        addFlag: none,
-        flagUse: "",
-        knwNames: (),
-      ),
-      (
-        questionSource: 2,
-        questionType: "",
-        relationType: "",
-        parentId: "3625913278165172224",
-        questionId: "3625913278366498818",
-        paperId: "3625849114759385088",
-        questionIndex: 3,
-        sysCode: 1,
-        standardFlag: "",
-        inputType: none,
-        addFlag: none,
-        flagUse: "",
-        knwNames: (),
-      ),
-      (
-        questionSource: 2,
-        questionType: "",
-        relationType: "",
-        parentId: "3625913278165172224",
-        questionId: "3625913278366498819",
-        paperId: "3625849114759385088",
-        questionIndex: 4,
-        sysCode: 1,
-        standardFlag: "",
-        inputType: none,
-        addFlag: none,
-        flagUse: "",
-        knwNames: (),
-      ),
-      (
-        questionSource: 2,
-        questionType: "",
-        relationType: "",
-        parentId: "3625913278165172224",
-        questionId: "3625913278366498820",
-        paperId: "3625849114759385088",
-        questionIndex: 5,
-        sysCode: 1,
-        standardFlag: "",
-        inputType: none,
-        addFlag: none,
-        flagUse: "",
-        knwNames: (),
-      ),
-      (
-        questionSource: 2,
-        questionType: "",
-        relationType: "",
-        parentId: "3625913278165172224",
-        questionId: "3625913278366498821",
-        paperId: "3625849114759385088",
-        questionIndex: 6,
-        sysCode: 1,
-        standardFlag: "",
-        inputType: none,
-        addFlag: none,
-        flagUse: "",
-        knwNames: (),
-      ),
-      (
-        questionSource: 2,
-        questionType: "",
-        relationType: "",
-        parentId: "3625913278165172224",
-        questionId: "3625913278366498822",
-        paperId: "3625849114759385088",
-        questionIndex: 7,
-        sysCode: 1,
-        standardFlag: "",
-        inputType: none,
-        addFlag: none,
-        flagUse: "",
-        knwNames: (),
-      ),
-      (
-        questionSource: 2,
-        questionType: "",
-        relationType: "",
-        parentId: "3625913278165172224",
-        questionId: "3625913278366498823",
-        paperId: "3625849114759385088",
-        questionIndex: 8,
-        sysCode: 1,
-        standardFlag: "",
-        inputType: none,
-        addFlag: none,
-        flagUse: "",
-        knwNames: (),
-      ),
-    ),
+    knwNames: ("简单组合体的三视图",),
+  ),
   ),
   (
+    type: "fb",
+    content: [想一想：如图在右侧什么位置放几颗棋子才能保证竹竿平衡？一共 #blank_line() 种放法，分别是 #blank_line() .（不能与左侧的位置对称）#box(baseline: 25%, image("https://k12static.xdf.cn/k12/auto/paper/2026/06/04/3622685100378255360.png", width: 44.37%))],
+    difficulty: 4,
+    business-type: "CSX-TIANKONG",
+    answer: ([#latex(`3`)], [距支点#latex(`1`)格的位置放#latex(`12`)颗棋子、距支点#latex(`2`)格的位置放#latex(`6`)颗棋子、距支点#latex(`4`)格的位置放#latex(`3`)颗棋子],),
+    analysis: [【分析】要使竹竿平衡，根据杠杆原理，即左侧棋子的重量与到支点距离的乘积等于右侧棋子的重量与到支点距离的乘积，通过计算左侧棋子产生的力与力臂的乘积，来确定右侧棋子的放置方式，据此解答.
+  
+  【解答】解：左侧有#latex(`4`)颗棋子在距支点#latex(`3`)格的位置，根据杠杆原理，其产生的力与力臂的乘积为：#latex(`4 \times 3 = 12`)
+  
+  右侧要产生与左侧相等的力与力臂的乘积，即#latex(`12`)​.
+  
+  当在距支点#latex(`1`)格的位置时，设放 #latex(`a`) 颗棋子，可得 #latex(`1a = 12`)，解得 #latex(`a = 12`)，即放#latex(`12`)颗棋子；
+  
+  当在距支点#latex(`2`)格的位置时，设放 #latex(`b`) 颗棋子，可得 #latex(`2b = 12`)，解得 #latex(`b = 6`)，即放#latex(`6`)颗棋子；
+  
+  当在距支点#latex(`3`)格的位置时，设放 #latex(`c`) 颗棋子，可得 #latex(`3c = 12`)，解得 #latex(`c = 4`)，即放#latex(`4`)颗棋子（不合题意）；
+  
+  当在距支点#latex(`4`)格的位置时，设放 #latex(`d`) 颗棋子，可得 #latex(`4d = 12`)，解得 #latex(`d = 3`)，即放#latex(`3`)颗棋子；
+  
+  当在距支点#latex(`5`)格的位置时，设放 #latex(`e`) 颗棋子，可得 #latex(`5e = 12`)，解得 #latex(`e = 2.4`)，即放#latex(`2.4`)颗棋子（不合题意）.
+  
+  综上：右侧应在距支点#latex(`1`)格的位置放#latex(`12`)颗棋子、距支点#latex(`2`)格的位置放#latex(`6`)颗棋子、距支点#latex(`4`)格的位置放#latex(`3`)颗棋子，共计#latex(`3`)种放法.
+  
+  故答案为：#latex(`3`)；距支点#latex(`1`)格的位置放#latex(`12`)颗棋子、距支点#latex(`2`)格的位置放#latex(`6`)颗棋子、距支点#latex(`4`)格的位置放#latex(`3`)颗棋子.
+  
+  【点评】本题考查了天平平衡问题的应用，枚举过程中做到不重不漏是解题的关键，且留意题意：不能与左侧的位置对称，即与左侧的位置对称的不能算一种放法.],
+    meta: (
     questionSource: 2,
     questionType: "1",
     relationType: 0,
-    parentId: "3625913286587174912",
-    questionId: "3625913286587174912",
-    paperId: "3625849114759385088",
+    parentId: "3622685400673644544",
+    questionId: "3622685400673644544",
+    paperId: "3622660555529351168",
     questionIndex: 24,
     sysCode: 1,
     standardFlag: "",
     inputType: none,
     addFlag: none,
     flagUse: "",
-    knwNames: (),
-    smallQuestions: (
-      (
-        questionSource: 2,
-        questionType: "",
-        relationType: "",
-        parentId: "3625913286587174912",
-        questionId: "3625913286788501504",
-        paperId: "3625849114759385088",
-        questionIndex: 1,
-        sysCode: 1,
-        standardFlag: "",
-        inputType: none,
-        addFlag: none,
-        flagUse: "",
-        knwNames: (),
-      ),
-      (
-        questionSource: 2,
-        questionType: "",
-        relationType: "",
-        parentId: "3625913286587174912",
-        questionId: "3625913286788501505",
-        paperId: "3625849114759385088",
-        questionIndex: 2,
-        sysCode: 1,
-        standardFlag: "",
-        inputType: none,
-        addFlag: none,
-        flagUse: "",
-        knwNames: (),
-      ),
-      (
-        questionSource: 2,
-        questionType: "",
-        relationType: "",
-        parentId: "3625913286587174912",
-        questionId: "3625913286788501506",
-        paperId: "3625849114759385088",
-        questionIndex: 3,
-        sysCode: 1,
-        standardFlag: "",
-        inputType: none,
-        addFlag: none,
-        flagUse: "",
-        knwNames: (),
-      ),
-      (
-        questionSource: 2,
-        questionType: "",
-        relationType: "",
-        parentId: "3625913286587174912",
-        questionId: "3625913286788501507",
-        paperId: "3625849114759385088",
-        questionIndex: 4,
-        sysCode: 1,
-        standardFlag: "",
-        inputType: none,
-        addFlag: none,
-        flagUse: "",
-        knwNames: (),
-      ),
-      (
-        questionSource: 2,
-        questionType: "",
-        relationType: "",
-        parentId: "3625913286587174912",
-        questionId: "3625913286788501508",
-        paperId: "3625849114759385088",
-        questionIndex: 5,
-        sysCode: 1,
-        standardFlag: "",
-        inputType: none,
-        addFlag: none,
-        flagUse: "",
-        knwNames: (),
-      ),
-      (
-        questionSource: 2,
-        questionType: "",
-        relationType: "",
-        parentId: "3625913286587174912",
-        questionId: "3625913286788501509",
-        paperId: "3625849114759385088",
-        questionIndex: 6,
-        sysCode: 1,
-        standardFlag: "",
-        inputType: none,
-        addFlag: none,
-        flagUse: "",
-        knwNames: (),
-      ),
-    ),
+    knwNames: ("由实际问题抽象出一元一次方程",),
+  ),
   ),
   (
+    type: "title",
+    content: [三、计算题。（#latex(`20`)分）],
+    meta: (
+    questionSource: 3,
+    questionType: "2",
+    relationType: 0,
+    parentId: "3622686747313664000",
+    questionId: "3622686747313664000",
+    paperId: "3622660555529351168",
+    questionIndex: 27,
+    sysCode: 1,
+    standardFlag: "",
+    inputType: none,
+    addFlag: none,
+    flagUse: "",
+    knwNames: (),
+  ),
+  ),
+  (
+    type: "composite",
+    content: [口算或估算.],
+    children: (
+    (
+      type: "subj",
+      content: [#latex(`3.48+5.52=`)],
+      difficulty: 2,
+      business-type: "CSX-JST",
+      answer: ([9],),
+      analysis: [【分析】根据整数、分数、小数、百分数加减乘除法、估算的方法，直接进行口算即可.
+    
+    【解答】解：①#latex(`3.48+5.52 = 9`)],
+      meta: (
+      questionSource: 2,
+      questionType: "",
+      relationType: "",
+      parentId: "3622686074798960640",
+      questionId: "3622686074798960641",
+      paperId: "3622660555529351168",
+      questionIndex: 1,
+      sysCode: 1,
+      standardFlag: "",
+      inputType: none,
+      addFlag: none,
+      flagUse: "",
+      knwNames: ("有理数的加法", "有理数的减法", "有理数的除法", "有理数的乘法", "有理数的四则混合运算",),
+    ),
+    ),
+    (
+      type: "subj",
+      content: [#latex(`6.3 \div 0.1=`)],
+      difficulty: 2,
+      business-type: "CSX-JST",
+      answer: ([63],),
+      analysis: [②#latex(`6.3 \div 0.1 = 63`)],
+      meta: (
+      questionSource: 2,
+      questionType: "",
+      relationType: "",
+      parentId: "3622686074798960640",
+      questionId: "3622686074798960642",
+      paperId: "3622660555529351168",
+      questionIndex: 2,
+      sysCode: 1,
+      standardFlag: "",
+      inputType: none,
+      addFlag: none,
+      flagUse: "",
+      knwNames: ("有理数的加法", "有理数的减法", "有理数的除法", "有理数的乘法", "有理数的四则混合运算",),
+    ),
+    ),
+    (
+      type: "subj",
+      content: [#latex(`1.02 - 0.43=`)],
+      difficulty: 2,
+      business-type: "CSX-JST",
+      answer: ([0.59],),
+      analysis: [③#latex(`1.02 - 0.43 = 0.59`)],
+      meta: (
+      questionSource: 2,
+      questionType: "",
+      relationType: "",
+      parentId: "3622686074798960640",
+      questionId: "3622686074798960643",
+      paperId: "3622660555529351168",
+      questionIndex: 3,
+      sysCode: 1,
+      standardFlag: "",
+      inputType: none,
+      addFlag: none,
+      flagUse: "",
+      knwNames: ("有理数的加法", "有理数的减法", "有理数的除法", "有理数的乘法", "有理数的四则混合运算",),
+    ),
+    ),
+    (
+      type: "subj",
+      content: [#latex(`2.5 \div 2\%=`)],
+      difficulty: 2,
+      business-type: "CSX-JST",
+      answer: ([125],),
+      analysis: [④#latex(`2.5 \div 2\% = 125`)],
+      meta: (
+      questionSource: 2,
+      questionType: "",
+      relationType: "",
+      parentId: "3622686074798960640",
+      questionId: "3622686074798960644",
+      paperId: "3622660555529351168",
+      questionIndex: 4,
+      sysCode: 1,
+      standardFlag: "",
+      inputType: none,
+      addFlag: none,
+      flagUse: "",
+      knwNames: ("有理数的加法", "有理数的减法", "有理数的除法", "有理数的乘法", "有理数的四则混合运算",),
+    ),
+    ),
+    (
+      type: "subj",
+      content: [#latex(`0.25 \times 0.8=`)],
+      difficulty: 2,
+      business-type: "CSX-JST",
+      answer: ([0.2],),
+      analysis: [⑤#latex(`0.25 \times 0.8 = 0.2`)],
+      meta: (
+      questionSource: 2,
+      questionType: "",
+      relationType: "",
+      parentId: "3622686074798960640",
+      questionId: "3622686074798960645",
+      paperId: "3622660555529351168",
+      questionIndex: 5,
+      sysCode: 1,
+      standardFlag: "",
+      inputType: none,
+      addFlag: none,
+      flagUse: "",
+      knwNames: ("有理数的加法", "有理数的减法", "有理数的除法", "有理数的乘法", "有理数的四则混合运算",),
+    ),
+    ),
+    (
+      type: "subj",
+      content: [#latex(`5.4 \div \dfrac{1}{2}=`)],
+      difficulty: 2,
+      business-type: "CSX-JST",
+      answer: ([10.8],),
+      analysis: [⑥#latex(`5.4 \div \dfrac{1}{2} = 10.8`)],
+      meta: (
+      questionSource: 2,
+      questionType: "",
+      relationType: "",
+      parentId: "3622686074798960640",
+      questionId: "3622686074798960646",
+      paperId: "3622660555529351168",
+      questionIndex: 6,
+      sysCode: 1,
+      standardFlag: "",
+      inputType: none,
+      addFlag: none,
+      flagUse: "",
+      knwNames: ("有理数的加法", "有理数的减法", "有理数的除法", "有理数的乘法", "有理数的四则混合运算",),
+    ),
+    ),
+    (
+      type: "subj",
+      content: [#latex(`632 \div 69 \approx`)],
+      difficulty: 2,
+      business-type: "CSX-JST",
+      answer: ([9],),
+      analysis: [⑦#latex(`632 \div 69 \approx 9`)],
+      meta: (
+      questionSource: 2,
+      questionType: "",
+      relationType: "",
+      parentId: "3622686074798960640",
+      questionId: "3622686074798960647",
+      paperId: "3622660555529351168",
+      questionIndex: 7,
+      sysCode: 1,
+      standardFlag: "",
+      inputType: none,
+      addFlag: none,
+      flagUse: "",
+      knwNames: ("有理数的加法", "有理数的减法", "有理数的除法", "有理数的乘法", "有理数的四则混合运算",),
+    ),
+    ),
+    (
+      type: "subj",
+      content: [#latex(`\dfrac{1}{2} - \dfrac{1}{3}=`)],
+      difficulty: 2,
+      business-type: "CSX-JST",
+      answer: ([\\dfrac{1}{6}],),
+      analysis: [⑧#latex(`\dfrac{1}{2} - \dfrac{1}{3} = \dfrac{1}{6}`)
+    
+    【点评】本题考查了简单的计算，计算时要细心，注意平时积累经验，提高计算的水平.],
+      meta: (
+      questionSource: 2,
+      questionType: "",
+      relationType: "",
+      parentId: "3622686074798960640",
+      questionId: "3622686074798960648",
+      paperId: "3622660555529351168",
+      questionIndex: 8,
+      sysCode: 1,
+      standardFlag: "",
+      inputType: none,
+      addFlag: none,
+      flagUse: "",
+      knwNames: ("有理数的加法", "有理数的减法", "有理数的除法", "有理数的乘法", "有理数的四则混合运算",),
+    ),
+    ),
+  ),
+    difficulty: 2,
+    business-type: "CSX-JST",
+    meta: (
     questionSource: 2,
     questionType: "1",
     relationType: 0,
-    parentId: "3625913293046403072",
-    questionId: "3625913293046403072",
-    paperId: "3625849114759385088",
+    parentId: "3622686074798960640",
+    questionId: "3622686074798960640",
+    paperId: "3622660555529351168",
     questionIndex: 25,
     sysCode: 1,
     standardFlag: "",
     inputType: none,
     addFlag: none,
     flagUse: "",
-    knwNames: (),
+    knwNames: ("有理数的加法", "有理数的减法", "有理数的除法", "有理数的乘法", "有理数的四则混合运算",),
     smallQuestions: (
       (
         questionSource: 2,
         questionType: "",
         relationType: "",
-        parentId: "3625913293046403072",
-        questionId: "3625913293247729664",
-        paperId: "3625849114759385088",
+        parentId: "3622686074798960640",
+        questionId: "3622686074798960641",
+        paperId: "3622660555529351168",
         questionIndex: 1,
         sysCode: 1,
         standardFlag: "",
         inputType: none,
         addFlag: none,
         flagUse: "",
-        knwNames: (),
+        knwNames: ("有理数的加法", "有理数的减法", "有理数的除法", "有理数的乘法", "有理数的四则混合运算",),
       ),
       (
         questionSource: 2,
         questionType: "",
         relationType: "",
-        parentId: "3625913293046403072",
-        questionId: "3625913293247729665",
-        paperId: "3625849114759385088",
+        parentId: "3622686074798960640",
+        questionId: "3622686074798960642",
+        paperId: "3622660555529351168",
         questionIndex: 2,
         sysCode: 1,
         standardFlag: "",
         inputType: none,
         addFlag: none,
         flagUse: "",
-        knwNames: (),
+        knwNames: ("有理数的加法", "有理数的减法", "有理数的除法", "有理数的乘法", "有理数的四则混合运算",),
       ),
       (
         questionSource: 2,
         questionType: "",
         relationType: "",
-        parentId: "3625913293046403072",
-        questionId: "3625913293247729666",
-        paperId: "3625849114759385088",
+        parentId: "3622686074798960640",
+        questionId: "3622686074798960643",
+        paperId: "3622660555529351168",
         questionIndex: 3,
         sysCode: 1,
         standardFlag: "",
         inputType: none,
         addFlag: none,
         flagUse: "",
-        knwNames: (),
+        knwNames: ("有理数的加法", "有理数的减法", "有理数的除法", "有理数的乘法", "有理数的四则混合运算",),
+      ),
+      (
+        questionSource: 2,
+        questionType: "",
+        relationType: "",
+        parentId: "3622686074798960640",
+        questionId: "3622686074798960644",
+        paperId: "3622660555529351168",
+        questionIndex: 4,
+        sysCode: 1,
+        standardFlag: "",
+        inputType: none,
+        addFlag: none,
+        flagUse: "",
+        knwNames: ("有理数的加法", "有理数的减法", "有理数的除法", "有理数的乘法", "有理数的四则混合运算",),
+      ),
+      (
+        questionSource: 2,
+        questionType: "",
+        relationType: "",
+        parentId: "3622686074798960640",
+        questionId: "3622686074798960645",
+        paperId: "3622660555529351168",
+        questionIndex: 5,
+        sysCode: 1,
+        standardFlag: "",
+        inputType: none,
+        addFlag: none,
+        flagUse: "",
+        knwNames: ("有理数的加法", "有理数的减法", "有理数的除法", "有理数的乘法", "有理数的四则混合运算",),
+      ),
+      (
+        questionSource: 2,
+        questionType: "",
+        relationType: "",
+        parentId: "3622686074798960640",
+        questionId: "3622686074798960646",
+        paperId: "3622660555529351168",
+        questionIndex: 6,
+        sysCode: 1,
+        standardFlag: "",
+        inputType: none,
+        addFlag: none,
+        flagUse: "",
+        knwNames: ("有理数的加法", "有理数的减法", "有理数的除法", "有理数的乘法", "有理数的四则混合运算",),
+      ),
+      (
+        questionSource: 2,
+        questionType: "",
+        relationType: "",
+        parentId: "3622686074798960640",
+        questionId: "3622686074798960647",
+        paperId: "3622660555529351168",
+        questionIndex: 7,
+        sysCode: 1,
+        standardFlag: "",
+        inputType: none,
+        addFlag: none,
+        flagUse: "",
+        knwNames: ("有理数的加法", "有理数的减法", "有理数的除法", "有理数的乘法", "有理数的四则混合运算",),
+      ),
+      (
+        questionSource: 2,
+        questionType: "",
+        relationType: "",
+        parentId: "3622686074798960640",
+        questionId: "3622686074798960648",
+        paperId: "3622660555529351168",
+        questionIndex: 8,
+        sysCode: 1,
+        standardFlag: "",
+        inputType: none,
+        addFlag: none,
+        flagUse: "",
+        knwNames: ("有理数的加法", "有理数的减法", "有理数的除法", "有理数的乘法", "有理数的四则混合运算",),
       ),
     ),
   ),
-  (
-    questionSource: 3,
-    questionType: "2",
-    relationType: 0,
-    parentId: "3625913298245689344",
-    questionId: "3625913298245689344",
-    paperId: "3625849114759385088",
-    questionIndex: 30,
-    sysCode: 1,
-    standardFlag: "",
-    inputType: none,
-    addFlag: none,
-    flagUse: "",
-    knwNames: (),
   ),
   (
+    type: "composite",
+    content: [下面各题怎样简便怎样算.],
+    children: (
+    (
+      type: "subj",
+      content: [#latex(`\dfrac{1}{8} + 1\dfrac{5}{7} + 3.875 + \dfrac{2}{7}`)],
+      difficulty: 3,
+      business-type: "CSX-JST",
+      answer: ([6],),
+      analysis: [【分析】①按照加法交换律和结合律计算；
+    
+    【解答】解：①#latex(`\dfrac{1}{8} + 1\dfrac{5}{7} + 3.875 + \dfrac{2}{7}`)
+    
+    #latex(`= (\dfrac{1}{8} + 3.875) + (1\dfrac{5}{7} + \dfrac{2}{7})`)
+    
+    #latex(`= 4 + 2`)
+    
+    #latex(`= 6`)],
+      meta: (
+      questionSource: 2,
+      questionType: "",
+      relationType: "",
+      parentId: "3622686549711613952",
+      questionId: "3622686549711613953",
+      paperId: "3622660555529351168",
+      questionIndex: 1,
+      sysCode: 1,
+      standardFlag: "",
+      inputType: none,
+      addFlag: none,
+      flagUse: "",
+      knwNames: ("有理数的加法", "有理数的乘法", "有理数的四则混合运算",),
+    ),
+    ),
+    (
+      type: "subj",
+      content: [#latex(`9.9 \times 25`)],
+      difficulty: 3,
+      business-type: "CSX-JST",
+      answer: ([247.5],),
+      analysis: [②按照乘法分配律计算；#linebreak()【解答】解：②#latex(`9.9 \times 25`)
+    
+    #latex(`= (10 - 0.1) \times 25`)
+    
+    #latex(`= 10 \times 25 - 0.1 \times 25`)
+    
+    #latex(`= 250 - 2.5`)
+    
+    #latex(`= 247.5`)],
+      meta: (
+      questionSource: 2,
+      questionType: "",
+      relationType: "",
+      parentId: "3622686549711613952",
+      questionId: "3622686549711613954",
+      paperId: "3622660555529351168",
+      questionIndex: 2,
+      sysCode: 1,
+      standardFlag: "",
+      inputType: none,
+      addFlag: none,
+      flagUse: "",
+      knwNames: ("有理数的加法", "有理数的乘法", "有理数的四则混合运算",),
+    ),
+    ),
+    (
+      type: "subj",
+      content: [#latex(`35 - 10.4 \div (7.1 - 5.8)`)],
+      difficulty: 3,
+      business-type: "CSX-JST",
+      answer: ([27],),
+      analysis: [③先算小括号里面的减法，再算除法，最后算括号外面的减法；#linebreak()【解答】解：③#latex(`35 - 10.4 \div (7.1 - 5.8)`)
+    
+    #latex(`= 35 - 10.4 \div 1.3`)
+    
+    #latex(`= 35 - 8`)
+    
+    #latex(`= 27`)],
+      meta: (
+      questionSource: 2,
+      questionType: "",
+      relationType: "",
+      parentId: "3622686549711613952",
+      questionId: "3622686549711613955",
+      paperId: "3622660555529351168",
+      questionIndex: 3,
+      sysCode: 1,
+      standardFlag: "",
+      inputType: none,
+      addFlag: none,
+      flagUse: "",
+      knwNames: ("有理数的加法", "有理数的乘法", "有理数的四则混合运算",),
+    ),
+    ),
+    (
+      type: "subj",
+      content: [#latex(`(\dfrac{5}{6} + \dfrac{7}{12} - \dfrac{3}{8}) \div \dfrac{1}{48}`)],
+      difficulty: 3,
+      business-type: "CSX-JST",
+      answer: ([50],),
+      analysis: [④按照乘法分配律计算.#linebreak()【解答】解：④#latex(`(\dfrac{5}{6} + \dfrac{7}{12} - \dfrac{3}{8}) \div \dfrac{1}{48}`)
+    
+    #latex(`= (\dfrac{5}{6} + \dfrac{7}{12} - \dfrac{3}{8}) \times 48`)
+    
+    #latex(`= \dfrac{5}{6} \times 48 + \dfrac{7}{12} \times 48 - \dfrac{3}{8} \times 48`)
+    
+    #latex(`= 40 + 28 - 18`)
+    
+    #latex(`= 50`)
+    
+    【点评】本题考查了四则混合运算，注意运算顺序和运算法则，灵活运用所学的运算定律进行简便计算.],
+      meta: (
+      questionSource: 2,
+      questionType: "",
+      relationType: "",
+      parentId: "3622686549711613952",
+      questionId: "3622686549711613956",
+      paperId: "3622660555529351168",
+      questionIndex: 4,
+      sysCode: 1,
+      standardFlag: "",
+      inputType: none,
+      addFlag: none,
+      flagUse: "",
+      knwNames: ("有理数的加法", "有理数的乘法", "有理数的四则混合运算",),
+    ),
+    ),
+  ),
+    difficulty: 3,
+    business-type: "CSX-JST",
+    meta: (
     questionSource: 2,
     questionType: "1",
     relationType: 0,
-    parentId: "3625913302609416192",
-    questionId: "3625913302609416192",
-    paperId: "3625849114759385088",
+    parentId: "3622686549711613952",
+    questionId: "3622686549711613952",
+    paperId: "3622660555529351168",
     questionIndex: 26,
     sysCode: 1,
     standardFlag: "",
     inputType: none,
     addFlag: none,
     flagUse: "",
-    knwNames: (),
+    knwNames: ("有理数的加法", "有理数的乘法", "有理数的四则混合运算",),
+    smallQuestions: (
+      (
+        questionSource: 2,
+        questionType: "",
+        relationType: "",
+        parentId: "3622686549711613952",
+        questionId: "3622686549711613953",
+        paperId: "3622660555529351168",
+        questionIndex: 1,
+        sysCode: 1,
+        standardFlag: "",
+        inputType: none,
+        addFlag: none,
+        flagUse: "",
+        knwNames: ("有理数的加法", "有理数的乘法", "有理数的四则混合运算",),
+      ),
+      (
+        questionSource: 2,
+        questionType: "",
+        relationType: "",
+        parentId: "3622686549711613952",
+        questionId: "3622686549711613954",
+        paperId: "3622660555529351168",
+        questionIndex: 2,
+        sysCode: 1,
+        standardFlag: "",
+        inputType: none,
+        addFlag: none,
+        flagUse: "",
+        knwNames: ("有理数的加法", "有理数的乘法", "有理数的四则混合运算",),
+      ),
+      (
+        questionSource: 2,
+        questionType: "",
+        relationType: "",
+        parentId: "3622686549711613952",
+        questionId: "3622686549711613955",
+        paperId: "3622660555529351168",
+        questionIndex: 3,
+        sysCode: 1,
+        standardFlag: "",
+        inputType: none,
+        addFlag: none,
+        flagUse: "",
+        knwNames: ("有理数的加法", "有理数的乘法", "有理数的四则混合运算",),
+      ),
+      (
+        questionSource: 2,
+        questionType: "",
+        relationType: "",
+        parentId: "3622686549711613952",
+        questionId: "3622686549711613956",
+        paperId: "3622660555529351168",
+        questionIndex: 4,
+        sysCode: 1,
+        standardFlag: "",
+        inputType: none,
+        addFlag: none,
+        flagUse: "",
+        knwNames: ("有理数的加法", "有理数的乘法", "有理数的四则混合运算",),
+      ),
+    ),
+  ),
   ),
   (
-    questionSource: 3,
-    questionType: "2",
-    relationType: 0,
-    parentId: "3625913307773542400",
-    questionId: "3625913307773542400",
-    paperId: "3625849114759385088",
-    questionIndex: 32,
-    sysCode: 1,
-    standardFlag: "",
-    inputType: none,
-    addFlag: none,
-    flagUse: "",
-    knwNames: (),
+    type: "composite",
+    content: [解方程或解比例.],
+    children: (
+    (
+      type: "subj",
+      content: [#latex(`3.8 + \dfrac{1}{8}x = 9.45`)],
+      difficulty: 3,
+      business-type: "CSX-JST",
+      answer: ([x=45.2],),
+      analysis: [【分析】①根据等式的性质，方程两边同时减去 #latex(`3.8`)，然后再同时除以 #latex(`\dfrac{1}{8}`) 求解；
+    
+    【解答】解：①#latex(`3.8 + \dfrac{1}{8}x = 9.45`)
+    
+    #latex(`3.8 + \dfrac{1}{8}x - 3.8 = 9.45 - 3.8`)
+    
+    #latex(`\dfrac{1}{8}x = 5.65`)
+    
+    #latex(`x = 45.2`)],
+      meta: (
+      questionSource: 2,
+      questionType: "",
+      relationType: "",
+      parentId: "3622686235004596224",
+      questionId: "3622686235004596225",
+      paperId: "3622660555529351168",
+      questionIndex: 1,
+      sysCode: 1,
+      standardFlag: "",
+      inputType: none,
+      addFlag: none,
+      flagUse: "",
+      knwNames: ("解一元一次方程",),
+    ),
+    ),
+    (
+      type: "subj",
+      content: [#latex(`25\%:\dfrac{1}{3} = 54:x`)],
+      difficulty: 3,
+      business-type: "CSX-JST",
+      answer: ([x=72],),
+      analysis: [②根据比例的基本性质，把比例化成普通方程，然后再根据等式的性质求解.
+    
+    【解答】解：②#latex(`25\%:\dfrac{1}{3} = 54:x`)
+    
+    #latex(`0.25x = \dfrac{1}{3} \times 54`)
+    
+    #latex(`0.25x = 18`)
+    
+    #latex(`x = 72`)
+    
+    【点评】此题考查解比例和解方程.掌握比例的基本性质和熟练运用等式的性质是解答的关键.],
+      meta: (
+      questionSource: 2,
+      questionType: "",
+      relationType: "",
+      parentId: "3622686235004596224",
+      questionId: "3622686235004596226",
+      paperId: "3622660555529351168",
+      questionIndex: 2,
+      sysCode: 1,
+      standardFlag: "",
+      inputType: none,
+      addFlag: none,
+      flagUse: "",
+      knwNames: ("解一元一次方程",),
+    ),
+    ),
   ),
-  (
+    difficulty: 3,
+    business-type: "CSX-JST",
+    meta: (
     questionSource: 2,
     questionType: "1",
-    relationType: 1,
-    parentId: "3084857810862485504",
-    questionId: "3084857810862485504",
-    paperId: "3625849114759385088",
+    relationType: 0,
+    parentId: "3622686235004596224",
+    questionId: "3622686235004596224",
+    paperId: "3622660555529351168",
     questionIndex: 27,
-    sysCode: 13,
+    sysCode: 1,
     standardFlag: "",
     inputType: none,
     addFlag: none,
     flagUse: "",
-    knwNames: ("规律型：图形的变化类",),
+    knwNames: ("解一元一次方程",),
+    smallQuestions: (
+      (
+        questionSource: 2,
+        questionType: "",
+        relationType: "",
+        parentId: "3622686235004596224",
+        questionId: "3622686235004596225",
+        paperId: "3622660555529351168",
+        questionIndex: 1,
+        sysCode: 1,
+        standardFlag: "",
+        inputType: none,
+        addFlag: none,
+        flagUse: "",
+        knwNames: ("解一元一次方程",),
+      ),
+      (
+        questionSource: 2,
+        questionType: "",
+        relationType: "",
+        parentId: "3622686235004596224",
+        questionId: "3622686235004596226",
+        paperId: "3622660555529351168",
+        questionIndex: 2,
+        sysCode: 1,
+        standardFlag: "",
+        inputType: none,
+        addFlag: none,
+        flagUse: "",
+        knwNames: ("解一元一次方程",),
+      ),
+    ),
+  ),
   ),
   (
+    type: "title",
+    content: [四、图形与操作。（每题#latex(`5`)分，共#latex(`10`)分）],
+    meta: (
     questionSource: 3,
     questionType: "2",
     relationType: 0,
-    parentId: "3625913320911708160",
-    questionId: "3625913320911708160",
-    paperId: "3625849114759385088",
-    questionIndex: 34,
-    sysCode: 1,
-    standardFlag: "",
-    inputType: none,
-    addFlag: none,
-    flagUse: "",
-    knwNames: (),
-  ),
-  (
-    questionSource: 2,
-    questionType: "1",
-    relationType: 0,
-    parentId: "3625913326079090688",
-    questionId: "3625913326079090688",
-    paperId: "3625849114759385088",
-    questionIndex: 28,
-    sysCode: 1,
-    standardFlag: "",
-    inputType: none,
-    addFlag: none,
-    flagUse: "",
-    knwNames: (),
-  ),
-  (
-    questionSource: 2,
-    questionType: "1",
-    relationType: 0,
-    parentId: "3625913331164237824",
-    questionId: "3625913331164237824",
-    paperId: "3625849114759385088",
-    questionIndex: 29,
-    sysCode: 1,
-    standardFlag: "",
-    inputType: none,
-    addFlag: none,
-    flagUse: "",
-    knwNames: (),
-  ),
-  (
-    questionSource: 2,
-    questionType: "1",
-    relationType: 1,
-    parentId: "2970416119154302976",
-    questionId: "2970416119154302976",
-    paperId: "3625849114759385088",
-    questionIndex: 30,
-    sysCode: 13,
-    standardFlag: "",
-    inputType: none,
-    addFlag: none,
-    flagUse: "",
-    knwNames: ("圆柱和圆锥",),
-  ),
-  (
-    questionSource: 2,
-    questionType: "1",
-    relationType: 0,
-    parentId: "3625913341480574976",
-    questionId: "3625913341480574976",
-    paperId: "3625849114759385088",
+    parentId: "3622686747313664001",
+    questionId: "3622686747313664001",
+    paperId: "3622660555529351168",
     questionIndex: 31,
     sysCode: 1,
     standardFlag: "",
@@ -1943,43 +1565,321 @@
     flagUse: "",
     knwNames: (),
   ),
+  ),
   (
+    type: "composite",
+    content: [图中方格的边长表示 #latex(`1`) 厘米. #box(baseline: 25%, image("https://k12static.xdf.cn/k12/auto/paper/2026/06/04/3622685109521838080.png", width: 44.37%))],
+    children: (
+    (
+      type: "fb",
+      content: [图中半圆的圆心 #latex(`O_1`) 的位置可用数对（ #blank_line() ， #blank_line() ）表示；],
+      difficulty: 2,
+      business-type: "CSX-JST",
+      answer: ([#latex(`3`)], [#latex(`7`)],),
+      analysis: [【分析】①用数对表示位置时，先表示第几列，再表示第几行，图中半圆的圆心 #latex(`O_1`) 的位置可用数对 #latex(`(3,7)`) 表示；
+    
+    【解答】解：①图中半圆的圆心 #latex(`O_1`) 的位置可用数对 #latex(`(3,7)`) 表示；],
+      meta: (
+      questionSource: 2,
+      questionType: "",
+      relationType: "",
+      parentId: "3622685589887086592",
+      questionId: "3622685589887086593",
+      paperId: "3622660555529351168",
+      questionIndex: 1,
+      sysCode: 1,
+      standardFlag: "",
+      inputType: none,
+      addFlag: none,
+      flagUse: "",
+      knwNames: ("由点的坐标确定位置", "作图—平移变换", "作图—位似变换",),
+    ),
+    ),
+    (
+      type: "subj",
+      content: [画出半圆向右平移 #latex(`4`) 格、再向下平移 #latex(`2`) 格后的图形，标出圆心 #latex(`O_2`)；],
+      difficulty: 3,
+      business-type: "CSX-JST",
+      answer: (),
+      analysis: [②根据图形平移的方法，画出半圆向右平移 #latex(`4`) 格、再向下平移 #latex(`2`) 格后的图形，标出圆心 #latex(`O_2`)；
+    
+    【解答】解：②画出半圆向右平移 #latex(`4`) 格、再向下平移 #latex(`2`) 格后的图形，标出圆心 #latex(`O_2`)；如图：],
+      meta: (
+      questionSource: 2,
+      questionType: "",
+      relationType: "",
+      parentId: "3622685589887086592",
+      questionId: "3622685589887086594",
+      paperId: "3622660555529351168",
+      questionIndex: 2,
+      sysCode: 1,
+      standardFlag: "",
+      inputType: none,
+      addFlag: none,
+      flagUse: "",
+      knwNames: ("由点的坐标确定位置", "作图—平移变换", "作图—位似变换",),
+    ),
+    ),
+    (
+      type: "subj",
+      content: [按 #latex(`2:1`) 画出这个半圆放大后的图形.],
+      difficulty: 3,
+      business-type: "CSX-JST",
+      answer: (),
+      analysis: [③根据图形放大的方法，按 #latex(`2:1`) 画出这个半圆放大到原来 #latex(`2`) 倍后的图形即可.
+    
+    【解答】解：③按 #latex(`2:1`) 画出这个半圆放大后的图形.如图：#box(baseline: 25%, image("https://k12static.xdf.cn/k12/auto/paper/2026/06/04/3622685109521838081.png", width: 42.94%))
+    
+    故答案为：#latex(`3`)，#latex(`7`)​.
+    
+    【点评】本题考查了数对表示位置、图形的平移和旋转知识，结合题意分析解答即可.],
+      meta: (
+      questionSource: 2,
+      questionType: "",
+      relationType: "",
+      parentId: "3622685589887086592",
+      questionId: "3622685589887086595",
+      paperId: "3622660555529351168",
+      questionIndex: 3,
+      sysCode: 1,
+      standardFlag: "",
+      inputType: none,
+      addFlag: none,
+      flagUse: "",
+      knwNames: ("由点的坐标确定位置", "作图—平移变换", "作图—位似变换",),
+    ),
+    ),
+  ),
+    difficulty: 3,
+    business-type: "CSX-JST",
+    meta: (
     questionSource: 2,
     questionType: "1",
     relationType: 0,
-    parentId: "3625913347236970496",
-    questionId: "3625913347236970496",
-    paperId: "3625849114759385088",
-    questionIndex: 32,
+    parentId: "3622685589887086592",
+    questionId: "3622685589887086592",
+    paperId: "3622660555529351168",
+    questionIndex: 28,
     sysCode: 1,
     standardFlag: "",
     inputType: none,
     addFlag: none,
     flagUse: "",
-    knwNames: (),
+    knwNames: ("由点的坐标确定位置", "作图—平移变换", "作图—位似变换",),
+    smallQuestions: (
+      (
+        questionSource: 2,
+        questionType: "",
+        relationType: "",
+        parentId: "3622685589887086592",
+        questionId: "3622685589887086593",
+        paperId: "3622660555529351168",
+        questionIndex: 1,
+        sysCode: 1,
+        standardFlag: "",
+        inputType: none,
+        addFlag: none,
+        flagUse: "",
+        knwNames: ("由点的坐标确定位置", "作图—平移变换", "作图—位似变换",),
+      ),
+      (
+        questionSource: 2,
+        questionType: "",
+        relationType: "",
+        parentId: "3622685589887086592",
+        questionId: "3622685589887086594",
+        paperId: "3622660555529351168",
+        questionIndex: 2,
+        sysCode: 1,
+        standardFlag: "",
+        inputType: none,
+        addFlag: none,
+        flagUse: "",
+        knwNames: ("由点的坐标确定位置", "作图—平移变换", "作图—位似变换",),
+      ),
+      (
+        questionSource: 2,
+        questionType: "",
+        relationType: "",
+        parentId: "3622685589887086592",
+        questionId: "3622685589887086595",
+        paperId: "3622660555529351168",
+        questionIndex: 3,
+        sysCode: 1,
+        standardFlag: "",
+        inputType: none,
+        addFlag: none,
+        flagUse: "",
+        knwNames: ("由点的坐标确定位置", "作图—平移变换", "作图—位似变换",),
+      ),
+    ),
+  ),
   ),
   (
+    type: "composite",
+    content: [#box(baseline: 25%, image("https://k12static.xdf.cn/k12/auto/paper/2026/06/04/3622685122255745025.png", width: 65.85%))],
+    children: (
+    (
+      type: "fb",
+      content: [商场在小玲家 #blank_line() 偏 #blank_line() #latex(`30^\circ`) 方向；],
+      difficulty: 2,
+      business-type: "CSX-JST",
+      answer: ([西], [北],),
+      analysis: [【分析】①根据图示可知，以小玲家为观测点，商场在小玲家西偏北 #latex(`30^\circ`) 方向；
+    
+    【解答】解：①商场在小玲家西偏北 #latex(`30^\circ`) 方向；],
+      meta: (
+      questionSource: 2,
+      questionType: "",
+      relationType: "",
+      parentId: "3622685538515251200",
+      questionId: "3622685538515251201",
+      paperId: "3622660555529351168",
+      questionIndex: 1,
+      sysCode: 1,
+      standardFlag: "",
+      inputType: none,
+      addFlag: none,
+      flagUse: "",
+      knwNames: ("方向角", "有理数运算的实际应用",),
+    ),
+    ),
+    (
+      type: "subj",
+      content: [少年宫在小玲家北偏东 #latex(`60^\circ`) 方向上，距离是 #latex(`400`) 米.请在图上标出来；],
+      difficulty: 3,
+      business-type: "CSX-JST",
+      answer: (),
+      analysis: [②根据题意，以小玲家为观测点，少年宫在小玲家北偏东 #latex(`60^\circ`) 方向上，距离是 #latex(`400`) 米.据此把少年宫标示在图中；
+    
+    【解答】解：②#latex(`400 \div 200 = 2`)（厘米）#linebreak()少年宫在小玲家北偏东 #latex(`60^\circ`) 方向上，距离是 #latex(`400`) 米.请在图上标出来，如下图所示：#box(baseline: 25%, image("https://k12static.xdf.cn/k12/auto/paper/2026/06/04/3622685122255745024.png", width: 65.85%))],
+      meta: (
+      questionSource: 2,
+      questionType: "",
+      relationType: "",
+      parentId: "3622685538515251200",
+      questionId: "3622685538515251202",
+      paperId: "3622660555529351168",
+      questionIndex: 2,
+      sysCode: 1,
+      standardFlag: "",
+      inputType: none,
+      addFlag: none,
+      flagUse: "",
+      knwNames: ("方向角", "有理数运算的实际应用",),
+    ),
+    ),
+    (
+      type: "fb",
+      content: [小玲沿同一条路线经过商场去书店，去时用了 #latex(`15`) 分钟，返回时用了 #latex(`20`) 分钟，小玲往返的平均速度是 #blank_line() .],
+      difficulty: 3,
+      business-type: "CSX-JST",
+      answer: ([#latex(`80`)m\/#latex(`\rm{min}`)],),
+      analysis: [③根据“速度 #latex(`=`) 路程 #latex(`\div`) 时间”，用小玲往返的路程除以往返的时间之和即可求出小玲往返的平均速度.
+    
+    【解答】解：③#latex(`(5+2) \times 200 \times 2 \div (15+20)`)
+    
+    #latex(`= 2800 \div 35`)
+    
+    #latex(`= 80`)（#latex(`m/min`)）
+    
+    答：小玲往返的平均速度是 #latex(`80m/min`)​.
+    
+    故答案为：①西，北；③#latex(`80m/min`)​.
+    
+    【点评】本题考查了根据方向和距离确定物体位置的应用以及求平均速度的应用.],
+      meta: (
+      questionSource: 2,
+      questionType: "",
+      relationType: "",
+      parentId: "3622685538515251200",
+      questionId: "3622685538515251203",
+      paperId: "3622660555529351168",
+      questionIndex: 3,
+      sysCode: 1,
+      standardFlag: "",
+      inputType: none,
+      addFlag: none,
+      flagUse: "",
+      knwNames: ("方向角", "有理数运算的实际应用",),
+    ),
+    ),
+  ),
+    difficulty: 3,
+    business-type: "CSX-JST",
+    meta: (
     questionSource: 2,
     questionType: "1",
-    relationType: 1,
-    parentId: "2365775845531144192",
-    questionId: "2365775845531144192",
-    paperId: "3625849114759385088",
-    questionIndex: 33,
-    sysCode: 12,
+    relationType: 0,
+    parentId: "3622685538515251200",
+    questionId: "3622685538515251200",
+    paperId: "3622660555529351168",
+    questionIndex: 29,
+    sysCode: 1,
     standardFlag: "",
     inputType: none,
     addFlag: none,
     flagUse: "",
-    knwNames: ("行程问题（一元一次方程）", "行程问题（一元一次方程）"),
+    knwNames: ("方向角", "有理数运算的实际应用",),
+    smallQuestions: (
+      (
+        questionSource: 2,
+        questionType: "",
+        relationType: "",
+        parentId: "3622685538515251200",
+        questionId: "3622685538515251201",
+        paperId: "3622660555529351168",
+        questionIndex: 1,
+        sysCode: 1,
+        standardFlag: "",
+        inputType: none,
+        addFlag: none,
+        flagUse: "",
+        knwNames: ("方向角", "有理数运算的实际应用",),
+      ),
+      (
+        questionSource: 2,
+        questionType: "",
+        relationType: "",
+        parentId: "3622685538515251200",
+        questionId: "3622685538515251202",
+        paperId: "3622660555529351168",
+        questionIndex: 2,
+        sysCode: 1,
+        standardFlag: "",
+        inputType: none,
+        addFlag: none,
+        flagUse: "",
+        knwNames: ("方向角", "有理数运算的实际应用",),
+      ),
+      (
+        questionSource: 2,
+        questionType: "",
+        relationType: "",
+        parentId: "3622685538515251200",
+        questionId: "3622685538515251203",
+        paperId: "3622660555529351168",
+        questionIndex: 3,
+        sysCode: 1,
+        standardFlag: "",
+        inputType: none,
+        addFlag: none,
+        flagUse: "",
+        knwNames: ("方向角", "有理数运算的实际应用",),
+      ),
+    ),
+  ),
   ),
   (
-    questionSource: 2,
-    questionType: "1",
+    type: "title",
+    content: [五、解决问题。（#latex(`22`)分）],
+    meta: (
+    questionSource: 3,
+    questionType: "2",
     relationType: 0,
-    parentId: "3625913357034864640",
-    questionId: "3625913357034864640",
-    paperId: "3625849114759385088",
+    parentId: "3622686747313664002",
+    questionId: "3622686747313664002",
+    paperId: "3622660555529351168",
     questionIndex: 34,
     sysCode: 1,
     standardFlag: "",
@@ -1988,98 +1888,590 @@
     flagUse: "",
     knwNames: (),
   ),
-  (
-    questionSource: 2,
-    questionType: "1",
-    relationType: 1,
-    parentId: "3379191167956639744",
-    questionId: "3379191167956639744",
-    paperId: "3625849114759385088",
-    questionIndex: 35,
-    sysCode: 13,
-    standardFlag: "",
-    inputType: none,
-    addFlag: none,
-    flagUse: "",
-    knwNames: ("其他",),
   ),
   (
+    type: "subj",
+    content: [学校的阅览室是正方形的，装修时用边长是 #latex(`0.3`) 米的方砖铺地，需要 #latex(`480`) 块，如果改用边长是 #latex(`0.4`) 米的方砖，需要多少块？（请用比例知识解）],
+    difficulty: 3,
+    business-type: "CSX-JIEDA",
+    answer: ([270块],),
+    analysis: [【分析】教室的面积是不变的，每一块方砖的面积与所需块数的乘积是一定的，即两种量成反比例，由此设出未知数，列出比例式解答即可.
+  
+  【解答】解：设需要 #latex(`x`) 块，由题意得
+  
+  #latex(`0.4 \times 0.4 \times x = 0.3 \times 0.3 \times 480`)
+  
+  #latex(`0.16x = 43.2`)
+  
+  #latex(`x = 43.2 \div 0.16`)
+  
+  #latex(`x = 270`)
+  
+  答：需要 #latex(`270`) 块.
+  
+  【点评】此题首先利用正反比例的意义判定两种量的关系，解答时关键不要把边长当做面积进行计算.],
+    meta: (
     questionSource: 2,
     questionType: "1",
     relationType: 0,
-    parentId: "3625913366426689536",
-    questionId: "3625913366426689536",
-    paperId: "3625849114759385088",
-    questionIndex: 36,
+    parentId: "3622685921790750720",
+    questionId: "3622685921790750720",
+    paperId: "3622660555529351168",
+    questionIndex: 30,
     sysCode: 1,
     standardFlag: "",
     inputType: none,
     addFlag: none,
     flagUse: "",
-    knwNames: (),
+    knwNames: ("其他问题（一元一次方程）",),
+  ),
   ),
   (
+    type: "composite",
+    content: [“端午节”是我国传统节日，有吃粽子的习俗.妈妈在端午节这天包了一些粽子.],
+    children: (
+    (
+      type: "subj",
+      content: [这些粽子每 #latex(`8`) 个一袋或每 #latex(`10`) 个一袋都剩余 #latex(`6`) 个.妈妈最少包了多少个粽子？],
+      difficulty: 3,
+      business-type: "CSX-JST",
+      answer: ([46个],),
+      analysis: [【分析】①求出 #latex(`8`) 和 #latex(`10`) 的最小公倍数，再加上剩余的 #latex(`6`) 个，就是最少包的粽子数；
+    
+    【解答】解：①#latex(`8`) 和 #latex(`10`) 的最小公倍数，分解质因数：
+    
+    #latex(`8 = 2 \times 2 \times 2`)
+    
+    #latex(`10 = 2 \times 5`)
+    
+    #latex(`[8,10] = 2 \times 2 \times 2 \times 5 = 40`)
+    
+    #latex(`40+6=46`)（个）
+    
+    答：妈妈最少包了 #latex(`46`) 个粽子.],
+      meta: (
+      questionSource: 2,
+      questionType: "",
+      relationType: "",
+      parentId: "3622685421712273408",
+      questionId: "3622685421712273409",
+      paperId: "3622660555529351168",
+      questionIndex: 1,
+      sysCode: 1,
+      standardFlag: "",
+      inputType: none,
+      addFlag: none,
+      flagUse: "",
+      knwNames: ("有理数运算的实际应用",),
+    ),
+    ),
+    (
+      type: "subj",
+      content: [妈妈煮了 #latex(`20`) 个粽子，爸爸吃了这些粽子的 #latex(`\dfrac{2}{5}`)，妈妈比爸爸少吃了 #latex(`\dfrac{1}{4}`)，妈妈吃了多少个？],
+      difficulty: 3,
+      business-type: "CSX-JST",
+      answer: ([6个],),
+      analysis: [②根据求一个数的几分之几是多少用乘法算出爸爸吃的数量，再根据数量关系算妈妈吃的数量，涉及“求一个数的几分之几是多少”及“比一个数少几分之几”的计算.即先算出爸爸吃的粽子数，再根据妈妈比爸爸少吃 #latex(`\dfrac{1}{4}`)，求出妈妈吃的粽子数.
+    
+    【解答】解：②#latex(`20 \times \dfrac{2}{5} = 8`)（个）
+    
+    #latex(`8 \times (1 - \dfrac{1}{4}) = 6`)（个）
+    
+    答：妈妈吃了 #latex(`6`) 个粽子.
+    
+    【点评】本题考查最小公倍数的实际应用以及分数乘法的应用.],
+      meta: (
+      questionSource: 2,
+      questionType: "",
+      relationType: "",
+      parentId: "3622685421712273408",
+      questionId: "3622685421712273410",
+      paperId: "3622660555529351168",
+      questionIndex: 2,
+      sysCode: 1,
+      standardFlag: "",
+      inputType: none,
+      addFlag: none,
+      flagUse: "",
+      knwNames: ("有理数运算的实际应用",),
+    ),
+    ),
+  ),
+    difficulty: 3,
+    business-type: "CSX-JST",
+    meta: (
     questionSource: 2,
     questionType: "1",
     relationType: 0,
-    parentId: "3625913371511791616",
-    questionId: "3625913371511791616",
-    paperId: "3625849114759385088",
-    questionIndex: 37,
+    parentId: "3622685421712273408",
+    questionId: "3622685421712273408",
+    paperId: "3622660555529351168",
+    questionIndex: 31,
     sysCode: 1,
     standardFlag: "",
     inputType: none,
     addFlag: none,
     flagUse: "",
-    knwNames: (),
+    knwNames: ("有理数运算的实际应用",),
     smallQuestions: (
       (
         questionSource: 2,
         questionType: "",
         relationType: "",
-        parentId: "3625913371511791616",
-        questionId: "3625913371746672640",
-        paperId: "3625849114759385088",
+        parentId: "3622685421712273408",
+        questionId: "3622685421712273409",
+        paperId: "3622660555529351168",
         questionIndex: 1,
         sysCode: 1,
         standardFlag: "",
         inputType: none,
         addFlag: none,
         flagUse: "",
-        knwNames: (),
+        knwNames: ("有理数运算的实际应用",),
       ),
       (
         questionSource: 2,
         questionType: "",
         relationType: "",
-        parentId: "3625913371511791616",
-        questionId: "3625913371746672641",
-        paperId: "3625849114759385088",
+        parentId: "3622685421712273408",
+        questionId: "3622685421712273410",
+        paperId: "3622660555529351168",
         questionIndex: 2,
         sysCode: 1,
         standardFlag: "",
         inputType: none,
         addFlag: none,
         flagUse: "",
-        knwNames: (),
+        knwNames: ("有理数运算的实际应用",),
+      ),
+    ),
+  ),
+  ),
+  (
+    type: "composite",
+    content: [妈妈买了一个厨房防虫罩，底边长 #latex(`6`) 分米，横截面是半径为 #latex(`2`) 分米的半圆形.（如图） #box(baseline: 25%, image("https://k12static.xdf.cn/k12/auto/paper/2026/06/04/3622685130946342912.png", width: 22.9%))],
+    children: (
+    (
+      type: "subj",
+      content: [做这个防虫罩至少需要多少平方分米纱布？（接头、握柄处忽略不计）],
+      difficulty: 4,
+      business-type: "CSX-JST",
+      answer: ([50.24平方分米],),
+      analysis: [【分析】①做这个防虫罩至少需要多少平方分米纱布，是求圆柱的表面积的一半.圆柱的表面积 #latex(`=`) 侧面积 #latex(`+`) 两个底面积 #latex(`=`) 底面的周长 #latex(`\times`) 高 #latex(`+`) 底面圆的面积 #latex(`\times 2`)
+    
+    【解答】解：①#latex(`3.14 \times 2 \times 2 \times 6 \div 2 + 3.14 \times 2^2`)
+    
+    #latex(`= 37.68 + 12.56`)
+    
+    #latex(`= 50.24`)（平方分米）
+    
+    答：做这个防虫罩至少需要 #latex(`50.24`) 平方分米纱布.],
+      meta: (
+      questionSource: 2,
+      questionType: "",
+      relationType: "",
+      parentId: "3622685501873811456",
+      questionId: "3622685501873811457",
+      paperId: "3622660555529351168",
+      questionIndex: 1,
+      sysCode: 1,
+      standardFlag: "",
+      inputType: none,
+      addFlag: none,
+      flagUse: "",
+      knwNames: ("圆柱的计算",),
+    ),
+    ),
+    (
+      type: "subj",
+      content: [防虫罩的容积多大？],
+      difficulty: 3,
+      business-type: "CSX-JST",
+      answer: ([37.68立方分米],),
+      analysis: [②防虫罩的容积多大，是求圆柱体积的一半.圆柱的体积 #latex(`=`) 底面积 #latex(`\times`) 高.
+    
+    【解答】解：②#latex(`3.14 \times 2^2 \times 6 \div 2`)
+    
+    #latex(`= 3.14 \times 4 \times 6 \div 2`)
+    
+    #latex(`= 37.68`)（立方分米）
+    
+    答：防虫罩的容积是 #latex(`37.68`) 立方分米.
+    
+    【点评】本题考查了圆柱的表面积和体积计算.],
+      meta: (
+      questionSource: 2,
+      questionType: "",
+      relationType: "",
+      parentId: "3622685501873811456",
+      questionId: "3622685501873811458",
+      paperId: "3622660555529351168",
+      questionIndex: 2,
+      sysCode: 1,
+      standardFlag: "",
+      inputType: none,
+      addFlag: none,
+      flagUse: "",
+      knwNames: ("圆柱的计算",),
+    ),
+    ),
+  ),
+    difficulty: 4,
+    business-type: "CSX-JST",
+    meta: (
+    questionSource: 2,
+    questionType: "1",
+    relationType: 0,
+    parentId: "3622685501873811456",
+    questionId: "3622685501873811456",
+    paperId: "3622660555529351168",
+    questionIndex: 32,
+    sysCode: 1,
+    standardFlag: "",
+    inputType: none,
+    addFlag: none,
+    flagUse: "",
+    knwNames: ("圆柱的计算",),
+    smallQuestions: (
+      (
+        questionSource: 2,
+        questionType: "",
+        relationType: "",
+        parentId: "3622685501873811456",
+        questionId: "3622685501873811457",
+        paperId: "3622660555529351168",
+        questionIndex: 1,
+        sysCode: 1,
+        standardFlag: "",
+        inputType: none,
+        addFlag: none,
+        flagUse: "",
+        knwNames: ("圆柱的计算",),
       ),
       (
         questionSource: 2,
         questionType: "",
         relationType: "",
-        parentId: "3625913371511791616",
-        questionId: "3625913371746672642",
-        paperId: "3625849114759385088",
+        parentId: "3622685501873811456",
+        questionId: "3622685501873811458",
+        paperId: "3622660555529351168",
+        questionIndex: 2,
+        sysCode: 1,
+        standardFlag: "",
+        inputType: none,
+        addFlag: none,
+        flagUse: "",
+        knwNames: ("圆柱的计算",),
+      ),
+    ),
+  ),
+  ),
+  (
+    type: "composite",
+    content: [我们在探究圆柱的体积公式时，是将一个圆柱转化为一个近似的长方体得出的（如图）. #linebreak()我们的发现： #box(baseline: 25%, image("https://k12static.xdf.cn/k12/auto/paper/2026/06/04/3622685143311151104.png", width: 35.79%))],
+    children: (
+    (
+      type: "fb",
+      content: [转化后的长方体的底面积等于圆柱的 #blank_line() ，长方体的高等于圆柱的 #blank_line() ，因此圆柱的体积还可以这样计算：圆柱的体积 #latex(`=`) #blank_line() .],
+      difficulty: 2,
+      business-type: "CSX-JST",
+      answer: ([底面积], [高], [底面积\\#latex(`\rm{times}`) 高],),
+      analysis: [【分析】①长方体的底面积是圆柱底面圆分割后重新拼接而成，因此等于圆柱的底面积；长方体的高与圆柱的高完全重合，保持不变；长方体的体积 #latex(`=`) 底面积 #latex(`\times`) 高，因此圆柱体积 #latex(`=`) 底面积 #latex(`\times`) 高；
+    
+    【解答】解：①转化后的长方体的底面积等于圆柱的底面积，长方体的高等于圆柱的高，因此圆柱的体积还可以这样计算：圆柱的体积 #latex(`=`) 底面积 #latex(`\times`) 高.],
+      meta: (
+      questionSource: 2,
+      questionType: "",
+      relationType: "",
+      parentId: "3622685787724017664",
+      questionId: "3622685787724017665",
+      paperId: "3622660555529351168",
+      questionIndex: 1,
+      sysCode: 1,
+      standardFlag: "",
+      inputType: none,
+      addFlag: none,
+      flagUse: "",
+      knwNames: ("圆柱的计算",),
+    ),
+    ),
+    (
+      type: "subj",
+      content: [在圆柱转化为长方体的过程中，你还发现了什么“变”与“不变”？],
+      difficulty: 3,
+      business-type: "CSX-JST",
+      answer: ([体积不变], [形状变了], [表面积增加了],),
+      analysis: [②不变的是圆柱的体积在转化过程中保持不变；改变的是形状和表面积；
+    
+    【解答】解：②在转换过程中，体积不变，但形状从圆柱变为长方体，且表面积增加（因切割面产生新的切面）.],
+      meta: (
+      questionSource: 2,
+      questionType: "",
+      relationType: "",
+      parentId: "3622685787724017664",
+      questionId: "3622685787724017666",
+      paperId: "3622660555529351168",
+      questionIndex: 2,
+      sysCode: 1,
+      standardFlag: "",
+      inputType: none,
+      addFlag: none,
+      flagUse: "",
+      knwNames: ("圆柱的计算",),
+    ),
+    ),
+    (
+      type: "subj",
+      content: [“转化”是一种重要的数学思想方法，除了上面的研究外，小学阶段你还知道在哪些地方用到了这种方法？请至少举出两个例子说明.],
+      difficulty: 3,
+      business-type: "CSX-JST",
+      answer: ([将平行四边形沿高剪开平移], [转换为长方形求面积],),
+      analysis: [③根据所学知识，例如平行四边形面积公式的推导等.
+    
+    【解答】解：③将平行四边形沿高剪开平移，转换为长方形求面积.
+    
+    故答案为：①底面积；高；底面积 #latex(`\times`) 高.（答案不唯一）
+    
+    【点评】此题考查的是圆柱的体积.],
+      meta: (
+      questionSource: 2,
+      questionType: "",
+      relationType: "",
+      parentId: "3622685787724017664",
+      questionId: "3622685787724017667",
+      paperId: "3622660555529351168",
+      questionIndex: 3,
+      sysCode: 1,
+      standardFlag: "",
+      inputType: none,
+      addFlag: none,
+      flagUse: "",
+      knwNames: ("圆柱的计算",),
+    ),
+    ),
+  ),
+    difficulty: 3,
+    business-type: "CSX-JST",
+    meta: (
+    questionSource: 2,
+    questionType: "1",
+    relationType: 0,
+    parentId: "3622685787724017664",
+    questionId: "3622685787724017664",
+    paperId: "3622660555529351168",
+    questionIndex: 33,
+    sysCode: 1,
+    standardFlag: "",
+    inputType: none,
+    addFlag: none,
+    flagUse: "",
+    knwNames: ("圆柱的计算",),
+    smallQuestions: (
+      (
+        questionSource: 2,
+        questionType: "",
+        relationType: "",
+        parentId: "3622685787724017664",
+        questionId: "3622685787724017665",
+        paperId: "3622660555529351168",
+        questionIndex: 1,
+        sysCode: 1,
+        standardFlag: "",
+        inputType: none,
+        addFlag: none,
+        flagUse: "",
+        knwNames: ("圆柱的计算",),
+      ),
+      (
+        questionSource: 2,
+        questionType: "",
+        relationType: "",
+        parentId: "3622685787724017664",
+        questionId: "3622685787724017666",
+        paperId: "3622660555529351168",
+        questionIndex: 2,
+        sysCode: 1,
+        standardFlag: "",
+        inputType: none,
+        addFlag: none,
+        flagUse: "",
+        knwNames: ("圆柱的计算",),
+      ),
+      (
+        questionSource: 2,
+        questionType: "",
+        relationType: "",
+        parentId: "3622685787724017664",
+        questionId: "3622685787724017667",
+        paperId: "3622660555529351168",
         questionIndex: 3,
         sysCode: 1,
         standardFlag: "",
         inputType: none,
         addFlag: none,
         flagUse: "",
-        knwNames: (),
+        knwNames: ("圆柱的计算",),
       ),
     ),
   ),
+  ),
+  (
+    type: "title",
+    content: [六.统计。（#latex(`5`)分）],
+    meta: (
+    questionSource: 3,
+    questionType: "2",
+    relationType: 0,
+    parentId: "3622686747313664003",
+    questionId: "3622686747313664003",
+    paperId: "3622660555529351168",
+    questionIndex: 39,
+    sysCode: 1,
+    standardFlag: "",
+    inputType: none,
+    addFlag: none,
+    flagUse: "",
+    knwNames: (),
+  ),
+  ),
+  (
+    type: "composite",
+    content: [希望小学开展阳光体育运动.聪聪调查了六年级男生最喜欢的球类活动，并将调查情况制成了下面的统计表和统计图. #linebreak()
+  #figure(
+    align(center)[#table(
+      columns: 5,
+      align: (auto,auto,auto,auto,auto,),
+      [球类项目], [排球], [篮球], [足球], [其他],
+      [喜欢人数], [30], [30], [], [],
+    )]
+    , kind: table
+    )
+  #linebreak() #box(baseline: 25%, image("https://k12static.xdf.cn/k12/auto/paper/2026/06/04/3622685150290472960.png", width: 25.77%))],
+    children: (
+    (
+      type: "subj",
+      content: [请将上面的图、表补充完整.],
+      difficulty: 3,
+      business-type: "CSX-JST",
+      answer: (),
+      analysis: [【分析】①把六年级男生人数看作单位“#latex(`1`)”，用单位“#latex(`1`)”减去喜欢排球、篮球、其他的百分数即可求出喜欢足球的人数占单位“#latex(`1`)”的百分数，据此补充完善扇形统计图；再根据求一个数的百分之几是多少，用乘法计算，用单位“#latex(`1`)”的量乘喜欢足球的人数占单位“#latex(`1`)”的百分数即可求出喜欢足球的人数，同理求出喜欢其他的人数，据此把统计表补充完整；
+    
+    【解答】解：①#latex(`1 - 25\% - 25\% - 12.5\% = 37.5\%`)
+    
+    #latex(`30 \div 25\% = 120`)（人）
+    
+    #latex(`120 \times 37.5\% = 45`)（人）
+    
+    #latex(`120 \times 12.5\% = 15`)（人）
+    
+    将统计表、统计图补充完整.如下图所示：#linebreak()
+    #figure(
+      align(center)[#table(
+        columns: 5,
+        align: (auto,auto,auto,auto,auto,),
+        [球类项目], [排球], [篮球], [足球], [其他],
+        [喜欢人数], [30], [30], [45], [15],
+      )]
+      , kind: table
+      )],
+      meta: (
+      questionSource: 2,
+      questionType: "",
+      relationType: "",
+      parentId: "3622685880367804416",
+      questionId: "3622685880367804417",
+      paperId: "3622660555529351168",
+      questionIndex: 1,
+      sysCode: 1,
+      standardFlag: "",
+      inputType: none,
+      addFlag: none,
+      flagUse: "",
+      knwNames: ("统计表", "扇形统计图",),
+    ),
+    ),
+    (
+      type: "fb",
+      content: [其他球类项目中，有 #latex(`60\%`) 的学生喜欢乒乓球，如果喜欢网球的人数与喜欢乒乓球的人数比是 #latex(`1:3`)，有 #blank_line() 人喜欢网球.],
+      difficulty: 4,
+      business-type: "CSX-JST",
+      answer: ([#latex(`3`)],),
+      analysis: [【分析】②根据求一个数的百分之几是多少，用乘法计算，用喜欢其他的人数乘喜欢乒乓球的人数占喜欢其他的百分数即可求出喜欢乒乓球的人数，用喜欢乒乓球的任女士除以喜欢乒乓球人数的份数即可求出 #latex(`1`) 份数，#latex(`1`) 份数即是希望网球的人数，据此即可求出喜欢网球的人数.
+    
+    【解答】解：②#latex(`15 \times 60\% \div 3 \times 1 = 3`)（人）
+    
+    答：有 #latex(`3`) 人喜欢网球.
+    
+    故答案为：①#latex(`45`)，#latex(`15`)；②#latex(`3`)​.
+    
+    【点评】本题考查了学生绘制统计图的能力以及根据统计图解决问题的能力.],
+      meta: (
+      questionSource: 2,
+      questionType: "",
+      relationType: "",
+      parentId: "3622685880367804416",
+      questionId: "3622685880367804418",
+      paperId: "3622660555529351168",
+      questionIndex: 2,
+      sysCode: 1,
+      standardFlag: "",
+      inputType: none,
+      addFlag: none,
+      flagUse: "",
+      knwNames: ("统计表", "扇形统计图",),
+    ),
+    ),
+  ),
+    difficulty: 3,
+    business-type: "CSX-JST",
+    meta: (
+    questionSource: 2,
+    questionType: "1",
+    relationType: 0,
+    parentId: "3622685880367804416",
+    questionId: "3622685880367804416",
+    paperId: "3622660555529351168",
+    questionIndex: 34,
+    sysCode: 1,
+    standardFlag: "",
+    inputType: none,
+    addFlag: none,
+    flagUse: "",
+    knwNames: ("统计表", "扇形统计图",),
+    smallQuestions: (
+      (
+        questionSource: 2,
+        questionType: "",
+        relationType: "",
+        parentId: "3622685880367804416",
+        questionId: "3622685880367804417",
+        paperId: "3622660555529351168",
+        questionIndex: 1,
+        sysCode: 1,
+        standardFlag: "",
+        inputType: none,
+        addFlag: none,
+        flagUse: "",
+        knwNames: ("统计表", "扇形统计图",),
+      ),
+      (
+        questionSource: 2,
+        questionType: "",
+        relationType: "",
+        parentId: "3622685880367804416",
+        questionId: "3622685880367804418",
+        paperId: "3622660555529351168",
+        questionIndex: 2,
+        sysCode: 1,
+        standardFlag: "",
+        inputType: none,
+        addFlag: none,
+        flagUse: "",
+        knwNames: ("统计表", "扇形统计图",),
+      ),
+    ),
+  ),
+  ),
 )
 
-#(forrender, metadata)
+#paper_data

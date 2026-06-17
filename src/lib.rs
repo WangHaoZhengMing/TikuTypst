@@ -94,6 +94,7 @@ mod tests {
         assert!(output.contains("options: (A: [#latex(`\\rm{one}`)], B: [#latex(`\\rm{two}`)])"));
         assert!(output.contains("business-type: \"CSX-DANXUAN\""));
         assert!(output.contains("meta: ("));
+        assert!(!output.contains("meta: (\n"));
         assert!(output.contains("questionSource: 2"));
         assert!(output.contains("parentId: \"2833099944152530944\""));
         assert!(output.contains("paperId: \"3635497690720632832\""));
@@ -199,6 +200,8 @@ mod tests {
         assert!(output.contains("type: \"subj\""));
         assert!(output.contains("answer: ([#latex(`2`)],)"));
         assert!(output.contains("analysis: ["));
+        assert!(output.contains("smallQuestions: (("));
+        assert!(!output.contains("smallQuestions: (\n"));
     }
 
     #[test]

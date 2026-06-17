@@ -1,4 +1,4 @@
-use crate::document::{indent, render_array, render_metadata_string_array};
+use crate::document::{render_array, render_metadata_string_array};
 use crate::model::{Metadata, OptionItem, QuestionFields, QuestionKind};
 use anyhow::{Context, Result, anyhow, bail};
 use regex::{Captures, Regex};
@@ -214,19 +214,18 @@ fn render_metadata(metadata: &Metadata) -> String {
             .children
             .iter()
             .map(render_metadata)
-            .map(|value| format!("{},", indent(&value, "    ")))
             .collect::<Vec<_>>()
-            .join("\n");
-        fields.push(format!("smallQuestions: (\n{children}\n  )"));
+            .join(", ");
+        fields.push(format!("smallQuestions: ({children},)"));
     }
 
     format!(
-        "(\n{}\n)",
+        "({})",
         fields
             .iter()
-            .map(|field| format!("  {field},"))
+            .map(|field| format!("{field},"))
             .collect::<Vec<_>>()
-            .join("\n")
+            .join(" ")
     )
 }
 
