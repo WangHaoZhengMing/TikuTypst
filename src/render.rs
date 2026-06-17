@@ -1,4 +1,4 @@
-use crate::document::{indent, render_metadata_string_array};
+use crate::document::{indent, render_array, render_metadata_string_array};
 use crate::model::{Metadata, OptionItem, QuestionFields, QuestionKind};
 use anyhow::{Context, Result, anyhow, bail};
 use regex::{Captures, Regex};
@@ -60,111 +60,128 @@ enum TextContext {
     ChoiceStem,
 }
 
-pub(crate) fn render_question(question: &QuestionFields) -> Result<(String, String)> {
-    Ok((
-        render_question_dsl(question)?,
-        render_metadata(&question.metadata),
-    ))
+pub(crate) fn render_question(question: &QuestionFields) -> Result<String> {
+    render_question_data(question)
 }
 
-fn render_question_dsl(question: &QuestionFields) -> Result<String> {
+fn render_question_data(question: &QuestionFields) -> Result<String> {
+    let kind = question_type_name(question.kind);
+    let mut fields = vec![format!("type: {}", crate::typst_string(kind))];
+
     match question.kind {
-        QuestionKind::Title => Ok(format!(
-            "title({})",
-            html_to_content(&question.stem, TextContext::Normal)?
-        )),
-        QuestionKind::SingleChoice | QuestionKind::MultipleChoice => render_choice(question),
-        QuestionKind::FillBlank => render_fill_blank(question),
-        QuestionKind::Judge => render_simple(question, "judge"),
-        QuestionKind::Subjective => render_subjective(question),
-        QuestionKind::Composite => render_composite(question),
-        QuestionKind::Completion => render_completion(question),
+        QuestionKind::Title => {
+            fields.push(format!(
+                "content: {}",
+                html_to_content(&question.stem, TextContext::Normal)?
+            ));
+        }
+        QuestionKind::SingleChoice | QuestionKind::MultipleChoice => {
+            fields.push(format!(
+                "content: {}",
+                html_to_content(&question.stem, TextContext::ChoiceStem)?
+            ));
+            fields.push(format!("options: {}", render_options(&question.options)?));
+            push_common_question_fields(&mut fields, question)?;
+        }
+        QuestionKind::FillBlank => {
+            let stem = html_to_content(&question.stem, TextContext::Normal)?;
+            if !stem.contains("#blank_line()") {
+                bail!(
+                    "fill-blank questionIndex={} is missing #blank_line() in stem",
+                    question.question_index.unwrap_or_default()
+                );
+            }
+            fields.push(format!("content: {stem}"));
+            push_common_question_fields(&mut fields, question)?;
+        }
+        QuestionKind::Judge => {
+            fields.push(format!(
+                "content: {}",
+                html_to_content(&question.stem, TextContext::Normal)?
+            ));
+            push_common_question_fields(&mut fields, question)?;
+        }
+        QuestionKind::Subjective => {
+            fields.push(format!(
+                "content: {}",
+                html_to_content(&question.stem, TextContext::Normal)?
+            ));
+            push_common_question_fields(&mut fields, question)?;
+        }
+        QuestionKind::Composite => {
+            fields.push(format!(
+                "content: {}",
+                html_to_content(&question.stem, TextContext::Normal)?
+            ));
+            let children = question
+                .children
+                .iter()
+                .map(render_question_data)
+                .collect::<Result<Vec<_>>>()?;
+            fields.push(format!(
+                "children: {}",
+                render_array(children.iter().map(String::as_str))
+            ));
+            fields.push(format!("difficulty: {}", question.difficulty));
+            fields.push(format!(
+                "business-type: {}",
+                crate::typst_string(&question.business_type)
+            ));
+        }
+        QuestionKind::Completion => {
+            let stem = html_to_content(&question.stem, TextContext::Normal)?;
+            if !stem.contains("#blank_line()") {
+                bail!(
+                    "completion questionIndex={} is missing #blank_line() in stem",
+                    question.question_index.unwrap_or_default()
+                );
+            }
+            fields.push(format!("content: {stem}"));
+            fields.push(format!("options: {}", render_options(&question.options)?));
+            fields.push(format!("difficulty: {}", question.difficulty));
+            fields.push(format!(
+                "business-type: {}",
+                crate::typst_string(&question.business_type)
+            ));
+        }
     }
-}
 
-fn render_simple(question: &QuestionFields, function: &str) -> Result<String> {
-    let stem = html_to_content(&question.stem, TextContext::Normal)?;
+    fields.push(format!("meta: {}", render_metadata(&question.metadata)));
     Ok(format!(
-        "{function}({stem}, difficulty: {}, business-type: {})",
-        question.difficulty,
-        crate::typst_string(&question.business_type)
+        "(\n{}\n)",
+        fields
+            .iter()
+            .map(|field| format!("  {field},"))
+            .collect::<Vec<_>>()
+            .join("\n")
     ))
 }
 
-fn render_choice(question: &QuestionFields) -> Result<String> {
-    let function = if question.kind == QuestionKind::SingleChoice {
-        "sc"
-    } else {
-        "mc"
-    };
-    let stem = html_to_content(&question.stem, TextContext::ChoiceStem)?;
-    let options = render_options(&question.options)?;
-    let answer = render_answer(&question.answer)?;
-    let analysis = html_to_content(&question.analysis, TextContext::Normal)?;
-    Ok(format!(
-        "{function}({stem}, {options}, difficulty: {}, business-type: {}, answer: {answer}, analysis: {analysis})",
-        question.difficulty,
+fn push_common_question_fields(fields: &mut Vec<String>, question: &QuestionFields) -> Result<()> {
+    fields.push(format!("difficulty: {}", question.difficulty));
+    fields.push(format!(
+        "business-type: {}",
         crate::typst_string(&question.business_type)
-    ))
+    ));
+    fields.push(format!("answer: {}", render_answer(&question.answer)?));
+    fields.push(format!(
+        "analysis: {}",
+        html_to_content(&question.analysis, TextContext::Normal)?
+    ));
+    Ok(())
 }
 
-fn render_subjective(question: &QuestionFields) -> Result<String> {
-    let stem = html_to_content(&question.stem, TextContext::Normal)?;
-    let answer = render_answer(&question.answer)?;
-    let analysis = html_to_content(&question.analysis, TextContext::Normal)?;
-    Ok(format!(
-        "subj({stem}, difficulty: {}, business-type: {}, answer: {answer}, analysis: {analysis})",
-        question.difficulty,
-        crate::typst_string(&question.business_type)
-    ))
-}
-
-fn render_fill_blank(question: &QuestionFields) -> Result<String> {
-    let stem = html_to_content(&question.stem, TextContext::Normal)?;
-    if !stem.contains("#blank_line()") {
-        bail!(
-            "fill-blank questionIndex={} is missing #blank_line() in stem",
-            question.question_index.unwrap_or_default()
-        );
+fn question_type_name(kind: QuestionKind) -> &'static str {
+    match kind {
+        QuestionKind::Title => "title",
+        QuestionKind::SingleChoice => "sc",
+        QuestionKind::MultipleChoice => "mc",
+        QuestionKind::FillBlank => "fb",
+        QuestionKind::Judge => "judge",
+        QuestionKind::Subjective => "subj",
+        QuestionKind::Composite => "composite",
+        QuestionKind::Completion => "completion",
     }
-    let answer = render_answer(&question.answer)?;
-    let analysis = html_to_content(&question.analysis, TextContext::Normal)?;
-    Ok(format!(
-        "fb({stem}, difficulty: {}, business-type: {}, answer: {answer}, analysis: {analysis})",
-        question.difficulty,
-        crate::typst_string(&question.business_type)
-    ))
-}
-
-fn render_composite(question: &QuestionFields) -> Result<String> {
-    let stem = html_to_content(&question.stem, TextContext::Normal)?;
-    let children = question
-        .children
-        .iter()
-        .map(render_question_dsl)
-        .collect::<Result<Vec<_>>>()?;
-    Ok(format!(
-        "composite({stem}, {}, difficulty: {}, business-type: {})",
-        render_call_tuple(&children),
-        question.difficulty,
-        crate::typst_string(&question.business_type)
-    ))
-}
-
-fn render_completion(question: &QuestionFields) -> Result<String> {
-    let stem = html_to_content(&question.stem, TextContext::Normal)?;
-    if !stem.contains("#blank_line()") {
-        bail!(
-            "completion questionIndex={} is missing #blank_line() in stem",
-            question.question_index.unwrap_or_default()
-        );
-    }
-    Ok(format!(
-        "completion({stem}, {}, difficulty: {}, business-type: {})",
-        render_options(&question.options)?,
-        question.difficulty,
-        crate::typst_string(&question.business_type)
-    ))
 }
 
 fn render_metadata(metadata: &Metadata) -> String {
@@ -283,18 +300,6 @@ fn render_content_tuple(items: &[String]) -> String {
     } else {
         format!("({},)", items.join(", "))
     }
-}
-
-fn render_call_tuple(items: &[String]) -> String {
-    if items.is_empty() {
-        return "()".to_owned();
-    }
-    let body = items
-        .iter()
-        .map(|item| format!("  {item},"))
-        .collect::<Vec<_>>()
-        .join("\n");
-    format!("(\n{body}\n)")
 }
 
 fn html_to_content(html: &str, context: TextContext) -> Result<String> {

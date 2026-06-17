@@ -19,13 +19,13 @@ pub fn convert_page_json(json: &str) -> Result<String> {
     render_records(&records)
 }
 
-pub fn convert_record(record: &Record) -> Result<(String, String)> {
+pub fn convert_record(record: &Record) -> Result<String> {
     let question = parser::extract_question(record)?;
     render::render_question(&question)
 }
 
 pub fn render_record(record: &Record) -> Result<String> {
-    convert_record(record).map(|(for_render, _)| for_render)
+    convert_record(record)
 }
 
 pub fn render_records(records: &[Record]) -> Result<String> {
@@ -89,14 +89,17 @@ mod tests {
         }"#;
 
         let output = convert_json(json).unwrap();
-        assert!(output.contains("sc("));
+        assert!(output.contains("type: \"sc\""));
+        assert!(output.contains("content: [#latex(`\\rm{Choose}`) #klammern()]"));
+        assert!(output.contains("options: (A: [#latex(`\\rm{one}`)], B: [#latex(`\\rm{two}`)])"));
         assert!(output.contains("business-type: \"CSX-DANXUAN\""));
+        assert!(output.contains("meta: ("));
         assert!(output.contains("questionSource: 2"));
         assert!(output.contains("parentId: \"2833099944152530944\""));
         assert!(output.contains("paperId: \"3635497690720632832\""));
         assert!(output.contains("knwNames: (\"Knowledge A\", \"Knowledge B\",)"));
         assert!(!output.contains("knwId"));
-        assert!(output.ends_with("#(forrender, metadata)"));
+        assert!(output.ends_with("#paper_data"));
     }
 
     #[test]
@@ -126,7 +129,8 @@ mod tests {
         }"#;
 
         let output = convert_json(json).unwrap();
-        assert!(output.contains("title([#latex(`\\rm{Section}`) #latex(`\\rm{One}`)])"));
+        assert!(output.contains("type: \"title\""));
+        assert!(output.contains("content: [#latex(`\\rm{Section}`) #latex(`\\rm{One}`)]"));
     }
 
     #[test]
@@ -167,7 +171,7 @@ mod tests {
         }"#;
 
         let output = convert_json(json).unwrap();
-        assert!(output.contains("subj("));
+        assert!(output.contains("type: \"subj\""));
         assert!(output.contains("answer: ([#latex(`x=1`)],)"));
         assert!(output.contains("analysis: ["));
         assert!(output.contains("#latex(`1`)"));
@@ -190,7 +194,9 @@ mod tests {
         }"#;
 
         let output = convert_json(json).unwrap();
-        assert!(output.contains("subj("));
+        assert!(output.contains("type: \"composite\""));
+        assert!(output.contains("children: ("));
+        assert!(output.contains("type: \"subj\""));
         assert!(output.contains("answer: ([#latex(`2`)],)"));
         assert!(output.contains("analysis: ["));
     }
@@ -203,7 +209,7 @@ mod tests {
         ]"#;
 
         let output = convert_page_json(page).unwrap();
-        assert!(output.find("judge(").unwrap() < output.find("title(").unwrap());
+        assert!(output.find("type: \"judge\"").unwrap() < output.find("type: \"title\"").unwrap());
         assert_eq!(output.matches("questionIndex:").count(), 2);
     }
 
@@ -217,7 +223,7 @@ mod tests {
 
         let output = convert_page_json(page).unwrap();
         let before = output.find("#latex(`\\rm{Before}`)").unwrap();
-        let title = output.find("title(").unwrap();
+        let title = output.find("type: \"title\"").unwrap();
         let after = output.find("#latex(`\\rm{After}`)").unwrap();
         assert!(before < title && title < after);
     }
@@ -228,7 +234,7 @@ mod tests {
             {"structureType":"judge","questionInfo":{"stem":"<p>Question</p>"}}
         ]}}"#;
 
-        assert!(convert_page_json(page).unwrap().contains("judge("));
+        assert!(convert_page_json(page).unwrap().contains("type: \"judge\""));
     }
 
     #[test]
@@ -250,7 +256,7 @@ mod tests {
         }"#;
 
         let output = convert_page_json(page).unwrap();
-        assert!(output.find("title(").unwrap() < output.find("judge(").unwrap());
+        assert!(output.find("type: \"title\"").unwrap() < output.find("type: \"judge\"").unwrap());
         assert!(output.contains("questionId: \"3635889599578992640\""));
     }
 
@@ -267,7 +273,7 @@ mod tests {
             }
         }"#;
 
-        assert!(convert_page_json(page).unwrap().contains("title("));
+        assert!(convert_page_json(page).unwrap().contains("type: \"title\""));
     }
 
     #[test]
@@ -277,6 +283,6 @@ mod tests {
         ];
         sendQuestionsSequentially(questionDatas);"#;
 
-        assert!(convert_page_json(page).unwrap().contains("judge("));
+        assert!(convert_page_json(page).unwrap().contains("type: \"judge\""));
     }
 }

@@ -1,12 +1,11 @@
 use crate::typst_string;
 
-pub(crate) fn render_document(items: &[(String, String)]) -> String {
-    let forrender = render_array(items.iter().map(|(render, _)| render.as_str()));
-    let metadata = render_array(items.iter().map(|(_, metadata)| metadata.as_str()));
-    format!("#let forrender = {forrender}\n\n#let metadata = {metadata}\n\n#(forrender, metadata)")
+pub(crate) fn render_document(items: &[String]) -> String {
+    let paper_data = render_array(items.iter().map(String::as_str));
+    format!("#let paper_data = {paper_data}\n\n#paper_data")
 }
 
-fn render_array<'a>(items: impl Iterator<Item = &'a str>) -> String {
+pub(crate) fn render_array<'a>(items: impl Iterator<Item = &'a str>) -> String {
     let items = items
         .map(|item| indent(item, "  "))
         .map(|item| format!("{item},"))
